@@ -1,0 +1,1724 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>AYA · WORLD</title>
+<meta name="description" content="Light interiors and dark provocations. An interactive gallery in two acts by visual artist Aya Krass."/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="AYA · WORLD — A solo exhibition in two acts"/>
+<meta property="og:description" content="Light interiors and dark provocations. An interactive gallery by visual artist Aya Krass."/>
+<meta property="og:image" content="project/images/queen-of-hearts.webp"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="theme-color" content="#f6efe2"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italiana&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Caveat:wght@400;600&family=JetBrains+Mono:wght@300;400;500&display=swap"/>
+<style>
+:root {
+  --cream: #f6efe2;
+  --paper: #faf4e7;
+  --linen: #ecdfca;
+  --blush: #edd9cc;
+  --petal: #e2bdb0;
+  --rose:  #b88a82;
+  --umber: #5a4a40;
+  --ink-soft: #2a1c17;
+  --sgold: #b8945a;
+  --night: #07040a;
+  --oxblood: #15050a;
+  --wine: #2a0813;
+  --bordeaux: #4a0a16;
+  --rouge: #c41a2a;
+  --lipstick: #e62538;
+  --crimson: var(--rouge);
+  --gold: #c8a45e;
+  --gold-bright: #ecc97a;
+  --gold-dim: #6f5430;
+  --bone: #efe4cc;
+  --bone-dim: #b5a98a;
+  --display: "Italiana", "Cormorant Garamond", Georgia, serif;
+  --serif: "Cormorant Garamond", Georgia, serif;
+  --hand: "Caveat", "Cormorant Garamond", cursive;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--serif);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  cursor: default;
+  background: var(--cream);
+  color: var(--ink-soft);
+  line-height: 1.5;
+  font-weight: 300;
+}
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+button { font: inherit; cursor: pointer; }
+
+.mono { font-family: var(--mono); font-weight: 300; letter-spacing: .25em; text-transform: uppercase; font-size: 10px; }
+.italic { font-style: italic; }
+.display { font-family: var(--display); line-height: .95; letter-spacing: .005em; }
+
+.playbill {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 250;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 16px 28px;
+  font-family: var(--mono); font-size: 10px; letter-spacing: .3em; text-transform: uppercase;
+  mix-blend-mode: difference; color: #b9a98a;
+  pointer-events: none;
+}
+.playbill .dot {
+  display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--lipstick); margin-right: 8px; vertical-align: middle;
+  box-shadow: 0 0 8px var(--lipstick);
+  animation: pulse 1.6s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%,100% { transform: scale(1); opacity: 1; }
+  50%     { transform: scale(1.4); opacity: .5; }
+}
+
+.ink-veil {
+  position: fixed; inset: 0; z-index: 9000; pointer-events: none;
+  opacity: 0;
+}
+.ink-veil.armed { opacity: 1; }
+.ink-blot {
+  position: absolute; left: 50%; top: 110%;
+  width: 30vmax; height: 30vmax;
+  transform: translate(-50%, -50%) scale(0);
+  background: radial-gradient(circle at 50% 40%,
+    var(--lipstick) 0%, var(--rouge) 30%, var(--bordeaux) 60%, var(--oxblood) 85%, var(--night) 100%);
+  filter: blur(2px);
+  border-radius: 50% 48% 52% 50% / 50% 52% 48% 50%;
+  transition: transform 1.6s cubic-bezier(.7,0,.3,1), top 1.6s cubic-bezier(.7,0,.3,1);
+}
+.ink-veil.flooding .ink-blot { top: 50%; transform: translate(-50%, -50%) scale(8); }
+.ink-veil.flooded { background: var(--night); }
+.ink-veil.fade { transition: opacity .9s ease .2s; opacity: 0; }
+.ink-text {
+  position: absolute; inset: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 18px;
+  color: var(--bone); text-align: center;
+  opacity: 0; transition: opacity .8s ease;
+  padding: 24px;
+}
+.ink-veil.flooded .ink-text { opacity: 1; transition-delay: .8s; }
+.ink-text .lbl { font-family: var(--mono); font-size: 10px; letter-spacing: .4em; color: var(--gold); }
+.ink-text .typ {
+  font-family: var(--display); font-size: clamp(28px, 5vw, 56px); font-style: italic;
+  color: var(--lipstick); max-width: 14ch; line-height: 1.1;
+}
+
+/* LIGHT WORLD */
+.lw { background: var(--cream); color: var(--ink-soft); position: relative; }
+.lw::before {
+  content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, #fff7e8 0%, transparent 65%),
+    radial-gradient(ellipse 60% 60% at 100% 100%, #f1d8c8 0%, transparent 70%);
+  opacity: .9;
+}
+.lw section { position: relative; z-index: 1; }
+
+.lhero {
+  min-height: 100vh; display: grid; grid-template-columns: 1.05fr .95fr;
+  gap: 0; align-items: stretch; padding: 0;
+}
+@media (max-width: 900px) { .lhero { grid-template-columns: 1fr; min-height: auto; } }
+.lhero-left {
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 120px 64px 120px;
+  position: relative;
+}
+@media (max-width: 900px) { .lhero-left { padding: 120px 28px 40px; } }
+@media (max-height: 760px) {
+  .lhero-left { padding: 96px 64px 56px; }
+  .lhero-eyebrow { margin-bottom: 20px; }
+  .lhero-tag { margin-top: 20px; font-size: 16px; }
+  .lhero-meta { margin-top: 28px; font-size: 9px; }
+}
+.lhero-eyebrow {
+  font-family: var(--mono); color: var(--rose); margin-bottom: 36px;
+  display: flex; align-items: center; gap: 14px;
+}
+.lhero-eyebrow .ln { width: 28px; height: 1px; background: var(--rose); opacity: .5; }
+.lhero-h1 {
+  font-family: var(--display); font-size: clamp(64px, 11vw, 156px);
+  color: var(--ink-soft); letter-spacing: -.01em; line-height: .88;
+}
+.lhero-h1 em {
+  display: block; font-style: italic; color: var(--rose);
+  font-size: .55em; margin-top: 12px; letter-spacing: .02em;
+  font-family: "Cormorant Garamond", serif; font-weight: 300;
+}
+.lhero-tag {
+  margin-top: 36px; max-width: 38ch;
+  font-family: var(--serif); font-style: italic; font-size: 19px; line-height: 1.7;
+  color: var(--umber);
+}
+.lhero-meta {
+  margin-top: 56px; display: flex; gap: 28px; align-items: center;
+  font-family: var(--mono); color: var(--rose); font-size: 10px;
+}
+.lhero-meta .v { color: var(--ink-soft); opacity: .6; }
+.scroll-hint {
+  position: absolute; bottom: 36px; left: 64px;
+  display: flex; flex-direction: column; gap: 10px;
+  font-family: var(--mono); color: var(--rose);
+}
+@media (max-width: 900px), (max-height: 760px) { .scroll-hint { display: none; } }
+.scroll-line {
+  width: 1px; height: 60px;
+  background: linear-gradient(to bottom, transparent, var(--rose));
+  animation: drip 2.6s ease-in-out infinite;
+}
+@keyframes drip {
+  0%   { transform: scaleY(0); transform-origin: top; }
+  45%  { transform: scaleY(1); transform-origin: top; }
+  55%  { transform: scaleY(1); transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+.lhero-right {
+  position: relative; overflow: hidden;
+  background: linear-gradient(180deg, #f3e3d1, #ebd2bf 60%, #e7c5ad);
+}
+.lhero-video {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  filter: sepia(.18) saturate(.7) brightness(1.04) contrast(.94);
+  mix-blend-mode: multiply; opacity: .9;
+}
+.lhero-vignette {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 70% 60% at 50% 40%, transparent 40%, rgba(180,120,90,.45) 100%);
+  pointer-events: none;
+}
+.lhero-plate {
+  position: absolute; left: 24px; bottom: 24px; right: 24px;
+  font-family: var(--mono); color: rgba(255,250,235,.85); font-size: 9px;
+  display: flex; justify-content: space-between; mix-blend-mode: difference;
+}
+
+.lwelcome { padding: 140px 24px 100px; }
+.lwelcome-inner { max-width: 760px; margin: 0 auto; text-align: center; }
+.section-eyebrow {
+  font-family: var(--mono); color: var(--sgold);
+  display: inline-flex; align-items: center; gap: 14px; margin-bottom: 36px;
+  white-space: nowrap;
+}
+.section-eyebrow::before, .section-eyebrow::after {
+  content: ""; width: 36px; height: 1px; background: var(--sgold); opacity: .5;
+}
+.l-h2 {
+  font-family: var(--display); font-size: clamp(36px, 6vw, 72px); color: var(--ink-soft);
+  line-height: 1.05; margin-bottom: 32px;
+}
+.l-h2 em { font-style: italic; color: var(--rose); }
+.l-body {
+  font-family: var(--serif); font-size: 18px; line-height: 1.85; color: var(--umber);
+  font-style: italic; max-width: 50ch; margin: 0 auto;
+}
+.divider-row { display: flex; align-items: center; justify-content: center; gap: 16px; margin: 56px 0; }
+.divider-row .ln { height: 1px; width: 80px; background: var(--sgold); opacity: .5; }
+.divider-row .mark { color: var(--sgold); font-size: 14px; letter-spacing: .4em; }
+
+.lgallery { padding: 60px 24px 140px; }
+.lgallery-inner { max-width: 1180px; margin: 0 auto; }
+.lg-grid {
+  display: grid; grid-template-columns: repeat(12, 1fr); gap: 36px;
+  margin-top: 64px;
+}
+@media (max-width: 900px) { .lg-grid { grid-template-columns: 1fr; } }
+.lg-card { position: relative; }
+.lg-card .frame {
+  position: relative; background: var(--paper); padding: 18px 18px 20px;
+  box-shadow: 0 1px 0 #d8c4ad, 0 30px 60px -30px rgba(90,55,30,.35);
+}
+.lg-card .frame::before {
+  content: ""; position: absolute; inset: 0;
+  border: 1px solid #d8c4ad; pointer-events: none;
+}
+.lg-card .img-wrap {
+  aspect-ratio: 4/5; overflow: hidden; background: #e9d8c2;
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+}
+.lg-card .img-wrap img {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: sepia(.12) saturate(.85) brightness(1.02);
+  transition: transform 1.2s cubic-bezier(.3,0,.2,1), filter .8s;
+}
+.lg-card:hover .img-wrap img { transform: scale(1.04); filter: none; }
+.lg-card .plaque {
+  margin-top: 20px;
+  font-family: var(--serif); color: var(--umber);
+  display: flex; flex-direction: column; gap: 4px;
+}
+.lg-card .plaque .ttl {
+  font-family: var(--display); font-size: 24px; color: var(--ink-soft);
+  font-style: italic;
+}
+.lg-card .plaque .meta { font-family: var(--mono); font-size: 9px; color: var(--rose); }
+.lg-card .plaque .medium { font-size: 14px; font-style: italic; }
+.lg-card.empty .img-wrap {
+  background:
+    repeating-linear-gradient(45deg, #e9d8c2 0 12px, #e3d0b6 12px 24px);
+  display: flex; align-items: center; justify-content: center;
+}
+.lg-card.empty .img-wrap .ph {
+  font-family: var(--mono); font-size: 10px; color: var(--rose);
+  background: rgba(255,250,236,.75); padding: 10px 16px; letter-spacing: .25em;
+}
+.lg-12 { grid-column: span 12; }
+.lg-8  { grid-column: span 8; }
+.lg-6  { grid-column: span 6; }
+.lg-4  { grid-column: span 4; }
+@media (max-width: 900px) {
+  .lg-12, .lg-8, .lg-6, .lg-4 { grid-column: span 1; }
+}
+
+.lpromises { padding: 100px 24px 60px; background: linear-gradient(180deg, transparent, #f9efde 40%, #f9efde); }
+.lp-inner { max-width: 640px; margin: 0 auto; }
+.lp-item { padding: 22px 0; border-bottom: 1px solid rgba(184,148,90,.22); display: flex; gap: 24px; align-items: baseline; }
+.lp-num { font-family: var(--mono); color: var(--sgold); flex-shrink: 0; min-width: 36px; }
+.lp-txt { font-family: var(--display); font-size: clamp(20px, 3vw, 28px); color: var(--ink-soft); line-height: 1.3; }
+.lp-txt em { font-style: italic; color: var(--rose); }
+
+.fear-sec {
+  padding: 160px 24px 200px; text-align: center; position: relative;
+  background: linear-gradient(180deg, #f9efde 0%, #f1d9c7 60%, #e8c2a8 100%);
+}
+.fear-sec::before {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 35vh;
+  background: radial-gradient(ellipse 60% 100% at 50% 100%, rgba(196,26,42,.25) 0%, transparent 80%);
+  pointer-events: none;
+}
+.fear-inner { max-width: 620px; margin: 0 auto; position: relative; z-index: 2; }
+.fear-orn { font-family: var(--mono); color: var(--rose); margin-bottom: 36px; }
+.fear-q {
+  font-family: var(--display); font-size: clamp(40px, 7vw, 88px);
+  color: var(--ink-soft); font-style: italic; line-height: 1.05; margin-bottom: 24px;
+}
+.fear-sub { font-family: var(--serif); font-style: italic; color: var(--umber); font-size: 17px; margin-bottom: 44px; }
+.fear-ta {
+  width: 100%; min-height: 110px;
+  background: rgba(255,250,236,.85); color: var(--ink-soft);
+  border: none; border-bottom: 1px solid var(--rose);
+  padding: 22px 4px; font-family: var(--hand); font-size: 28px;
+  outline: none; resize: none; line-height: 1.4; text-align: center;
+  transition: border-color .3s;
+}
+.fear-ta::placeholder { color: var(--petal); font-style: italic; opacity: .9; }
+.fear-ta:focus { border-color: var(--rouge); }
+.dare-btn {
+  margin-top: 36px; position: relative; overflow: hidden;
+  background: transparent; border: 1px solid var(--rouge); color: var(--rouge);
+  font-family: var(--mono); font-size: 11px; letter-spacing: .35em; text-transform: uppercase;
+  padding: 18px 50px; transition: color .4s;
+}
+.dare-btn::before {
+  content: ""; position: absolute; inset: 0; background: var(--rouge);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform .55s cubic-bezier(.7,0,.3,1);
+}
+.dare-btn:hover::before, .dare-btn:active::before { transform: scaleX(1); }
+.dare-btn:hover, .dare-btn:active { color: var(--paper); }
+.dare-btn span { position: relative; z-index: 1; }
+.dare-btn:disabled { opacity: .4; cursor: not-allowed; pointer-events: none; }
+.dare-note { margin-top: 18px; font-family: var(--serif); font-style: italic; color: var(--umber); font-size: 13px; opacity: .7; }
+.fear-strike {
+  position: relative; display: inline-block; margin-top: 8px;
+  font-family: var(--hand); font-size: 26px; color: var(--ink-soft);
+}
+.fear-strike::after {
+  content: ""; position: absolute; left: -8px; right: -8px; top: 50%;
+  height: 4px; background: var(--rouge);
+  transform: scaleX(0); transform-origin: left;
+  animation: strike .85s cubic-bezier(.6,0,.4,1) forwards;
+  box-shadow: 0 0 12px rgba(196,26,42,.5);
+}
+@keyframes strike { to { transform: scaleX(1); } }
+
+/* DARK WORLD */
+.dw {
+  background: var(--night); color: var(--bone); position: relative;
+  min-height: 100vh;
+}
+.dw::after {
+  content: ""; position: fixed; inset: -50%; pointer-events: none; z-index: 100;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .94  0 0 0 0 .88  0 0 0 0 .8  0 0 0 .55 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='.45'/></svg>");
+  opacity: var(--grain, 0.16); mix-blend-mode: overlay;
+  animation: grain 1.3s steps(6) infinite;
+}
+@keyframes grain {
+  0%   { transform: translate(0,0); }
+  20%  { transform: translate(-3%,2%); }
+  40%  { transform: translate(2%,-3%); }
+  60%  { transform: translate(-1%,3%); }
+  80%  { transform: translate(3%,1%); }
+  100% { transform: translate(0,0); }
+}
+.d-ornament {
+  font-family: var(--mono); color: var(--gold); margin-bottom: 36px;
+  display: flex; align-items: center; gap: 16px;
+}
+.d-ornament::before, .d-ornament::after {
+  content: ""; flex: 1; height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold-dim), transparent);
+}
+.d-ornament.left::before { display: none; }
+.d-ornament.left { justify-content: flex-start; }
+.d-ornament.left::after { max-width: 200px; }
+.d-h2 {
+  font-family: var(--display); font-size: clamp(42px, 8vw, 110px);
+  font-weight: 400; color: var(--bone); line-height: .98; letter-spacing: -.005em;
+}
+.d-h2 em { font-style: italic; color: var(--lipstick); }
+.d-h2 .stk { text-decoration: line-through; text-decoration-color: var(--rouge); opacity: .45; }
+
+.power-sec {
+  min-height: 100vh; display: grid; grid-template-columns: .9fr 1.1fr; align-items: stretch;
+  padding: 0; position: relative;
+}
+@media (max-width: 900px) { .power-sec { grid-template-columns: 1fr; } }
+.power-left {
+  position: relative; overflow: hidden;
+  background: linear-gradient(135deg, #1a0508, #0a0204);
+  display: flex; align-items: center; justify-content: center;
+}
+.power-video {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  filter: saturate(.7) brightness(.7) contrast(1.1);
+  mix-blend-mode: screen; opacity: .55;
+}
+.power-left::before {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(ellipse 65% 60% at 50% 50%, rgba(196,26,42,.28) 0%, transparent 70%);
+  z-index: 2; pointer-events: none;
+}
+.power-sigil {
+  position: relative; z-index: 3; font-family: var(--display); color: var(--gold);
+  font-size: clamp(80px, 14vw, 220px); font-style: italic;
+  text-shadow: 0 0 32px rgba(196,26,42,.55);
+  animation: sigil 4s ease-in-out infinite;
+}
+@keyframes sigil { 0%,100% { transform: scale(1) rotate(-2deg); opacity: .9; } 50% { transform: scale(1.04) rotate(0deg); opacity: 1; } }
+.power-right {
+  padding: 120px 64px 80px; display: flex; flex-direction: column; justify-content: center;
+}
+@media (max-width: 900px) { .power-right { padding: 80px 28px; } }
+.pr-label {
+  font-family: var(--mono); font-size: 10px; letter-spacing: .3em;
+  color: rgba(239,228,204,.4); text-transform: uppercase; margin-bottom: 32px;
+  line-height: 2;
+}
+.pr-label .fear-said {
+  display: inline-block; font-family: var(--hand); font-size: 26px; color: var(--rouge);
+  text-decoration: line-through; text-decoration-color: var(--rouge);
+  text-decoration-thickness: 2.5px; letter-spacing: normal; text-transform: none;
+  font-weight: 600; margin-top: 8px; max-width: 32ch; line-height: 1.4;
+}
+.pr-power {
+  font-family: var(--display); font-size: clamp(28px, 4.5vw, 64px);
+  font-style: italic; color: var(--bone); line-height: 1.15;
+  white-space: pre-line; max-width: 18ch;
+  opacity: 0; transform: translateY(20px); transition: opacity 1s ease, transform 1s ease;
+}
+.pr-power.on { opacity: 1; transform: translateY(0); }
+.pr-power em { color: var(--lipstick); font-style: italic; }
+.pr-loading { display: flex; gap: 10px; padding: 32px 0; }
+.pr-loading .d {
+  width: 10px; height: 10px; background: var(--rouge); border-radius: 50%;
+  animation: pdot 1.4s ease-in-out infinite;
+}
+.pr-loading .d:nth-child(2) { animation-delay: .2s; }
+.pr-loading .d:nth-child(3) { animation-delay: .4s; }
+@keyframes pdot {
+  0%,80%,100% { transform: scale(.6); opacity: .35; }
+  40%         { transform: scale(1.3); opacity: 1; }
+}
+.pr-cont { margin-top: 64px; font-family: var(--mono); font-size: 10px; color: rgba(239,228,204,.3); animation: breathe 3s ease-in-out infinite; }
+@keyframes breathe { 0%,100% { opacity: .25; } 50% { opacity: .65; } }
+
+.dgallery { padding: 0; }
+.dscene {
+  min-height: 100vh; display: grid; grid-template-columns: 1.05fr .95fr;
+  align-items: stretch; position: relative;
+}
+.dscene.flip { grid-template-columns: .95fr 1.05fr; }
+.dscene.flip .dscene-art { order: 2; }
+.dscene.flip .dscene-text { order: 1; }
+@media (max-width: 900px) {
+  .dscene, .dscene.flip { grid-template-columns: 1fr; }
+  .dscene.flip .dscene-art { order: 0; }
+  .dscene.flip .dscene-text { order: 1; }
+}
+.dscene-art {
+  position: relative; overflow: hidden;
+  background: var(--oxblood);
+  min-height: 60vh;
+}
+.dscene-art img {
+  width: 100%; height: 100%; object-fit: cover;
+  position: absolute; inset: 0;
+  transition: transform 1.6s cubic-bezier(.3,0,.2,1);
+}
+.dscene-art:hover img { transform: scale(1.04); }
+.dscene-art::after {
+  content: ""; position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 100% 80% at 50% 50%, transparent 50%, rgba(0,0,0,.55) 100%),
+    linear-gradient(180deg, transparent 60%, rgba(0,0,0,.5));
+  pointer-events: none; z-index: 1;
+}
+.dscene-art .corner {
+  position: absolute; top: 22px; left: 22px;
+  font-family: var(--mono); font-size: 10px; color: var(--gold); letter-spacing: .3em;
+  z-index: 3;
+}
+.dscene-art .corner.r { left: auto; right: 22px; text-align: right; }
+
+/* Dark gallery upload overlay */
+.dscene-upload {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 20px; z-index: 4;
+  display: flex; align-items: flex-end; justify-content: flex-end; gap: 8px;
+  opacity: 0; transition: opacity .3s;
+}
+.dscene-art:hover .dscene-upload { opacity: 1; }
+.upload-dark-btn {
+  font-family: var(--mono); font-size: 9px; letter-spacing: .3em; text-transform: uppercase;
+  color: var(--gold); background: rgba(7,4,10,.75); border: 1px solid rgba(200,164,94,.4);
+  padding: 9px 16px; cursor: pointer;
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  transition: background .25s, color .25s;
+}
+.upload-dark-btn:hover { background: var(--gold); color: var(--night); }
+.clear-dark-btn {
+  font-family: var(--mono); font-size: 9px; letter-spacing: .3em; text-transform: uppercase;
+  color: var(--bone-dim); background: rgba(7,4,10,.75); border: 1px solid rgba(239,228,204,.2);
+  padding: 9px 16px; cursor: pointer;
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  transition: background .25s;
+}
+.clear-dark-btn:hover { background: rgba(239,228,204,.12); }
+
+.dscene-text {
+  padding: 100px 64px; display: flex; flex-direction: column; justify-content: center;
+  background: linear-gradient(135deg, var(--oxblood), var(--night));
+  position: relative;
+}
+@media (max-width: 900px) { .dscene-text { padding: 80px 28px; } }
+.dscene-num {
+  font-family: var(--mono); color: var(--gold-bright); letter-spacing: .4em; font-size: 11px;
+  margin-bottom: 28px;
+}
+.dscene-ttl {
+  font-family: var(--display); font-size: clamp(40px, 6.5vw, 92px);
+  color: var(--bone); line-height: .98; margin-bottom: 24px;
+}
+.dscene-ttl em { font-style: italic; color: var(--lipstick); }
+.dscene-meta {
+  font-family: var(--mono); color: var(--gold); font-size: 10px;
+  display: flex; gap: 18px; margin-bottom: 32px; flex-wrap: wrap;
+}
+.dscene-meta .v { color: var(--bone-dim); }
+.dscene-line { width: 56px; height: 1px; background: var(--gold-dim); margin: 24px 0; }
+.dscene-body {
+  font-family: var(--serif); font-style: italic; font-size: 20px; line-height: 1.7;
+  color: var(--bone-dim); max-width: 38ch;
+}
+.dscene-body em { color: var(--lipstick); font-style: italic; }
+.dgallery-cover {
+  min-height: 60vh; padding: 120px 24px 80px; text-align: center;
+}
+.dgallery-cover .inner { max-width: 760px; margin: 0 auto; }
+
+.manifesto-sec { padding: 140px 24px; }
+.manifesto-inner { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: .9fr 1.1fr; gap: 80px; align-items: start; }
+@media (max-width: 900px) { .manifesto-inner { grid-template-columns: 1fr; gap: 48px; } }
+.cmd-list { list-style: none; }
+.cmd-item {
+  display: grid; grid-template-columns: 64px 1fr; gap: 22px;
+  padding: 22px 0; border-bottom: 1px solid rgba(200,164,94,.15); align-items: baseline;
+  transition: background .35s;
+}
+.cmd-item:hover { background: rgba(196,26,42,.05); }
+.cmd-n { font-family: var(--mono); font-size: 11px; letter-spacing: .25em; color: var(--gold-bright); }
+.cmd-t { font-family: var(--display); font-size: clamp(22px, 3vw, 36px); color: var(--bone); line-height: 1.15; }
+.cmd-t em { font-style: italic; color: var(--lipstick); }
+
+.draw-sec { padding: 140px 24px; background: #0b0306; text-align: center; position: relative; }
+.draw-sec::before, .draw-sec::after {
+  content: ""; position: absolute; left: 0; right: 0; height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold-dim), transparent);
+}
+.draw-sec::before { top: 0; }
+.draw-sec::after { bottom: 0; }
+.draw-inner { max-width: 720px; margin: 0 auto; }
+.draw-sub { font-family: var(--serif); font-style: italic; color: var(--bone-dim); font-size: 18px; margin: 16px auto 80px; max-width: 40ch; line-height: 1.7; }
+.deck-stage {
+  position: relative; height: 280px; perspective: 1000px; margin: 0 auto 56px;
+  display: flex; align-items: center; justify-content: center;
+}
+.deck-fan { position: relative; width: 220px; height: 280px; cursor: pointer; }
+.deck-card {
+  position: absolute; left: 50%; top: 50%;
+  width: 160px; height: 230px;
+  transform: translate(-50%,-50%) rotate(var(--r,0deg)) translateY(var(--ty,0px)) translateX(var(--tx,0px));
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 30% 25%, rgba(236,201,122,.18), transparent 50%),
+    repeating-linear-gradient(45deg, #220409 0 4px, #1a0306 4px 8px);
+  border: 1px solid rgba(200,164,94,.35);
+  box-shadow: 0 12px 40px -20px rgba(0,0,0,.8);
+  display: flex; align-items: center; justify-content: center;
+  transition: transform .6s cubic-bezier(.3,1.4,.5,1), box-shadow .5s;
+}
+.deck-fan:hover .deck-card {
+  transform: translate(-50%,-50%) rotate(calc(var(--r,0deg) * 1.6)) translateY(calc(var(--ty,0px) - 14px)) translateX(calc(var(--tx,0px) * 1.6));
+  box-shadow: 0 30px 60px -25px rgba(196,26,42,.6);
+}
+.deck-card::after {
+  content: ""; position: absolute; inset: 8px;
+  border: 1px solid rgba(200,164,94,.35); border-radius: 4px;
+}
+.deck-card .heart {
+  font-family: var(--display); font-size: 48px; color: var(--lipstick); font-style: italic;
+  text-shadow: 0 0 14px rgba(196,26,42,.6);
+  z-index: 2; line-height: 1;
+}
+.drawn {
+  position: relative; padding: 56px 28px;
+  background:
+    radial-gradient(circle at 30% 15%, rgba(236,201,122,.06), transparent 50%),
+    linear-gradient(180deg, var(--oxblood), #0a0204);
+  border: 1px solid rgba(200,164,94,.25);
+  display: flex; flex-direction: column; align-items: center; gap: 18px;
+  animation: drawIn .9s cubic-bezier(.3,1.2,.4,1);
+}
+@keyframes drawIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.drawn .ord { font-family: var(--mono); color: var(--gold); letter-spacing: .35em; font-size: 10px; }
+.drawn .ph { font-family: var(--display); font-size: clamp(24px, 4vw, 42px); font-style: italic; color: var(--bone); line-height: 1.2; }
+.drawn .sub { font-family: var(--serif); font-style: italic; color: var(--bone-dim); font-size: 17px; line-height: 1.7; max-width: 38ch; }
+.again-btn {
+  margin-top: 20px; background: transparent; color: var(--gold);
+  border: 1px solid rgba(200,164,94,.4);
+  font-family: var(--mono); font-size: 10px; letter-spacing: .35em; text-transform: uppercase;
+  padding: 14px 36px; transition: background .3s, color .3s;
+}
+.again-btn:hover { background: var(--gold); color: var(--night); }
+.draw-hint { font-family: var(--mono); font-size: 10px; color: rgba(239,228,204,.3); letter-spacing: .35em; }
+
+.sign-sec {
+  padding: 180px 24px 120px; text-align: center; position: relative; overflow: hidden;
+}
+.sign-sec::before {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(ellipse 60% 50% at 50% 30%, rgba(196,26,42,.1), transparent 70%);
+  pointer-events: none;
+}
+.sign-inner { max-width: 760px; margin: 0 auto; position: relative; z-index: 2; }
+.sign-credo {
+  font-family: var(--serif); font-style: italic; font-size: 21px; line-height: 1.85;
+  color: var(--bone-dim); margin: 48px auto;
+  max-width: 50ch;
+}
+.sign-credo em { color: var(--bone); font-style: normal; }
+.sign-name {
+  font-family: var(--display); font-style: italic; font-size: clamp(72px, 12vw, 144px);
+  color: var(--lipstick); margin: 56px 0 0;
+  text-shadow: 0 0 40px rgba(196,26,42,.4);
+}
+.sign-contact {
+  margin-top: 80px; padding: 40px 32px;
+  border: 1px solid rgba(200,164,94,.2);
+  display: flex; flex-direction: column; gap: 20px; align-items: center;
+}
+.sign-contact .lbl { font-family: var(--mono); color: var(--gold); font-size: 10px; letter-spacing: .35em; }
+.sign-contact .em {
+  font-family: var(--display); font-style: italic; color: var(--bone); font-size: clamp(24px, 3.5vw, 36px);
+  text-decoration: underline; text-decoration-color: var(--gold-dim); text-underline-offset: 6px;
+}
+.sign-contact .em:hover { color: var(--lipstick); text-decoration-color: var(--lipstick); }
+.sign-links {
+  margin-top: 56px; display: flex; justify-content: center; gap: 36px; flex-wrap: wrap;
+}
+.sign-links a {
+  font-family: var(--mono); font-size: 10px; letter-spacing: .3em; text-transform: uppercase;
+  color: var(--bone-dim); padding-bottom: 4px; border-bottom: 1px solid transparent;
+  transition: color .3s, border-color .3s;
+}
+.sign-links a:hover { color: var(--gold); border-color: var(--gold); }
+.colophon {
+  margin-top: 100px; font-family: var(--mono); font-size: 9px;
+  letter-spacing: .35em; color: rgba(239,228,204,.18); text-transform: uppercase;
+}
+
+.heartbeat-overlay {
+  position: fixed; inset: 0; z-index: 8500; pointer-events: none;
+  background: radial-gradient(circle at 50% 50%, rgba(196,26,42,.18), transparent 60%);
+  opacity: 0; mix-blend-mode: screen;
+}
+.heartbeat-overlay.on { animation: heart 1.1s ease-in-out 3; }
+@keyframes heart {
+  0%,100% { opacity: 0; }
+  10%     { opacity: .9; }
+  20%     { opacity: .2; }
+  30%     { opacity: 1; }
+  50%     { opacity: 0; }
+}
+
+.skip-intro {
+  position: fixed; top: 56px; right: 28px; z-index: 260;
+  font-family: var(--mono); font-size: 10px; letter-spacing: .3em; text-transform: uppercase;
+  color: var(--rose); background: rgba(246,239,226,.85); border: 1px solid rgba(184,138,130,.35);
+  cursor: pointer; pointer-events: auto;
+  padding: 8px 14px; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  transition: color .3s, background .3s, border-color .3s;
+}
+.skip-intro:hover { color: var(--paper); background: var(--rouge); border-color: var(--rouge); }
+.dw .skip-intro {
+  background: rgba(10,4,6,.7); border-color: rgba(200,164,94,.3); color: var(--gold);
+}
+.dw .skip-intro:hover { background: var(--gold); color: var(--night); }
+@media (max-width: 600px) {
+  .playbill { padding: 12px 16px; font-size: 9px; }
+  .lhero-left, .power-right, .dscene-text { padding: 80px 22px; }
+  .lhero-eyebrow { margin-bottom: 24px; }
+  .dscene-text { padding: 64px 22px; }
+  .skip-intro { top: 46px; right: 14px; padding: 6px 10px; font-size: 9px; }
+}
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script>
+/* image-slot custom element */
+(()=>{const STATE_FILE='.image-slots.state.json';const MAX_DIM=1200;const ACCEPT=['image/png','image/jpeg','image/webp','image/avif'];const subs=new Set();let slots={};const tombstones=new Set();let loaded=false;let loadP=null;function load(){if(loadP)return loadP;loadP=fetch(STATE_FILE).then(r=>r.ok?r.json():null).then(j=>{if(j&&typeof j==='object'){const merged=Object.assign({},j,slots);for(const k in slots){if(merged[k]&&!merged[k].u&&j[k]){merged[k].u=typeof j[k]==='string'?j[k]:j[k].u;}}for(const id of tombstones)delete merged[id];slots=merged;}tombstones.clear();}).catch(()=>{}).then(()=>{loaded=true;subs.forEach(fn=>fn());});return loadP;}let saving=false;let saveDirty=false;function save(){if(saving){saveDirty=true;return;}const w=window.omelette&&window.omelette.writeFile;if(!w)return;saving=true;Promise.resolve(w(STATE_FILE,JSON.stringify(slots))).catch(()=>{}).then(()=>{saving=false;if(saveDirty){saveDirty=false;save();}});}const S_MAX=5;const clampS=s=>Math.max(1,Math.min(S_MAX,s));function getSlot(id){const v=slots[id];if(!v)return null;return typeof v==='string'?{u:v,s:1,x:0,y:0}:v;}function setSlot(id,val){if(!id)return;if(val){slots[id]=val;tombstones.delete(id);}else{delete slots[id];if(!loaded)tombstones.add(id);}subs.forEach(fn=>fn());if(loaded)save();else load().then(save);}async function toDataUrl(file,targetW){const bitmap=await createImageBitmap(file);try{const cap=Math.min(MAX_DIM,Math.max(1,Math.round(targetW*2))||MAX_DIM);const scale=Math.min(1,cap/Math.max(bitmap.width,bitmap.height));const w=Math.max(1,Math.round(bitmap.width*scale));const h=Math.max(1,Math.round(bitmap.height*scale));const canvas=document.createElement('canvas');canvas.width=w;canvas.height=h;canvas.getContext('2d').drawImage(bitmap,0,0,w,h);return canvas.toDataURL('image/webp',0.85);}finally{bitmap.close&&bitmap.close();}}const stylesheet=':host{display:inline-block;position:relative;vertical-align:top;font:13px/1.3 system-ui,-apple-system,sans-serif;color:rgba(0,0,0,.55);width:240px;height:160px}.frame{position:absolute;inset:0;overflow:hidden;background:rgba(0,0,0,.04)}.frame img{position:absolute;max-width:none;transform:translate(-50%,-50%);-webkit-user-drag:none;user-select:none;touch-action:none}.spill{position:absolute;transform:translate(-50%,-50%);display:none;z-index:1;cursor:grab;touch-action:none}:host([data-panning]) .spill{cursor:grabbing}.spill .ghost{position:absolute;inset:0;width:100%;height:100%;opacity:.35;pointer-events:none;-webkit-user-drag:none;user-select:none;box-shadow:0 0 0 1px rgba(0,0,0,.2),0 12px 32px rgba(0,0,0,.2)}.spill .handle{position:absolute;width:12px;height:12px;border-radius:50%;background:#fff;box-shadow:0 0 0 1.5px #c96442,0 1px 3px rgba(0,0,0,.3);transform:translate(-50%,-50%)}.spill .handle[data-c=nw]{left:0;top:0;cursor:nwse-resize}.spill .handle[data-c=ne]{left:100%;top:0;cursor:nesw-resize}.spill .handle[data-c=sw]{left:0;top:100%;cursor:nesw-resize}.spill .handle[data-c=se]{left:100%;top:100%;cursor:nwse-resize}:host([data-reframe]){z-index:10}:host([data-reframe]) .spill{display:block}:host([data-reframe]) .frame{box-shadow:0 0 0 2px #c96442}.empty{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;padding:12px;box-sizing:border-box;cursor:pointer;user-select:none}.empty svg{opacity:.45}.empty .cap{max-width:90%;font-weight:500;letter-spacing:.01em}.empty .sub{font-size:11px}.empty .sub u{text-underline-offset:2px;text-decoration-color:rgba(0,0,0,.25)}.empty:hover .sub u{color:rgba(0,0,0,.75);text-decoration-color:currentColor}:host([data-over]) .frame{outline:2px solid #c96442;outline-offset:-2px;background:rgba(201,100,66,.10)}.ring{position:absolute;inset:0;pointer-events:none;border:1.5px dashed rgba(0,0,0,.25);transition:border-color .12s}:host([data-over]) .ring{border-color:#c96442}:host([data-filled]) .ring{display:none}.ctl{position:absolute;top:100%;left:50%;transform:translateX(-50%);padding-top:8px;display:flex;gap:6px;opacity:0;pointer-events:none;transition:opacity .12s;z-index:2;white-space:nowrap}:host([data-filled][data-editable]:hover) .ctl,:host([data-reframe]) .ctl{opacity:1;pointer-events:auto}.ctl button{appearance:none;border:0;border-radius:6px;padding:5px 10px;cursor:pointer;background:rgba(0,0,0,.65);color:#fff;font:11px/1 system-ui,-apple-system,sans-serif;backdrop-filter:blur(6px)}.ctl button:hover{background:rgba(0,0,0,.8)}.err{position:absolute;left:8px;bottom:8px;right:8px;color:#b3261e;font-size:11px;background:rgba(255,255,255,.85);padding:4px 6px;border-radius:5px;pointer-events:none}';const icon='<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>';class ImageSlot extends HTMLElement{static get observedAttributes(){return['shape','radius','mask','fit','position','placeholder','src','id'];}constructor(){super();const root=this.attachShadow({mode:'open'});root.innerHTML='<style>'+stylesheet+'</style><div class="frame" part="frame"><img part="image" alt="" draggable="false" style="display:none"><div class="empty" part="empty">'+icon+'<div class="cap"></div><div class="sub">or <u>browse files</u></div></div><div class="ring" part="ring"></div></div><div class="spill"><img class="ghost" alt="" draggable="false"><div class="handle" data-c="nw"></div><div class="handle" data-c="ne"></div><div class="handle" data-c="sw"></div><div class="handle" data-c="se"></div></div><div class="ctl"><button data-act="replace" title="Replace image">Replace</button><button data-act="clear" title="Remove image">Remove</button></div><input type="file" accept="'+ACCEPT.join(',')+'" hidden>';this._frame=root.querySelector('.frame');this._ring=root.querySelector('.ring');this._img=root.querySelector('.frame img');this._empty=root.querySelector('.empty');this._cap=root.querySelector('.cap');this._sub=root.querySelector('.sub');this._spill=root.querySelector('.spill');this._ghost=root.querySelector('.ghost');this._err=null;this._input=root.querySelector('input');this._depth=0;this._gen=0;this._view={s:1,x:0,y:0};this._subFn=()=>this._render();this._empty.addEventListener('click',()=>this._input.click());root.addEventListener('click',e=>{const act=e.target&&e.target.getAttribute&&e.target.getAttribute('data-act');if(act==='replace'){this._exitReframe(true);this._input.click();}if(act==='clear'){this._exitReframe(false);this._gen++;this._local=null;if(this.id)setSlot(this.id,null);else this._render();}});this._input.addEventListener('change',()=>{const f=this._input.files&&this._input.files[0];if(f)this._ingest(f);this._input.value='';});this._img.addEventListener('load',()=>this._applyView());this.addEventListener('dblclick',e=>{if(!this.hasAttribute('data-editable')||!this._reframes())return;e.preventDefault();if(this.hasAttribute('data-reframe'))this._exitReframe(true);else this._enterReframe();});this._spill.addEventListener('pointerdown',e=>{if(e.button!==0||!this.hasAttribute('data-reframe'))return;e.preventDefault();e.stopPropagation();this._spill.setPointerCapture(e.pointerId);const rect=this.getBoundingClientRect();const fw=rect.width||1,fh=rect.height||1;const corner=e.target.getAttribute&&e.target.getAttribute('data-c');let move;if(corner){const iw=this._img.naturalWidth||1,ih=this._img.naturalHeight||1;const base=Math.max(fw/iw,fh/ih);const sx=corner.includes('e')?1:-1;const sy=corner.includes('s')?1:-1;const s0=this._view.s;const w0=iw*base*s0,h0=ih*base*s0;const cx0=(50+this._view.x)/100*fw;const cy0=(50+this._view.y)/100*fh;const ox=cx0-sx*w0/2,oy=cy0-sy*h0/2;const diag0=Math.hypot(w0,h0);const ux=sx*w0/diag0,uy=sy*h0/diag0;move=ev=>{const proj=(ev.clientX-rect.left-ox)*ux+(ev.clientY-rect.top-oy)*uy;const s=clampS(s0*proj/diag0);const d=diag0*s/s0;this._view.s=s;this._view.x=(ox+ux*d/2)/fw*100-50;this._view.y=(oy+uy*d/2)/fh*100-50;this._clampView();this._applyView();};}else{this.setAttribute('data-panning','');const start={px:e.clientX,py:e.clientY,x:this._view.x,y:this._view.y};move=ev=>{this._view.x=start.x+(ev.clientX-start.px)/fw*100;this._view.y=start.y+(ev.clientY-start.py)/fh*100;this._clampView();this._applyView();};}const up=()=>{try{this._spill.releasePointerCapture(e.pointerId);}catch{}this._spill.removeEventListener('pointermove',move);this._spill.removeEventListener('pointerup',up);this._spill.removeEventListener('pointercancel',up);this.removeAttribute('data-panning');this._dragUp=null;};this._dragUp=up;this._spill.addEventListener('pointermove',move);this._spill.addEventListener('pointerup',up);this._spill.addEventListener('pointercancel',up);});this.addEventListener('wheel',e=>{if(!this.hasAttribute('data-reframe'))return;e.preventDefault();const r=this.getBoundingClientRect();const cx=(e.clientX-r.left)/r.width*100-50;const cy=(e.clientY-r.top)/r.height*100-50;const prev=this._view.s;const next=clampS(prev*Math.pow(1.0015,-e.deltaY));if(next===prev)return;const k=next/prev;this._view.s=next;this._view.x=cx*(1-k)+this._view.x*k;this._view.y=cy*(1-k)+this._view.y*k;this._clampView();this._applyView();},{passive:false});}connectedCallback(){if(!this.id&&!ImageSlot._warned){ImageSlot._warned=true;console.warn('<image-slot> without an id will not persist its dropped image.');}this.addEventListener('dragenter',this);this.addEventListener('dragover',this);this.addEventListener('dragleave',this);this.addEventListener('drop',this);subs.add(this._subFn);this._ro=new ResizeObserver(()=>this._render());this._ro.observe(this);load();this._render();}disconnectedCallback(){subs.delete(this._subFn);this.removeEventListener('dragenter',this);this.removeEventListener('dragover',this);this.removeEventListener('dragleave',this);this.removeEventListener('drop',this);if(this._ro){this._ro.disconnect();this._ro=null;}this._exitReframe(false);}_enterReframe(){if(this.hasAttribute('data-reframe'))return;this.setAttribute('data-reframe','');this._applyView();this._outside=e=>{if(e.composedPath&&e.composedPath().includes(this))return;this._exitReframe(true);};this._esc=e=>{if(e.key==='Escape')this._exitReframe(true);};document.addEventListener('pointerdown',this._outside,true);document.addEventListener('keydown',this._esc,true);}_exitReframe(commit){if(!this.hasAttribute('data-reframe'))return;if(this._dragUp)this._dragUp();this.removeAttribute('data-reframe');this.removeAttribute('data-panning');if(this._outside)document.removeEventListener('pointerdown',this._outside,true);if(this._esc)document.removeEventListener('keydown',this._esc,true);this._outside=this._esc=null;if(commit)this._commitView();}attributeChangedCallback(){if(this.shadowRoot)this._render();}handleEvent(e){if(e.type==='dragenter'||e.type==='dragover'){e.preventDefault();e.stopPropagation();if(e.dataTransfer)e.dataTransfer.dropEffect='copy';if(e.type==='dragenter')this._depth++;this.setAttribute('data-over','');}else if(e.type==='dragleave'){if(--this._depth<=0){this._depth=0;this.removeAttribute('data-over');}}else if(e.type==='drop'){e.preventDefault();e.stopPropagation();this._depth=0;this.removeAttribute('data-over');const f=e.dataTransfer&&e.dataTransfer.files&&e.dataTransfer.files[0];if(f)this._ingest(f);}}async _ingest(file){this._setError(null);if(!file||ACCEPT.indexOf(file.type)<0){this._setError('Drop a PNG, JPEG, WebP, or AVIF image.');return;}const gen=++this._gen;try{const w=this.clientWidth||this.offsetWidth||MAX_DIM;const url=await toDataUrl(file,w);if(gen!==this._gen)return;this._exitReframe(false);const val={u:url,s:1,x:0,y:0};setSlot(this.id||'',val);if(!this.id){this._local=val;this._render();}}catch(err){if(gen!==this._gen)return;this._setError('Could not read that image.');console.warn('<image-slot> ingest failed:',err);}}_setError(msg){if(this._err){this._err.remove();this._err=null;}if(!msg)return;const d=document.createElement('div');d.className='err';d.textContent=msg;this.shadowRoot.appendChild(d);this._err=d;setTimeout(()=>{if(this._err===d){d.remove();this._err=null;}},3000);}_reframes(){return this.hasAttribute('data-filled')&&(this.getAttribute('fit')||'cover')==='cover';}_geom(){const iw=this._img.naturalWidth,ih=this._img.naturalHeight;const fw=this.clientWidth,fh=this.clientHeight;if(!iw||!ih||!fw||!fh)return null;return{iw,ih,fw,fh,base:Math.max(fw/iw,fh/ih)};}_clampView(){const g=this._geom();if(!g)return;const mx=Math.max(0,(g.iw*g.base*this._view.s/g.fw-1)*50);const my=Math.max(0,(g.ih*g.base*this._view.s/g.fh-1)*50);this._view.x=Math.max(-mx,Math.min(mx,this._view.x));this._view.y=Math.max(-my,Math.min(my,this._view.y));}_applyView(){const g=this._geom();const fit=this.getAttribute('fit')||'cover';if(fit!=='cover'||!g){this._img.style.width='100%';this._img.style.height='100%';this._img.style.left='50%';this._img.style.top='50%';this._img.style.objectFit=fit;this._img.style.objectPosition=this.getAttribute('position')||'50% 50%';return;}const k=g.base*this._view.s;const w=(g.iw*k/g.fw*100)+'%';const h=(g.ih*k/g.fh*100)+'%';const l=(50+this._view.x)+'%';const t=(50+this._view.y)+'%';this._img.style.width=w;this._img.style.height=h;this._img.style.left=l;this._img.style.top=t;this._img.style.objectFit='';this._spill.style.width=w;this._spill.style.height=h;this._spill.style.left=l;this._spill.style.top=t;}_commitView(){const v={s:this._view.s,x:this._view.x,y:this._view.y};if(this._userUrl)v.u=this._userUrl;if(this.id)setSlot(this.id,v);else{this._local=v;}}_render(){const mask=this.getAttribute('mask');const shape=(this.getAttribute('shape')||'rounded').toLowerCase();let radius='';if(shape==='circle')radius='50%';else if(shape==='pill')radius='9999px';else if(shape==='rounded'){const n=parseFloat(this.getAttribute('radius'));radius=(Number.isFinite(n)?n:12)+'px';}this._frame.style.borderRadius=mask?'':radius;this._frame.style.clipPath=mask||'';this._ring.style.borderRadius=mask?'':radius;this._ring.style.display=mask?'none':'';const editable=!!(window.omelette&&window.omelette.writeFile);this.toggleAttribute('data-editable',editable);this._sub.style.display=editable?'':'none';let stored=this.id?getSlot(this.id):this._local;if(stored&&stored.u&&!/^data:image\//i.test(stored.u))stored=null;const srcAttr=this.getAttribute('src')||'';this._userUrl=(stored&&stored.u)||null;const url=this._userUrl||srcAttr;if(!this.hasAttribute('data-reframe')){this._view={s:stored&&Number.isFinite(stored.s)?clampS(stored.s):1,x:stored&&Number.isFinite(stored.x)?stored.x:0,y:stored&&Number.isFinite(stored.y)?stored.y:0};}this._cap.textContent=this.getAttribute('placeholder')||'Drop an image';if(url){if(this._img.getAttribute('src')!==url){this._img.src=url;this._ghost.src=url;}this._img.style.display='block';this._empty.style.display='none';this.setAttribute('data-filled','');this._clampView();this._applyView();}else{this._img.style.display='none';this._img.removeAttribute('src');this._ghost.removeAttribute('src');this._empty.style.display='flex';this.removeAttribute('data-filled');}}}if(!customElements.get('image-slot')){customElements.define('image-slot',ImageSlot);}})();
+</script>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel">
+// ── TWEAKS PANEL ─────────────────────────────────────────
+const __TWEAKS_STYLE = `
+  .twk-panel{position:fixed;right:16px;bottom:16px;z-index:2147483646;width:280px;
+    max-height:calc(100vh - 32px);display:flex;flex-direction:column;
+    transform:scale(var(--dc-inv-zoom,1));transform-origin:bottom right;
+    background:rgba(250,249,247,.78);color:#29261b;
+    -webkit-backdrop-filter:blur(24px) saturate(160%);backdrop-filter:blur(24px) saturate(160%);
+    border:.5px solid rgba(255,255,255,.6);border-radius:14px;
+    box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 12px 40px rgba(0,0,0,.18);
+    font:11.5px/1.4 ui-sans-serif,system-ui,-apple-system,sans-serif;overflow:hidden}
+  .twk-hd{display:flex;align-items:center;justify-content:space-between;
+    padding:10px 8px 10px 14px;cursor:move;user-select:none}
+  .twk-hd b{font-size:12px;font-weight:600;letter-spacing:.01em}
+  .twk-x{appearance:none;border:0;background:transparent;color:rgba(41,38,27,.55);
+    width:22px;height:22px;border-radius:6px;cursor:default;font-size:13px;line-height:1}
+  .twk-x:hover{background:rgba(0,0,0,.06);color:#29261b}
+  .twk-body{padding:2px 14px 14px;display:flex;flex-direction:column;gap:10px;
+    overflow-y:auto;overflow-x:hidden;min-height:0}
+  .twk-row{display:flex;flex-direction:column;gap:5px}
+  .twk-row-h{flex-direction:row;align-items:center;justify-content:space-between;gap:10px}
+  .twk-lbl{display:flex;justify-content:space-between;align-items:baseline;color:rgba(41,38,27,.72)}
+  .twk-lbl>span:first-child{font-weight:500}
+  .twk-val{color:rgba(41,38,27,.5);font-variant-numeric:tabular-nums}
+  .twk-sect{font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+    color:rgba(41,38,27,.45);padding:10px 0 0}
+  .twk-sect:first-child{padding-top:0}
+  .twk-slider{appearance:none;-webkit-appearance:none;width:100%;height:4px;margin:6px 0;
+    border-radius:999px;background:rgba(0,0,0,.12);outline:none}
+  .twk-slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;
+    width:14px;height:14px;border-radius:50%;background:#fff;
+    border:.5px solid rgba(0,0,0,.12);box-shadow:0 1px 3px rgba(0,0,0,.2);cursor:default}
+  .twk-toggle{position:relative;width:32px;height:18px;border:0;border-radius:999px;
+    background:rgba(0,0,0,.15);transition:background .15s;cursor:default;padding:0}
+  .twk-toggle[data-on="1"]{background:#34c759}
+  .twk-toggle i{position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;
+    background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.25);transition:transform .15s}
+  .twk-toggle[data-on="1"] i{transform:translateX(14px)}
+  .twk-chips{display:flex;gap:6px}
+  .twk-chip{position:relative;appearance:none;flex:1;min-width:0;height:46px;
+    padding:0;border:0;border-radius:6px;overflow:hidden;cursor:default;
+    box-shadow:0 0 0 .5px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.06);
+    transition:transform .12s,box-shadow .12s}
+  .twk-chip:hover{transform:translateY(-1px)}
+  .twk-chip[data-on="1"]{box-shadow:0 0 0 1.5px rgba(0,0,0,.85),0 2px 6px rgba(0,0,0,.15)}
+  .twk-chip svg{position:absolute;top:6px;left:6px;width:13px;height:13px;
+    filter:drop-shadow(0 1px 1px rgba(0,0,0,.3))}
+`;
+
+function useTweaks(defaults) {
+  const [values, setValues] = React.useState(defaults);
+  const setTweak = React.useCallback((keyOrEdits, val) => {
+    const edits = typeof keyOrEdits === 'object' && keyOrEdits !== null
+      ? keyOrEdits : { [keyOrEdits]: val };
+    setValues(prev => ({ ...prev, ...edits }));
+    window.parent.postMessage({ type: '__edit_mode_set_keys', edits }, '*');
+    window.dispatchEvent(new CustomEvent('tweakchange', { detail: edits }));
+  }, []);
+  return [values, setTweak];
+}
+
+function TweaksPanel({ title = 'Tweaks', children }) {
+  const [open, setOpen] = React.useState(false);
+  const dragRef = React.useRef(null);
+  const offsetRef = React.useRef({ x: 16, y: 16 });
+  const PAD = 16;
+
+  const clampToViewport = React.useCallback(() => {
+    const panel = dragRef.current;
+    if (!panel) return;
+    const w = panel.offsetWidth, h = panel.offsetHeight;
+    const maxRight = Math.max(PAD, window.innerWidth - w - PAD);
+    const maxBottom = Math.max(PAD, window.innerHeight - h - PAD);
+    offsetRef.current = {
+      x: Math.min(maxRight, Math.max(PAD, offsetRef.current.x)),
+      y: Math.min(maxBottom, Math.max(PAD, offsetRef.current.y)),
+    };
+    panel.style.right = offsetRef.current.x + 'px';
+    panel.style.bottom = offsetRef.current.y + 'px';
+  }, []);
+
+  React.useEffect(() => {
+    if (!open) return;
+    clampToViewport();
+    const ro = new ResizeObserver(clampToViewport);
+    ro.observe(document.documentElement);
+    return () => ro.disconnect();
+  }, [open, clampToViewport]);
+
+  React.useEffect(() => {
+    const onMsg = e => {
+      const t = e?.data?.type;
+      if (t === '__activate_edit_mode') setOpen(true);
+      else if (t === '__deactivate_edit_mode') setOpen(false);
+    };
+    window.addEventListener('message', onMsg);
+    window.parent.postMessage({ type: '__edit_mode_available' }, '*');
+    return () => window.removeEventListener('message', onMsg);
+  }, []);
+
+  const dismiss = () => {
+    setOpen(false);
+    window.parent.postMessage({ type: '__edit_mode_dismissed' }, '*');
+  };
+
+  const onDragStart = e => {
+    const panel = dragRef.current;
+    if (!panel) return;
+    const r = panel.getBoundingClientRect();
+    const sx = e.clientX, sy = e.clientY;
+    const startRight = window.innerWidth - r.right;
+    const startBottom = window.innerHeight - r.bottom;
+    const move = ev => {
+      offsetRef.current = { x: startRight - (ev.clientX - sx), y: startBottom - (ev.clientY - sy) };
+      clampToViewport();
+    };
+    const up = () => { window.removeEventListener('mousemove', move); window.removeEventListener('mouseup', up); };
+    window.addEventListener('mousemove', move);
+    window.addEventListener('mouseup', up);
+  };
+
+  if (!open) return null;
+  return (
+    <>
+      <style>{__TWEAKS_STYLE}</style>
+      <div ref={dragRef} className="twk-panel" style={{ right: offsetRef.current.x, bottom: offsetRef.current.y }}>
+        <div className="twk-hd" onMouseDown={onDragStart}>
+          <b>{title}</b>
+          <button className="twk-x" onMouseDown={e => e.stopPropagation()} onClick={dismiss}>✕</button>
+        </div>
+        <div className="twk-body">{children}</div>
+      </div>
+    </>
+  );
+}
+
+function TweakSection({ title, label, children }) {
+  return <><div className="twk-sect">{title || label}</div>{children}</>;
+}
+
+function TweakRow({ label, value, children, inline = false }) {
+  return (
+    <div className={inline ? 'twk-row twk-row-h' : 'twk-row'}>
+      <div className="twk-lbl">
+        <span>{label}</span>
+        {value != null && <span className="twk-val">{value}</span>}
+      </div>
+      {children}
+    </div>
+  );
+}
+
+function TweakSlider({ label, value, min = 0, max = 100, step = 1, unit = '', format, onChange }) {
+  const display = format ? format(value) : `${value}${unit}`;
+  return (
+    <TweakRow label={label} value={display}>
+      <input type="range" className="twk-slider" min={min} max={max} step={step}
+             value={value} onChange={e => onChange(Number(e.target.value))} />
+    </TweakRow>
+  );
+}
+
+function TweakToggle({ label, value, onChange, hint }) {
+  return (
+    <div className="twk-row twk-row-h">
+      <div className="twk-lbl"><span>{label}</span></div>
+      <button type="button" className="twk-toggle" data-on={value ? '1' : '0'}
+              role="switch" aria-checked={!!value} title={hint}
+              onClick={() => onChange(!value)}><i /></button>
+    </div>
+  );
+}
+
+function __twkIsLight(hex) {
+  const h = String(hex).replace('#', '');
+  const x = h.length === 3 ? h.replace(/./g, c => c + c) : h.padEnd(6, '0');
+  const n = parseInt(x.slice(0, 6), 16);
+  if (Number.isNaN(n)) return true;
+  const r = (n >> 16) & 255, g = (n >> 8) & 255, b = n & 255;
+  return r * 299 + g * 587 + b * 114 > 148000;
+}
+
+const __TwkCheck = ({ light }) => (
+  <svg viewBox="0 0 14 14" aria-hidden="true">
+    <path d="M3 7.2 5.8 10 11 4.2" fill="none" strokeWidth="2.2"
+          strokeLinecap="round" strokeLinejoin="round"
+          stroke={light ? 'rgba(0,0,0,.78)' : '#fff'} />
+  </svg>
+);
+
+function TweakColor({ label, value, options, onChange }) {
+  if (!options || !options.length) {
+    return (
+      <div className="twk-row twk-row-h">
+        <div className="twk-lbl"><span>{label}</span></div>
+        <input type="color" value={value} onChange={e => onChange(e.target.value)} />
+      </div>
+    );
+  }
+  const key = o => String(JSON.stringify(o)).toLowerCase();
+  const cur = key(value);
+  return (
+    <TweakRow label={label}>
+      <div className="twk-chips" role="radiogroup">
+        {options.map((o, i) => {
+          const colors = Array.isArray(o) ? o : [o];
+          const [hero] = colors;
+          const on = key(o) === cur;
+          return (
+            <button key={i} type="button" className="twk-chip" role="radio"
+                    aria-checked={on} data-on={on ? '1' : '0'}
+                    style={{ background: hero }}
+                    onClick={() => onChange(o)}>
+              {on && <__TwkCheck light={__twkIsLight(hero)} />}
+            </button>
+          );
+        })}
+      </div>
+    </TweakRow>
+  );
+}
+
+Object.assign(window, { useTweaks, TweaksPanel, TweakSection, TweakRow, TweakSlider, TweakToggle, TweakColor });
+</script>
+
+<script type="text/babel">
+// ── DATA ─────────────────────────────────────────────────
+const LIGHT_WORKS = [
+  {
+    id: "strawberry",
+    title: "A Strawberry, gilded",
+    year: "2025",
+    medium: "Oil & gold leaf on linen",
+    size: "40 × 40 cm",
+    note: "Sweet things take their time to ripen. Beneath them, gold.",
+    src: "project/images/strawberry.webp",
+    span: 6,
+  },
+  { id: "interior_1", placeholder: "interior · landscape · 30×40", title: "(coming soon)", year: "2025", medium: "Oil on linen", size: "30 × 40 cm", note: "A quiet morning. A vase. A patch of sun on the wall.", span: 6 },
+  { id: "interior_2", placeholder: "interior · still life", title: "(coming soon)", year: "2025", medium: "Oil on canvas", size: "50 × 60 cm", note: "What lives on the table when the table is alone.", span: 4 },
+  { id: "interior_3", placeholder: "interior · figure", title: "(coming soon)", year: "2024", medium: "Oil on linen", size: "70 × 90 cm", note: "Softness, in good light.", span: 4 },
+  { id: "interior_4", placeholder: "interior · floral", title: "(coming soon)", year: "2024", medium: "Oil & wax on canvas", size: "30 × 30 cm", note: "Bouquet, fading on purpose.", span: 4 },
+];
+
+const DARK_WORKS = [
+  {
+    n: "I",
+    title: ["Refuse the", { em: "blindfold." }],
+    img: "project/images/blindfold.webp",
+    medium: "Oil on linen, gold dust",
+    size: "100 × 100 cm",
+    year: "2025",
+    body: ["They covered the eyes and called it modesty. The mouth, still painted, answered anyway. ", { em: "What the eyes cannot say, the lips will." }],
+  },
+  {
+    n: "II",
+    title: ["Queen of", { em: "Hearts." }],
+    img: "project/images/queen-of-hearts.webp",
+    medium: "Oil on canvas",
+    size: "90 × 130 cm",
+    year: "2025",
+    body: ["She does not deal the cards. She is the cards. ", { em: "The ace was never up the sleeve — it was the woman." }],
+  },
+  {
+    n: "III",
+    title: ["The", { em: "Coronation." }],
+    img: "project/images/queen-pearls.webp",
+    medium: "Oil & lacquer on canvas",
+    size: "80 × 110 cm",
+    year: "2024",
+    body: ["Pearls and a crown of fur — the kind a girl makes for herself when no one is offering one. ", { em: "Wear it." }],
+  },
+  {
+    n: "IV",
+    title: ["The", { em: "Spectacle." }],
+    img: "project/images/queen-curls.webp",
+    medium: "Oil on linen",
+    size: "70 × 100 cm",
+    year: "2024",
+    body: ["They were always going to look. ", { em: "Give them something to look at." }],
+  },
+  {
+    n: "V",
+    title: ["Grunge", { em: "Madonna." }],
+    img: "project/images/grunge-woman.webp",
+    medium: "Oil & gold leaf on linen",
+    size: "120 × 120 cm",
+    year: "2024",
+    body: ["A saint with a thread of gold for stitches. ", { em: "The cracks are where the gold gets in." }],
+  },
+];
+
+const CMDS = [
+  { n: "I",    t: ["Refuse the ", { em: "blindfold." }] },
+  { n: "II",   t: ["Be loud. ", { em: "Be seen." }] },
+  { n: "III",  t: ["Wear your heart ", { em: "as a crown." }] },
+  { n: "IV",   t: ["Soft is ", { em: "not small." }] },
+  { n: "V",    t: ["Bleed ", { em: "in colour." }] },
+  { n: "VI",   t: ["You are ", { em: "the ace." }] },
+  { n: "VII",  t: ["Open your mouth. ", { em: "Speak red." }] },
+  { n: "VIII", t: ["You are not ", { em: "a secret." }] },
+];
+
+const CARDS = [
+  { p: "Refuse the blindfold.",            s: "Today you take what you have been hiding and bring it into the light." },
+  { p: "Wear your heart as a crown.",      s: "Soft is not small. Tender is not weak." },
+  { p: "Open your mouth. Speak red.",      s: "The thing you have been swallowing is what you are meant to say." },
+  { p: "You are the ace.",                 s: "Stop apologising for being dealt strong." },
+  { p: "Bleed in colour.",                 s: "What you call 'too much' is exactly enough." },
+  { p: "Be loud. Be seen.",                s: "Visibility is not vanity. It is survival." },
+  { p: "Dare to be the spectacle.",        s: "They were always going to look. Give them something." },
+  { p: "You are not a secret.",            s: "Stop folding yourself small enough to fit." },
+  { p: "Tear the velvet.",                 s: "The pretty thing was holding you in place." },
+  { p: "Soft is not small.",               s: "Your gentleness is one of your weapons." },
+  { p: "The crack is the point.",          s: "Make it broken, and make it yours. Sign it." },
+  { p: "Walk into the room you dread.",    s: "It is the only one with a window." },
+];
+
+const FEAR_MAP = [
+  { re: /too much|overwhelming|intense|loud/i, power: "You are too much. That is precisely the point.\nThe world is drowning in not-enough.\nBe the flood. Be the excess.\nStay loud." },
+  { re: /seen|visible|noticed|exposed|public|judg/i, power: "You have always been visible.\nYou were pretending you could choose otherwise.\nThe question was never whether they would look —\nit was what you would give them to see." },
+  { re: /enough|worthy|talented|good enough/i, power: "Enough was never the bar.\nYou set it low to avoid the leap.\nYou are not too little —\nyou have been hoarding yourself. Open the vault." },
+  { re: /reject|fail|mistake|wrong/i, power: "Rejection is the shape of a door not meant for you.\nYou have not failed —\nyou have been eliminating the wrong rooms.\nThe right one opens from the inside." },
+  { re: /alone|lonely|nobody|no one|unseen/i, power: "Every artist has always been alone in the making.\nThat solitude is not emptiness — it is the studio.\nWork in it.\nThe work will find its people." },
+  { re: /perfect|imperfect|flawed|broken|mess/i, power: "Imperfect is how the gold gets in.\nThe crack is not the flaw —\nit is the whole point.\nMake it broken, and sign it." },
+  { re: /age|old|young|time|late/i, power: "Time is the medium.\nYou have been afraid of the very thing\nthat makes a painting an icon.\nKeep painting." },
+  { re: /money|poor|broke|sell|commerce/i, power: "The work knows its own price.\nMake it anyway.\nThe market is the last room you walk into,\nnot the first." },
+  { re: /love|relationship|partner|alone again/i, power: "You are not a question to be answered by another person.\nYou are the statement.\nWalk in already in love with yourself.\nThe rest is theatre." },
+];
+const FALLBACKS = [
+  "Your fear knows exactly which door you need to walk through.\nIt is standing in front of it.\nPush past.\nThe other side is yours.",
+  "What frightens you is the outline of your power.\nTrace it carefully.\nThat shape is your work.\nMake it. Now.",
+  "The thing you named is not a wall.\nIt is the gate.\nYou have been standing outside long enough.\nStep through.",
+];
+
+function curatedTransform(fear) {
+  for (const { re, power } of FEAR_MAP) if (re.test(fear)) return power;
+  return FALLBACKS[Math.floor(Math.random() * FALLBACKS.length)];
+}
+
+async function transformFear(fear) {
+  try {
+    if (window.claude && window.claude.complete) {
+      const text = await window.claude.complete({
+        messages: [{ role: "user", content: `You are AYA — a fearless, theatrical visual artist whose work is about red, gold, visibility, courage and softness as armor.\nTransform this person's fear into a fierce poetic declaration of power addressed to them. 3-4 short lines. Second person ("you"). No preamble. Theatrical and alive, never therapeutic. End with one short imperative.\nFear: "${fear}"` }]
+      });
+      if (text && typeof text === "string" && text.trim()) return text.trim();
+    }
+  } catch (e) {}
+  return curatedTransform(fear);
+}
+
+function renderMixed(parts) {
+  if (typeof parts === "string") return parts;
+  return parts.map((p, i) => typeof p === "string" ? p : <em key={i}>{p.em}</em>);
+}
+
+Object.assign(window, { LIGHT_WORKS, DARK_WORKS, CMDS, CARDS, transformFear, curatedTransform, renderMixed });
+</script>
+
+<script type="text/babel">
+// ── LIGHT WORLD ──────────────────────────────────────────
+const { useState, useEffect, useRef } = React;
+
+function Playbill() {
+  return (
+    <div className="playbill">
+      <div><span className="dot"></span>AYA · WORLD · MMXXVI</div>
+      <div>A solo exhibition · in two acts</div>
+    </div>
+  );
+}
+
+function LightHero() {
+  return (
+    <section className="lhero">
+      <div className="lhero-left">
+        <div className="lhero-eyebrow"><span className="ln"></span>Act I · the threshold</div>
+        <h1 className="lhero-h1">
+          Aya Krass
+          <em>— world —</em>
+        </h1>
+        <p className="lhero-tag">
+          A gentle place, at first. For art. For feeling.<br />
+          For everything that is <em>beautiful and true.</em>
+        </p>
+        <div className="lhero-meta">
+          <span>Studio · 2026</span>
+          <span className="v">·</span>
+          <span>oil · linen · gold leaf</span>
+          <span className="v">·</span>
+          <span>solo show</span>
+        </div>
+        <div className="scroll-hint">
+          enter quietly
+          <div className="scroll-line"></div>
+        </div>
+      </div>
+      <div className="lhero-right">
+        <video className="lhero-video" src="project/videos/hero.mp4" autoPlay muted loop playsInline preload="none"></video>
+        <div className="lhero-vignette"></div>
+        <div className="lhero-plate">
+          <span>plate 01 · the foyer</span>
+          <span>still warm</span>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function LightWelcome() {
+  return (
+    <section className="lwelcome">
+      <div className="lwelcome-inner">
+        <div className="section-eyebrow">A welcome</div>
+        <h2 className="l-h2" style={{ fontFamily: "Italiana" }}>
+          Everything here I made<br />
+          <em>with care and quiet intention.</em>
+        </h2>
+        <div className="divider-row">
+          <div className="ln"></div>
+          <div className="mark">✦</div>
+          <div className="ln"></div>
+        </div>
+        <p className="l-body">
+          The work is soft. The intention is pure. Take your time. There is no rush, no judgment.
+          The door is always open — for now.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+function LightGallery() {
+  return (
+    <section className="lgallery">
+      <div className="lgallery-inner">
+        <div style={{ textAlign: "center" }}>
+          <div className="section-eyebrow">The quiet wing</div>
+          <h2 className="l-h2">
+            Soft works.<br />
+            <em>For the rooms that hold you.</em>
+          </h2>
+          <p className="l-body" style={{ marginTop: "24px" }}>
+            Interior paintings — still lifes, gentle figures, hours of soft light.
+            They are happy to live where they are needed.
+          </p>
+        </div>
+        <div className="lg-grid">
+          {window.LIGHT_WORKS.map((w, i) => (
+            <article key={w.id} className={`lg-card ${w.placeholder ? "empty" : ""} lg-${w.span || 6}`}>
+              <div className="frame">
+                <div className="img-wrap">
+                  {w.placeholder ? (
+                    <image-slot
+                      id={`light-${w.id}`}
+                      placeholder={w.placeholder}
+                      shape="rect"
+                      style={{ width: "100%", height: "100%" }}>
+                    </image-slot>
+                  ) : (
+                    <img src={w.src} alt={w.title} loading="lazy" />
+                  )}
+                </div>
+                <div className="plaque">
+                  <div className="meta">№ {String(i + 1).padStart(2, "0")} · {w.year} · {w.size}</div>
+                  <div className="ttl">{w.title}</div>
+                  <div className="medium">{w.medium}</div>
+                  {w.note && <div className="medium" style={{ opacity: .7, fontSize: 13 }}>— {w.note}</div>}
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+const PROMISES = [
+  { t: ["This is a place for ", { em: "quiet hearts." }] },
+  { t: ["Beauty lives here, ", { em: "undisturbed." }] },
+  { t: ["Softness is welcome. ", { em: "You are welcome." }] },
+  { t: ["Everything here is ", { em: "gentle and good." }] },
+  { t: ["There is ", { em: "nothing to be afraid of." }] },
+];
+
+function LightPromises() {
+  return (
+    <section className="lpromises">
+      <div className="lp-inner">
+        {PROMISES.map((p, i) => (
+          <div key={i} className="lp-item">
+            <div className="lp-num">№ {String(i + 1).padStart(2, "0")}</div>
+            <div className="lp-txt">{window.renderMixed(p.t)}</div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function FearSection({ onDare, locked }) {
+  const [fear, setFear] = useState("");
+  const [striking, setStriking] = useState(false);
+  const handleSubmit = async () => {
+    const t = fear.trim();
+    if (!t || locked) return;
+    setStriking(true);
+    await new Promise(r => setTimeout(r, 900));
+    onDare(t);
+  };
+  return (
+    <section className="fear-sec">
+      <div className="fear-inner">
+        <div className="fear-orn">― before you go further ―</div>
+        <h2 className="fear-q">What are you<br /><em>afraid of?</em></h2>
+        <p className="fear-sub">You can say it here. It will not be held against you.</p>
+        {!striking ? (
+          <textarea
+            className="fear-ta"
+            rows={3}
+            placeholder="I am afraid of…"
+            value={fear}
+            onChange={e => setFear(e.target.value)}
+            disabled={locked}
+          />
+        ) : (
+          <div className="fear-strike">{fear}</div>
+        )}
+        <div>
+          <button
+            className="dare-btn"
+            onClick={handleSubmit}
+            disabled={!fear.trim() || locked || striking}>
+            <span>{striking ? "crossing it out…" : "Come if you dare  →"}</span>
+          </button>
+        </div>
+        <div className="dare-note">
+          {striking
+            ? "Hold on. Red ink is being mixed."
+            : fear.trim()
+              ? "It will be crossed out, in red."
+              : "Write your fear. Then step through."}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+Object.assign(window, { Playbill, LightHero, LightWelcome, LightGallery, LightPromises, FearSection });
+</script>
+
+<script type="text/babel">
+// ── DARK WORLD ───────────────────────────────────────────
+
+async function resizeImageForDark(file) {
+  const MAX = 1400;
+  const bitmap = await createImageBitmap(file);
+  try {
+    const scale = Math.min(1, MAX / Math.max(bitmap.width, bitmap.height));
+    const w = Math.round(bitmap.width * scale);
+    const h = Math.round(bitmap.height * scale);
+    const canvas = document.createElement('canvas');
+    canvas.width = w; canvas.height = h;
+    canvas.getContext('2d').drawImage(bitmap, 0, 0, w, h);
+    return canvas.toDataURL('image/webp', 0.87);
+  } finally {
+    bitmap.close && bitmap.close();
+  }
+}
+
+function PowerReveal({ fear, power, loading }) {
+  const [on, setOn] = useState(false);
+  useEffect(() => {
+    if (power) { const t = setTimeout(() => setOn(true), 350); return () => clearTimeout(t); }
+  }, [power]);
+
+  return (
+    <section className="power-sec">
+      <div className="power-left">
+        <video className="power-video" src="project/videos/portrait.mp4" autoPlay muted loop playsInline preload="none"></video>
+        <div className="power-sigil">♥</div>
+      </div>
+      <div className="power-right">
+        <div className="pr-label">
+          you said you were afraid of —<br />
+          <span className="fear-said">{fear}</span>
+        </div>
+        {loading ? (
+          <div className="pr-loading"><div className="d" /><div className="d" /><div className="d" /></div>
+        ) : (
+          <div className={`pr-power${on ? " on" : ""}`}>{power}</div>
+        )}
+        <div className="pr-cont">↓ continue ↓</div>
+      </div>
+    </section>
+  );
+}
+
+function DarkGalleryCover() {
+  return (
+    <section className="dgallery-cover">
+      <div className="inner">
+        <div className="d-ornament">Act II · the other wing</div>
+        <h2 className="d-h2">
+          The works that <em>do not whisper.</em>
+        </h2>
+        <p style={{
+          marginTop: 32, fontFamily: "var(--serif)", fontStyle: "italic",
+          fontSize: 20, color: "var(--bone-dim)", maxWidth: "44ch",
+          margin: "32px auto 0", lineHeight: 1.7
+        }}>
+          Behind the soft door, another room. Same artist. Different volume.
+          Each painting is a sentence the body finally agreed to say out loud.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+function DarkScene({ work, idx }) {
+  const flip = idx % 2 === 1;
+  const storageKey = `aya-dark-img-${work.n}`;
+  const inputRef = useRef(null);
+
+  const [customImg, setCustomImg] = useState(() => {
+    try { return localStorage.getItem(storageKey) || null; } catch { return null; }
+  });
+  const [uploadMsg, setUploadMsg] = useState(null);
+
+  const showMsg = (msg) => {
+    setUploadMsg(msg);
+    setTimeout(() => setUploadMsg(null), 4000);
+  };
+
+  const handleFile = async (file) => {
+    if (!file || !file.type.startsWith('image/')) {
+      showMsg('Please choose an image file.');
+      return;
+    }
+    try {
+      const url = await resizeImageForDark(file);
+      setCustomImg(url);
+      try {
+        localStorage.setItem(storageKey, url);
+      } catch {
+        showMsg('Saved for this session only — browser storage full.');
+      }
+    } catch {
+      showMsg('Could not read that image.');
+    }
+  };
+
+  const clearImg = () => {
+    setCustomImg(null);
+    try { localStorage.removeItem(storageKey); } catch {}
+  };
+
+  return (
+    <section className={`dscene${flip ? " flip" : ""}`}>
+      <div className="dscene-art">
+        <img src={customImg || work.img} alt={Array.isArray(work.title) ? work.title.map(p => typeof p === 'string' ? p : (p.em || '')).join('') : work.n} loading="lazy" />
+        <div className="corner">№ {work.n}</div>
+        <div className="corner r">{work.year}</div>
+
+        <div className="dscene-upload">
+          {uploadMsg && (
+            <div style={{ fontFamily: "var(--mono)", fontSize: 9, color: "var(--bone)", background: "rgba(7,4,10,.85)", padding: "7px 12px", letterSpacing: ".2em", maxWidth: 240 }}>
+              {uploadMsg}
+            </div>
+          )}
+          {customImg && (
+            <button className="clear-dark-btn" onClick={clearImg}>remove</button>
+          )}
+          <button className="upload-dark-btn" onClick={() => inputRef.current?.click()}>
+            {customImg ? "replace" : "upload painting"}
+          </button>
+        </div>
+
+        <input
+          ref={inputRef}
+          type="file"
+          accept="image/*"
+          style={{ display: "none" }}
+          onChange={e => { const f = e.target.files?.[0]; if (f) handleFile(f); e.target.value = ''; }}
+        />
+      </div>
+      <div className="dscene-text">
+        <div className="dscene-num">PLATE · {work.n}</div>
+        <h3 className="dscene-ttl">{window.renderMixed(work.title)}</h3>
+        <div className="dscene-meta">
+          <span>{work.medium}</span>
+          <span className="v">·</span>
+          <span>{work.size}</span>
+          <span className="v">·</span>
+          <span>{work.year}</span>
+        </div>
+        <div className="dscene-line"></div>
+        <p className="dscene-body">{window.renderMixed(work.body)}</p>
+      </div>
+    </section>
+  );
+}
+
+function DarkGallery() {
+  return (
+    <div className="dgallery">
+      <DarkGalleryCover />
+      {window.DARK_WORKS.map((w, i) => <DarkScene key={w.n} work={w} idx={i} />)}
+    </div>
+  );
+}
+
+function DarkManifesto() {
+  return (
+    <section className="manifesto-sec">
+      <div className="manifesto-inner">
+        <div>
+          <div className="d-ornament left">Act III · the commandments</div>
+          <h2 className="d-h2">
+            I would rather be<br />
+            <span className="stk">too much</span><br />
+            than <em>almost nothing.</em>
+          </h2>
+          <p style={{
+            marginTop: 32, fontFamily: "var(--serif)", fontStyle: "italic",
+            fontSize: 18, color: "var(--bone-dim)", maxWidth: "32ch", lineHeight: 1.7
+          }}>
+            Eight short laws. Tape them above the easel.
+          </p>
+        </div>
+        <ol className="cmd-list">
+          {window.CMDS.map(c => (
+            <li key={c.n} className="cmd-item">
+              <div className="cmd-n">№ {c.n}</div>
+              <div className="cmd-t">{window.renderMixed(c.t)}</div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  );
+}
+
+function DarkCardDraw() {
+  const [card, setCard] = useState(null);
+  const [shuffling, setShuffling] = useState(false);
+  const draw = () => {
+    if (shuffling) return;
+    setShuffling(true);
+    setTimeout(() => {
+      setCard(window.CARDS[Math.floor(Math.random() * window.CARDS.length)]);
+      setShuffling(false);
+    }, 550);
+  };
+  const fan = [
+    { r: "-14deg", ty: "8px", tx: "-30px" },
+    { r: "-7deg",  ty: "2px", tx: "-15px" },
+    { r: "0deg",   ty: "-4px", tx: "0px" },
+    { r: "7deg",   ty: "2px", tx: "15px" },
+    { r: "14deg",  ty: "8px", tx: "30px" },
+  ];
+  return (
+    <section className="draw-sec">
+      <div className="draw-inner">
+        <div className="d-ornament">Act IV · the deck</div>
+        <h2 className="d-h2" style={{ fontSize: "clamp(32px,6vw,84px)" }}>
+          Ask the deck a <em>question.</em>
+        </h2>
+        <p className="draw-sub">
+          Pull one card. The deck has been shuffled with red thread and a quiet prayer.
+          It will answer faster than you would like.
+        </p>
+        <div className="deck-stage">
+          <div className="deck-fan" onClick={!card ? draw : undefined} style={{ cursor: card ? "default" : "pointer" }}>
+            {fan.map((f, i) => (
+              <div key={i} className="deck-card"
+                   style={{ "--r": f.r, "--ty": f.ty, "--tx": f.tx, transitionDelay: shuffling ? `${i * 30}ms` : "0ms" }}>
+                <div className="heart">♥</div>
+              </div>
+            ))}
+          </div>
+        </div>
+        {!card ? (
+          <div className="draw-hint">― click the deck to draw ―</div>
+        ) : (
+          <div className="drawn">
+            <div className="ord">— the card you drew —</div>
+            <div className="ph">{card.p}</div>
+            <div className="sub">{card.s}</div>
+            <button className="again-btn" onClick={() => setCard(null)}>Draw again</button>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}
+
+function DarkSignature() {
+  return (
+    <section className="sign-sec">
+      <div className="sign-inner">
+        <div className="d-ornament">Final Act · curtain</div>
+        <h2 className="d-h2" style={{ fontSize: "clamp(40px,7vw,108px)" }}>
+          Stay <em>loud.</em><br />
+          Stay <em>seen.</em>
+        </h2>
+        <p className="sign-credo">
+          If you came for permission — <em>take it.</em>
+          If you came for proof that softness can be armored,
+          that hearts can be crowns, that loud can be holy — <em>it is.</em>
+          <br /><br />
+          Now go make the thing.
+        </p>
+        <div className="sign-name">— Aya</div>
+        <div className="sign-contact">
+          <div className="lbl">commissions · acquisitions · studio visits</div>
+          <a href="mailto:studio@ayaworld.art" className="em">studio@ayaworld.art</a>
+          <div style={{ fontFamily: "var(--serif)", fontStyle: "italic", color: "var(--bone-dim)", fontSize: 14, maxWidth: "44ch", textAlign: "center", lineHeight: 1.6 }}>
+            All works available in original. Prints by request, in editions of ten, signed in red.
+          </div>
+        </div>
+        <div className="sign-links">
+          <a href="https://instagram.com/ayaparskaya_art" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="#">Studio</a>
+          <a href="#">Press</a>
+          <a href="mailto:studio@ayaworld.art">Email</a>
+        </div>
+        <div className="colophon">AYA · WORLD · MMXXVI · all works © aya · made with red thread</div>
+      </div>
+    </section>
+  );
+}
+
+Object.assign(window, { PowerReveal, DarkGallery, DarkManifesto, DarkCardDraw, DarkSignature });
+</script>
+
+<script type="text/babel">
+// ── APP ───────────────────────────────────────────────────
+const TWEAK_DEFAULTS = {
+  bloodColor: "#c41a2a",
+  grain: 16,
+  ambient: false,
+  startInDark: false
+};
+
+function InkVeil({ phase }) {
+  return (
+    <div className={`ink-veil ${phase}`}>
+      <div className="ink-blot"></div>
+      <div className="ink-text">
+        <div className="lbl">― crossing the threshold ―</div>
+        <div className="typ">"…and the soft door<br/>closed behind her."</div>
+      </div>
+    </div>
+  );
+}
+
+function Heartbeat({ on }) {
+  return <div className={`heartbeat-overlay${on ? " on" : ""}`}></div>;
+}
+
+function AyaApp() {
+  const { useTweaks, TweaksPanel, TweakSection, TweakSlider, TweakToggle, TweakColor } = window;
+  const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+  const [world, setWorld] = useState(t.startInDark ? "dark" : "light");
+  const [fear, setFear] = useState("");
+  const [power, setPower] = useState("");
+  const [powerLoading, setPowerLoading] = useState(false);
+  const [inkPhase, setInkPhase] = useState("idle");
+  const [hb, setHb] = useState(false);
+  const [locked, setLocked] = useState(false);
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+    document.documentElement.style.setProperty("--grain", (t.grain / 100).toFixed(2));
+    document.documentElement.style.setProperty("--rouge", t.bloodColor);
+    document.documentElement.style.setProperty("--lipstick", t.bloodColor);
+  }, [t.grain, t.bloodColor]);
+
+  useEffect(() => {
+    if (!t.ambient) { if (audioRef.current) audioRef.current.pause(); return; }
+    if (!audioRef.current) {
+      try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        const o = ctx.createOscillator(); o.frequency.value = 55;
+        const g = ctx.createGain(); g.gain.value = 0.018;
+        const lfo = ctx.createOscillator(); lfo.frequency.value = 0.12;
+        const lfoGain = ctx.createGain(); lfoGain.gain.value = 0.014;
+        lfo.connect(lfoGain); lfoGain.connect(g.gain);
+        o.connect(g).connect(ctx.destination);
+        o.start(); lfo.start();
+        audioRef.current = { pause: () => { try { o.stop(); lfo.stop(); ctx.close(); } catch (e) {} } };
+      } catch (e) {}
+    }
+    return () => {};
+  }, [t.ambient]);
+
+  const handleDare = async (fearText) => {
+    if (locked) return;
+    setLocked(true);
+    setFear(fearText);
+    setPower("");
+    setPowerLoading(true);
+    setHb(true);
+    await new Promise(r => setTimeout(r, 700));
+    setInkPhase("armed");
+    await new Promise(r => setTimeout(r, 80));
+    setInkPhase("flooding");
+    const powerPromise = window.transformFear(fearText);
+    await new Promise(r => setTimeout(r, 1700));
+    setInkPhase("flooded");
+    await new Promise(r => setTimeout(r, 1400));
+    setWorld("dark");
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    await new Promise(r => setTimeout(r, 80));
+    setInkPhase("fade");
+    setHb(false);
+    const txt = await powerPromise;
+    await new Promise(r => setTimeout(r, 600));
+    setPower(txt);
+    setPowerLoading(false);
+    setLocked(false);
+    setTimeout(() => setInkPhase("idle"), 1400);
+  };
+
+  const skipToDark = () => {
+    setFear("(you skipped the threshold)");
+    setPower("You walked in already on fire.\nNo question, no incantation, no permission.\nGood.\nKeep walking.");
+    setPowerLoading(false);
+    setWorld("dark");
+    window.scrollTo({ top: 0 });
+  };
+
+  const backToLight = () => {
+    setWorld("light");
+    setFear(""); setPower("");
+    window.scrollTo({ top: 0 });
+  };
+
+  return (
+    <>
+      <Playbill />
+
+      {world === "light" && (
+        <button className="skip-intro" onClick={skipToDark}>skip the threshold →</button>
+      )}
+      {world === "dark" && (
+        <button className="skip-intro" onClick={backToLight} style={{ color: "var(--gold)" }}>
+          ← back to the foyer
+        </button>
+      )}
+
+      <InkVeil phase={inkPhase} />
+      <Heartbeat on={hb} />
+
+      {world === "light" && (
+        <div className="lw">
+          <LightHero />
+          <LightWelcome />
+          <LightGallery />
+          <LightPromises />
+          <FearSection onDare={handleDare} locked={locked} />
+        </div>
+      )}
+
+      {world === "dark" && (
+        <div className="dw">
+          <PowerReveal fear={fear || "(unspoken)"} power={power} loading={powerLoading} />
+          <DarkGallery />
+          <DarkManifesto />
+          <DarkCardDraw />
+          <DarkSignature />
+        </div>
+      )}
+
+      <TweaksPanel title="Tweaks">
+        <TweakSection title="Atmosphere">
+          <TweakColor
+            label="Blood / accent"
+            value={t.bloodColor}
+            onChange={v => setTweak("bloodColor", v)}
+            options={["#c41a2a", "#e62538", "#7c0a14", "#a4002b", "#d23f4a"]}
+          />
+          <TweakSlider
+            label="Film grain"
+            value={t.grain}
+            onChange={v => setTweak("grain", v)}
+            min={0} max={40} step={1}
+            format={v => `${v}%`}
+          />
+          <TweakToggle
+            label="Ambient hum"
+            value={t.ambient}
+            onChange={v => setTweak("ambient", v)}
+            hint="Low drone, like a curtain breathing."
+          />
+        </TweakSection>
+        <TweakSection title="Stage">
+          <TweakToggle
+            label="Open in dark world"
+            value={t.startInDark}
+            onChange={v => setTweak("startInDark", v)}
+            hint="Skip the threshold on next reload."
+          />
+        </TweakSection>
+      </TweaksPanel>
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<AyaApp />);
+</script>
+</body>
+</html>
