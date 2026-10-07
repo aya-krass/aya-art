@@ -1,0 +1,13 @@
+{
+  "name": "mezhdu-strok",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Между строк — MVP: что повторяется в твоих выборах",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0"
+  }
+}

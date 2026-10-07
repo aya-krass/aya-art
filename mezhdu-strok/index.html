@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Между строк</title>
+  <meta name="description" content="Напиши, что любишь. Посмотри, что повторяется.">
+  <meta name="theme-color" content="#F2ECDF">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Oswald:wght@500;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg class="defs" aria-hidden="true">
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.09 0"/></filter>
+  </svg>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- 1. LANDING -->
+  <section class="screen landing is-active" data-screen="landing">
+    <div class="landing-collage" aria-hidden="true">
+      <div class="velvet velvet-left" data-torn="r" data-amp="10" data-seed="41"></div>
+      <div class="scrap news news-a" data-torn="trbl" data-seed="12"><span class="news-big">ни</span><span class="news-lines"></span></div>
+      <div class="scrap news news-b" data-torn="trbl" data-seed="19"><span class="news-big">ОН</span><span class="news-lines"></span></div>
+      <div class="scrap gold-strip" data-torn="trbl" data-amp="9" data-seed="23"></div>
+      <div class="splatter s-landing-1" data-splatter="var(--carmine)" data-seed="7"></div>
+      <div class="splatter s-landing-2" data-splatter="var(--ink)" data-seed="29" data-drops="18"></div>
+      <span class="tag tag-landing">между</span>
+    </div>
+
+    <div class="landing-content">
+      <p class="kicker">Выпуск 01 · о выборах, а не о личности</p>
+      <h1 class="ransom ransom-xl" data-ransom="Между строк" data-seed="9"></h1>
+      <p class="paper-note" data-torn="tb" data-amp="5" data-seed="61">Напиши, что любишь. Посмотри, что повторяется.</p>
+      <button class="btn btn-primary" data-go="form">Найти связи</button>
+    </div>
+  </section>
+
+  <!-- 2. ФОРМА -->
+  <section class="screen form-screen" data-screen="form">
+    <header class="masthead">
+      <button class="link-back" data-go="landing">← Между строк</button>
+      <span class="masthead-mark">Анкета выборов</span>
+    </header>
+    <form class="form" id="form" autocomplete="off" novalidate>
+      <p class="form-intro">Чем честнее ответы, тем интереснее результат. Пиши сколько хочешь. Вопросы можно пропускать.</p>
+      <div id="questions"></div>
+      <div class="form-manual">
+        <button type="button" class="link-quiet" id="copy-manual">Скопировать промпт для ручного теста</button>
+        <button type="button" class="link-quiet" id="fill-example">Заполнить примером</button>
+      </div>
+    </form>
+    <div class="form-bar">
+      <div class="counter" id="counter" aria-live="polite"></div>
+      <button class="btn btn-primary" id="submit" form="form" type="submit">Найти связи</button>
+    </div>
+  </section>
+
+  <!-- 3. ЗАГРУЗКА -->
+  <section class="screen loading" data-screen="loading" aria-live="polite">
+    <div class="splatter s-loading" data-splatter="var(--carmine)" data-seed="17"></div>
+    <div class="loading-stack">
+      <p class="kicker" id="loading-step">Анализ и проверка редактором</p>
+      <p class="loading-phrase" id="loading-phrase">Раскладываю вещи на свойства</p>
+      <div class="loading-scraps" id="loading-scraps"></div>
+    </div>
+  </section>
+
+  <!-- 4–8. РЕЗУЛЬТАТ -->
+  <section class="screen result" data-screen="result">
+    <header class="masthead">
+      <button class="link-back" id="result-back">← Назад</button>
+      <span class="masthead-mark" id="result-counter">01 / 05</span>
+    </header>
+    <div class="progress"><span id="progress-bar"></span></div>
+    <div class="result-pages" id="result-pages"></div>
+  </section>
+
+  <!-- ОШИБКА -->
+  <section class="screen error-screen" data-screen="error">
+    <div class="error-box">
+      <h2 class="h-serif">Связи не нашлись с первого раза</h2>
+      <p id="error-text">Сервер анализа не ответил.</p>
+      <div class="btn-row">
+        <button class="btn btn-primary" id="retry">Попробовать ещё раз</button>
+        <button class="btn btn-ghost" id="show-demo">Посмотреть пример</button>
+      </div>
+      <button class="link-quiet" data-go="form">Вернуться к ответам</button>
+    </div>
+  </section>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
