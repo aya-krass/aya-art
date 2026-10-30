@@ -1,0 +1,825 @@
+{
+  "version": "intelligence-v1",
+  "model_parser": {
+    "type": "object",
+    "properties": {
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "item_id": {
+              "type": "string"
+            },
+            "label": {
+              "type": "string"
+            },
+            "source_text": {
+              "type": "string"
+            },
+            "explicit_user_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "item_id",
+            "label",
+            "source_text",
+            "explicit_user_reason"
+          ],
+          "additionalProperties": false
+        },
+        "minItems": 0,
+        "maxItems": 100
+      }
+    },
+    "required": [
+      "items"
+    ],
+    "additionalProperties": false
+  },
+  "canonical_classification": {
+    "type": "object",
+    "properties": {
+      "item_id": {
+        "type": "string"
+      },
+      "experience_type": {
+        "type": "string",
+        "enum": [
+          "endurance_sport_running_cycling_swimming",
+          "strength_training",
+          "combat_sport",
+          "team_sport_doing",
+          "outdoor_adventure_sport",
+          "extreme_sport",
+          "dance",
+          "yoga_mind_body",
+          "watching_sport",
+          "live_sport_stadium",
+          "watching_with_friends",
+          "rich_intense_food",
+          "comfort_food",
+          "fine_dining",
+          "street_food",
+          "cooking",
+          "baking",
+          "spicy_food",
+          "trying_new_foods",
+          "eating_socially",
+          "coffee",
+          "tea",
+          "wine_tasting",
+          "cocktails_specialty_drinks",
+          "energetic_music",
+          "melancholic_music",
+          "classical_music",
+          "rock_metal",
+          "jazz",
+          "ambient_music",
+          "live_music",
+          "festival_music",
+          "nostalgic_music",
+          "general_fiction",
+          "nonfiction_science_history",
+          "biography_memoir",
+          "philosophy",
+          "crime_mystery",
+          "fantasy_speculative_fiction",
+          "literary_fiction",
+          "poetry",
+          "comedy",
+          "drama_character_driven_media",
+          "thriller",
+          "horror",
+          "art_cinema",
+          "blockbuster_spectacle",
+          "documentary",
+          "rewatching",
+          "city_travel",
+          "nature_travel",
+          "road_trips",
+          "resorts",
+          "adventure_travel",
+          "cultural_travel",
+          "repeat_destinations",
+          "new_destinations",
+          "luxury_travel",
+          "slow_travel",
+          "specific_city_country_place",
+          "figurative_art",
+          "abstract_art",
+          "conceptual_art",
+          "minimalism",
+          "maximalism",
+          "monumental_art_architecture",
+          "tactile_material_design",
+          "fashion_styling",
+          "craft_material_fashion",
+          "luxury_brands",
+          "collecting_objects",
+          "partner",
+          "children",
+          "family",
+          "friends",
+          "communities",
+          "public_figures_creators",
+          "parties",
+          "concert_festival_stadium_crowd",
+          "sea",
+          "mountains",
+          "forest",
+          "gardens_parks",
+          "strategy_games",
+          "competitive_games",
+          "co_operative_games",
+          "simulation_games",
+          "rpgs",
+          "creating_from_scratch_at_work",
+          "researching",
+          "solving",
+          "crafting_improving",
+          "collaborating",
+          "independent_work",
+          "morning_coffee_tea",
+          "candles_home_ambience",
+          "decorating",
+          "cleaning_tidying",
+          "gardening",
+          "hosting",
+          "bath_spa_routine",
+          "piano_practice",
+          "coding_projects",
+          "unknown"
+        ]
+      },
+      "context": {
+        "type": "object",
+        "properties": {
+          "active_participation": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "live_presence": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "close_relationship": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "active_participation",
+          "live_presence",
+          "close_relationship"
+        ],
+        "additionalProperties": false
+      },
+      "classification_confidence": {
+        "type": "string",
+        "enum": [
+          "LOW",
+          "MEDIUM",
+          "MEDIUM_HIGH",
+          "HIGH"
+        ]
+      },
+      "domain": {
+        "type": "string"
+      },
+      "subdomain": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "required": [
+      "item_id",
+      "experience_type",
+      "context",
+      "classification_confidence",
+      "domain",
+      "subdomain"
+    ],
+    "additionalProperties": true
+  },
+  "classification_model_output": {
+    "type": "object",
+    "properties": {
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "item_id": {
+              "type": "string"
+            },
+            "experience_type": {
+              "type": "string",
+              "enum": [
+                "endurance_sport_running_cycling_swimming",
+                "strength_training",
+                "combat_sport",
+                "team_sport_doing",
+                "outdoor_adventure_sport",
+                "extreme_sport",
+                "dance",
+                "yoga_mind_body",
+                "watching_sport",
+                "live_sport_stadium",
+                "watching_with_friends",
+                "rich_intense_food",
+                "comfort_food",
+                "fine_dining",
+                "street_food",
+                "cooking",
+                "baking",
+                "spicy_food",
+                "trying_new_foods",
+                "eating_socially",
+                "coffee",
+                "tea",
+                "wine_tasting",
+                "cocktails_specialty_drinks",
+                "energetic_music",
+                "melancholic_music",
+                "classical_music",
+                "rock_metal",
+                "jazz",
+                "ambient_music",
+                "live_music",
+                "festival_music",
+                "nostalgic_music",
+                "general_fiction",
+                "nonfiction_science_history",
+                "biography_memoir",
+                "philosophy",
+                "crime_mystery",
+                "fantasy_speculative_fiction",
+                "literary_fiction",
+                "poetry",
+                "comedy",
+                "drama_character_driven_media",
+                "thriller",
+                "horror",
+                "art_cinema",
+                "blockbuster_spectacle",
+                "documentary",
+                "rewatching",
+                "city_travel",
+                "nature_travel",
+                "road_trips",
+                "resorts",
+                "adventure_travel",
+                "cultural_travel",
+                "repeat_destinations",
+                "new_destinations",
+                "luxury_travel",
+                "slow_travel",
+                "specific_city_country_place",
+                "figurative_art",
+                "abstract_art",
+                "conceptual_art",
+                "minimalism",
+                "maximalism",
+                "monumental_art_architecture",
+                "tactile_material_design",
+                "fashion_styling",
+                "craft_material_fashion",
+                "luxury_brands",
+                "collecting_objects",
+                "partner",
+                "children",
+                "family",
+                "friends",
+                "communities",
+                "public_figures_creators",
+                "parties",
+                "concert_festival_stadium_crowd",
+                "sea",
+                "mountains",
+                "forest",
+                "gardens_parks",
+                "strategy_games",
+                "competitive_games",
+                "co_operative_games",
+                "simulation_games",
+                "rpgs",
+                "creating_from_scratch_at_work",
+                "researching",
+                "solving",
+                "crafting_improving",
+                "collaborating",
+                "independent_work",
+                "morning_coffee_tea",
+                "candles_home_ambience",
+                "decorating",
+                "cleaning_tidying",
+                "gardening",
+                "hosting",
+                "bath_spa_routine",
+                "piano_practice",
+                "coding_projects",
+                "unknown"
+              ]
+            },
+            "context": {
+              "type": "object",
+              "properties": {
+                "active_participation": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ]
+                },
+                "live_presence": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ]
+                },
+                "close_relationship": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "active_participation",
+                "live_presence",
+                "close_relationship"
+              ],
+              "additionalProperties": false
+            },
+            "classification_confidence": {
+              "type": "string",
+              "enum": [
+                "LOW",
+                "MEDIUM",
+                "MEDIUM_HIGH",
+                "HIGH"
+              ]
+            }
+          },
+          "required": [
+            "item_id",
+            "experience_type",
+            "context",
+            "classification_confidence"
+          ],
+          "additionalProperties": false
+        },
+        "minItems": 0,
+        "maxItems": 100
+      }
+    },
+    "required": [
+      "items"
+    ],
+    "additionalProperties": false
+  },
+  "item_hypothesis": {
+    "type": "object",
+    "properties": {
+      "item_id": {
+        "type": "string"
+      },
+      "label": {
+        "type": "string"
+      },
+      "domain": {
+        "type": "string"
+      },
+      "experience_type": {
+        "type": "string"
+      },
+      "objective_affordances": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "explicit_user_reason": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "explicit_context_signals": {
+        "type": "object",
+        "properties": {
+          "confirmed": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "excluded": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "confirmed",
+          "excluded"
+        ],
+        "additionalProperties": true
+      },
+      "candidate_functions": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "function_id": {
+              "type": "string"
+            },
+            "evidence_strength": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "enum": [
+                "LOW_CONTEXT",
+                "MEDIUM",
+                "MEDIUM_HIGH",
+                "HIGH",
+                null
+              ]
+            },
+            "basis": {
+              "type": "string",
+              "enum": [
+                "structural_affordance",
+                "research_prior",
+                "explicit_user_reason"
+              ]
+            },
+            "initial_user_fit_confidence": {
+              "type": "string",
+              "enum": [
+                "LOW",
+                "MEDIUM",
+                "MEDIUM_HIGH",
+                "HIGH"
+              ]
+            },
+            "explicitly_excluded": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "function_id",
+            "evidence_strength",
+            "basis",
+            "initial_user_fit_confidence",
+            "explicitly_excluded"
+          ],
+          "additionalProperties": true
+        }
+      }
+    },
+    "required": [
+      "item_id",
+      "label",
+      "domain",
+      "experience_type",
+      "objective_affordances",
+      "explicit_user_reason",
+      "explicit_context_signals",
+      "candidate_functions"
+    ],
+    "additionalProperties": true
+  },
+  "approved_findings": {
+    "type": "object",
+    "properties": {
+      "findings": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "finding_id": {
+              "type": "string"
+            },
+            "primary_function_id": {
+              "type": "string",
+              "enum": [
+                "sensory_pleasure",
+                "savouring",
+                "stimulation_arousal",
+                "emotional_intensity",
+                "mood_regulation",
+                "restoration",
+                "escape_detachment",
+                "comfort_familiarity",
+                "nostalgia",
+                "movement_pleasure",
+                "embodied_intensity",
+                "challenge",
+                "mastery",
+                "achievement_progress",
+                "competence",
+                "autonomy",
+                "agency_control",
+                "novelty",
+                "exploration",
+                "curiosity",
+                "learning",
+                "cognitive_complexity",
+                "flow_absorption",
+                "play",
+                "competition",
+                "creativity_creation",
+                "aesthetic_pleasure",
+                "awe_transcendence",
+                "meaning_reflection",
+                "self_expression_identity",
+                "distinction_status",
+                "belonging",
+                "intimacy_attachment",
+                "care",
+                "shared_experience",
+                "collective_energy",
+                "social_observation",
+                "ritual_structure",
+                "social_recognition",
+                "nature_connection"
+              ]
+            },
+            "secondary_function_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "sensory_pleasure",
+                  "savouring",
+                  "stimulation_arousal",
+                  "emotional_intensity",
+                  "mood_regulation",
+                  "restoration",
+                  "escape_detachment",
+                  "comfort_familiarity",
+                  "nostalgia",
+                  "movement_pleasure",
+                  "embodied_intensity",
+                  "challenge",
+                  "mastery",
+                  "achievement_progress",
+                  "competence",
+                  "autonomy",
+                  "agency_control",
+                  "novelty",
+                  "exploration",
+                  "curiosity",
+                  "learning",
+                  "cognitive_complexity",
+                  "flow_absorption",
+                  "play",
+                  "competition",
+                  "creativity_creation",
+                  "aesthetic_pleasure",
+                  "awe_transcendence",
+                  "meaning_reflection",
+                  "self_expression_identity",
+                  "distinction_status",
+                  "belonging",
+                  "intimacy_attachment",
+                  "care",
+                  "shared_experience",
+                  "collective_energy",
+                  "social_observation",
+                  "ritual_structure",
+                  "social_recognition",
+                  "nature_connection"
+                ]
+              },
+              "minItems": 0,
+              "maxItems": 3
+            },
+            "user_fit_confidence": {
+              "type": "string",
+              "enum": [
+                "LOW",
+                "MEDIUM",
+                "MEDIUM_HIGH",
+                "HIGH"
+              ]
+            },
+            "evidence": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "item_id": {
+                    "type": "string"
+                  },
+                  "role": {
+                    "type": "string",
+                    "enum": [
+                      "support"
+                    ]
+                  },
+                  "reason": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "item_id",
+                  "role",
+                  "reason"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 2,
+              "maxItems": 12
+            },
+            "counterevidence": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "item_id": {
+                    "type": "string"
+                  },
+                  "reason": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "item_id",
+                  "reason"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 0,
+              "maxItems": 30
+            },
+            "competing_functions": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "sensory_pleasure",
+                  "savouring",
+                  "stimulation_arousal",
+                  "emotional_intensity",
+                  "mood_regulation",
+                  "restoration",
+                  "escape_detachment",
+                  "comfort_familiarity",
+                  "nostalgia",
+                  "movement_pleasure",
+                  "embodied_intensity",
+                  "challenge",
+                  "mastery",
+                  "achievement_progress",
+                  "competence",
+                  "autonomy",
+                  "agency_control",
+                  "novelty",
+                  "exploration",
+                  "curiosity",
+                  "learning",
+                  "cognitive_complexity",
+                  "flow_absorption",
+                  "play",
+                  "competition",
+                  "creativity_creation",
+                  "aesthetic_pleasure",
+                  "awe_transcendence",
+                  "meaning_reflection",
+                  "self_expression_identity",
+                  "distinction_status",
+                  "belonging",
+                  "intimacy_attachment",
+                  "care",
+                  "shared_experience",
+                  "collective_energy",
+                  "social_observation",
+                  "ritual_structure",
+                  "social_recognition",
+                  "nature_connection"
+                ]
+              },
+              "minItems": 0,
+              "maxItems": 8
+            },
+            "reason_selected": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "finding_id",
+            "primary_function_id",
+            "secondary_function_ids",
+            "user_fit_confidence",
+            "evidence",
+            "counterevidence",
+            "competing_functions",
+            "reason_selected",
+            "title",
+            "description"
+          ],
+          "additionalProperties": false
+        },
+        "minItems": 0,
+        "maxItems": 5
+      },
+      "unused_items": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "item_id": {
+              "type": "string"
+            },
+            "reason": {
+              "type": "string",
+              "enum": [
+                "no_strong_evidence"
+              ]
+            }
+          },
+          "required": [
+            "item_id",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "minItems": 0,
+        "maxItems": 100
+      }
+    },
+    "required": [
+      "findings",
+      "unused_items"
+    ],
+    "additionalProperties": false
+  },
+  "writer_output": {
+    "type": "object",
+    "properties": {
+      "headline": {
+        "type": "string"
+      },
+      "headline_accent": {
+        "type": "string"
+      },
+      "main_text": {
+        "type": "string"
+      },
+      "patterns": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "finding_id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "finding_id",
+            "title",
+            "description"
+          ],
+          "additionalProperties": false
+        },
+        "minItems": 1,
+        "maxItems": 5
+      }
+    },
+    "required": [
+      "headline",
+      "headline_accent",
+      "main_text",
+      "patterns"
+    ],
+    "additionalProperties": false
+  }
+}

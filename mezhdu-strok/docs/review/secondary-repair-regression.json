@@ -1,0 +1,51 @@
+{
+  "verification": "OFFLINE_WORKER_HTTP_INTEGRATION_WITH_PREPARED_PROVIDER_OUTPUTS",
+  "validation_version": "critic-repair-v1",
+  "http_status": 200,
+  "before": {
+    "primary_function_id": "collective_energy",
+    "secondary_function_ids": [
+      "belonging"
+    ]
+  },
+  "after": [
+    {
+      "finding_id": "finding_collective_energy",
+      "primary_function_id": "collective_energy",
+      "secondary_function_ids": [],
+      "evidence": [
+        {
+          "item_id": "item_1oqfbkw",
+          "role": "support",
+          "reason": "stadium даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+          "label": "stadium"
+        },
+        {
+          "item_id": "item_yd9i21",
+          "role": "support",
+          "reason": "live concert даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+          "label": "live concert"
+        }
+      ]
+    }
+  ],
+  "critic_calls": 1,
+  "repair_log": [
+    {
+      "event": "analysis_repaired",
+      "validation_version": "critic-repair-v1",
+      "phase": "critic_initial",
+      "removed_secondary_functions": [
+        {
+          "finding_id": "finding_collective_energy",
+          "function_id": "belonging",
+          "reason": "insufficient_support"
+        }
+      ],
+      "removed_evidence": [],
+      "removed_findings": [],
+      "removed_counterevidence": [],
+      "normalized_optional_fields": []
+    }
+  ]
+}

@@ -1,0 +1,397 @@
+{
+  "main_insight": "Чувство здесь почти всегда ищет материальный выход. В боксе напряжение можно перевести в движение; Abramović делает тело носителем опыта; у Айвазовского стихия удерживается композицией; красная помада превращает состояние в жест, который считывается раньше слов. В совершенно разных вещах оказывается важен один момент: когда чувство перестаёт быть бесформенным и с ним уже можно что-то сделать. Тело, полотно и одежда дают этому состоянию разную, но различимую форму.",
+  "key_fragment": "чувство перестаёт быть бесформенным",
+  "share_insight": "В боксе, у Abramović и Айвазовского чувство перестаёт быть бесформенным: движение, действие и композиция дают ему различимую форму.",
+  "main_evidence": [
+    {
+      "item_id": "abramovic",
+      "item": "Marina Abramović",
+      "area": "people",
+      "reason": "Переживание становится действием перформанса.",
+      "user_context": null,
+      "user_context_used": null,
+      "support_item_ids": [
+        "running",
+        "aivazovsky"
+      ]
+    },
+    {
+      "item_id": "running",
+      "item": "бег",
+      "area": "hobbies",
+      "reason": "Усилие проживается телом через ритм и дистанцию.",
+      "user_context": null,
+      "user_context_used": null,
+      "support_item_ids": [
+        "abramovic",
+        "classical"
+      ]
+    },
+    {
+      "item_id": "aivazovsky",
+      "item": "Айвазовский",
+      "area": "people",
+      "reason": "Движение моря получает живописную композицию.",
+      "user_context": null,
+      "user_context_used": null,
+      "support_item_ids": [
+        "running",
+        "classical"
+      ]
+    },
+    {
+      "item_id": "lipstick",
+      "item": "красная помада",
+      "area": "objects",
+      "reason": "Цвет становится видимым выразительным жестом.",
+      "user_context": null,
+      "user_context_used": null,
+      "support_item_ids": [
+        "abramovic",
+        "aivazovsky"
+      ]
+    },
+    {
+      "item_id": "boxing",
+      "item": "бокс",
+      "area": "hobbies",
+      "user_context": "как способ выпустить накопившуюся энергию",
+      "user_context_used": "как способ выпустить накопившуюся энергию",
+      "reason": "Личная ремарка прямо задаёт физический выход накопившегося напряжения, без предположений о сопернике и соревновании.",
+      "support_item_ids": [
+        "running",
+        "abramovic"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "title": "Не оставлять внутри",
+      "description": "Fleabag, I Love Dick и Abramović работают с тем, что обычно проще оставить личным: желанием, неловкостью, телом, болью. Здесь интерес появляется именно тогда, когда внутренний материал перестаёт быть только внутренним и становится произведением.",
+      "evidence": [
+        {
+          "item_id": "fleabag",
+          "item": "Fleabag",
+          "area": "films",
+          "reason": "Обращение к зрителю превращает личную неловкость героини в материал рассказа.",
+          "user_context": null,
+          "user_context_used": null,
+          "support_item_ids": [
+            "dick",
+            "abramovic"
+          ]
+        },
+        {
+          "item_id": "dick",
+          "item": "I Love Dick",
+          "area": "books",
+          "reason": "Личное желание становится письмами и литературным произведением.",
+          "user_context": null,
+          "user_context_used": null,
+          "support_item_ids": [
+            "fleabag",
+            "abramovic"
+          ]
+        },
+        {
+          "item_id": "abramovic",
+          "item": "Marina Abramović",
+          "area": "people",
+          "reason": "В перформансе тело и переживание становятся самим действием перед зрителем.",
+          "user_context": null,
+          "user_context_used": null,
+          "support_item_ids": [
+            "fleabag",
+            "dick"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Сила, которую удерживает форма",
+      "description": "В беге есть ритм и дистанция, у Айвазовского — композиция, в классической музыке — музыкальная форма. Сильное ощущение не исчезает от структуры; наоборот, структура позволяет ему стать сильнее и точнее.",
+      "evidence": [
+        {
+          "item_id": "running",
+          "item": "бег",
+          "area": "hobbies",
+          "reason": "Ритм шагов и дистанция дают физическому усилию протяжённость и форму.",
+          "user_context": null,
+          "user_context_used": null,
+          "support_item_ids": [
+            "classical",
+            "aivazovsky"
+          ]
+        },
+        {
+          "item_id": "aivazovsky",
+          "item": "Айвазовский",
+          "area": "people",
+          "reason": "Движение воды и света удерживается живописной композицией.",
+          "user_context": null,
+          "user_context_used": null,
+          "support_item_ids": [
+            "classical",
+            "running"
+          ]
+        },
+        {
+          "item_id": "classical",
+          "item": "классическая музыка вживую",
+          "area": "music",
+          "reason": "Развитие музыкальной темы организует нарастание и разрешение напряжения.",
+          "user_context": null,
+          "user_context_used": null,
+          "support_item_ids": [
+            "running",
+            "aivazovsky"
+          ]
+        }
+      ]
+    }
+  ],
+  "unexpected_connections": [
+    {
+      "item_1_id": "hitchcock",
+      "item_2_id": "agent",
+      "item_1": "фильмы Хичкока",
+      "item_2": "Agent Provocateur",
+      "area_1": "films",
+      "area_2": "objects",
+      "connection": "Хичкок и Agent Provocateur работают с одним довольно точным удовольствием: показать достаточно, чтобы внимание уже зацепилось, но остановиться раньше полного раскрытия. Интерес живёт именно в оставшемся промежутке."
+    },
+    {
+      "item_1_id": "abramovic",
+      "item_2_id": "running",
+      "item_1": "Marina Abramović",
+      "item_2": "бег",
+      "area_1": "people",
+      "area_2": "hobbies",
+      "connection": "В обоих тело перестаёт быть просто оболочкой и становится способом прожить опыт: через усилие, предел, повторение и физическое присутствие."
+    }
+  ],
+  "items": [
+    {
+      "id": "fleabag",
+      "item": "Fleabag",
+      "area": "films",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "dick",
+      "item": "I Love Dick",
+      "area": "books",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "abramovic",
+      "item": "Marina Abramović",
+      "area": "people",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "running",
+      "item": "бег",
+      "area": "hobbies",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "classical",
+      "item": "классическая музыка вживую",
+      "area": "music",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "aivazovsky",
+      "item": "Айвазовский",
+      "area": "people",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "hitchcock",
+      "item": "фильмы Хичкока",
+      "area": "films",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "lipstick",
+      "item": "красная помада",
+      "area": "objects",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "westwood",
+      "item": "Vivienne Westwood",
+      "area": "objects",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "agent",
+      "item": "Agent Provocateur",
+      "area": "objects",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "london",
+      "item": "Лондон",
+      "area": "places",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "projects",
+      "item": "придумывать проекты с нуля",
+      "area": "work",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "boxing",
+      "item": "бокс",
+      "area": "hobbies",
+      "user_context": "как способ выпустить накопившуюся энергию",
+      "visual": null
+    }
+  ],
+  "visual_map": {
+    "center": "Дать сильному ощущению форму",
+    "clusters": [
+      {
+        "title": "Не оставлять внутри",
+        "item_ids": [
+          "fleabag",
+          "dick",
+          "abramovic"
+        ],
+        "visual": null
+      },
+      {
+        "title": "Сила, которую удерживает форма",
+        "item_ids": [
+          "running",
+          "aivazovsky",
+          "classical"
+        ],
+        "visual": null
+      }
+    ],
+    "highlight_connections": [
+      {
+        "item_1_id": "hitchcock",
+        "item_2_id": "agent",
+        "label": "Не показывать всё сразу"
+      },
+      {
+        "item_1_id": "abramovic",
+        "item_2_id": "running",
+        "label": "Прожить опыт телом"
+      }
+    ]
+  },
+  "image_concept": {
+    "subject": "A translucent fabric with a vivid carmine fold",
+    "metaphor": "An intense internal movement becomes a visible contour",
+    "prompt": "Tactile conceptual editorial still life, carmine fabric pressing against translucent ivory paper, precise contour emerging, warm ivory, black, restrained gold, natural light, no text, no logos"
+  },
+  "areas_count": 6,
+  "headline": "Сильному чувству находится форма",
+  "headline_accent": "форма",
+  "visual_brief": {
+    "central_idea": "Сильному чувству находится форма",
+    "sections": [
+      {
+        "meaning": "Не оставлять внутри",
+        "caption": "Личное, неловкое и сложное становится материалом, действием или честным рассказом.",
+        "evidence": [
+          "fleabag",
+          "dick",
+          "abramovic"
+        ],
+        "visual_metaphor": "Не оставлять внутри",
+        "image_prompt": "tactile monochrome editorial photographic fragment, gesture"
+      },
+      {
+        "meaning": "Сила, которую удерживает форма",
+        "caption": "Структура не приглушает сильное ощущение. Она позволяет ему стать точнее.",
+        "evidence": [
+          "running",
+          "aivazovsky",
+          "classical"
+        ],
+        "visual_metaphor": "Сила, которую удерживает форма",
+        "image_prompt": "tactile monochrome editorial photographic fragment, wave"
+      },
+      {
+        "meaning": "Тело как способ выхода",
+        "caption": "Напряжение не остаётся только внутри — его можно перевести в физическое действие.",
+        "evidence": [
+          "boxing"
+        ],
+        "visual_metaphor": "Тело как способ выхода",
+        "image_prompt": "tactile monochrome editorial photographic fragment, body"
+      },
+      {
+        "meaning": "Состояние становится видимым",
+        "caption": "Внешняя форма не просто украшает. Она делает состояние заметным ещё до слов.",
+        "evidence": [
+          "lipstick",
+          "westwood"
+        ],
+        "visual_metaphor": "Состояние становится видимым",
+        "image_prompt": "tactile monochrome editorial photographic fragment, reveal"
+      },
+      {
+        "meaning": "Не показывать всё сразу",
+        "caption": "Интерес возникает между тем, что уже показали, и тем, что всё ещё удерживают.",
+        "evidence": [
+          "hitchcock",
+          "agent"
+        ],
+        "visual_metaphor": "Не показывать всё сразу",
+        "image_prompt": "tactile monochrome editorial photographic fragment, reveal"
+      }
+    ],
+    "highlight_connection": {
+      "item_1_id": "hitchcock",
+      "item_2_id": "agent",
+      "meaning": "Интерес живёт до полного раскрытия"
+    }
+  },
+  "visuals": [
+    {
+      "section_index": 0,
+      "image_url": "/assets/gesture.webp",
+      "alt": "Не оставлять внутри"
+    },
+    {
+      "section_index": 1,
+      "image_url": "/assets/wave.webp",
+      "alt": "Сила, которую удерживает форма"
+    },
+    {
+      "section_index": 2,
+      "image_url": "/assets/body.webp",
+      "alt": "Тело как способ выхода"
+    },
+    {
+      "section_index": 3,
+      "image_url": "/assets/reveal.webp",
+      "alt": "Состояние становится видимым"
+    },
+    {
+      "section_index": 4,
+      "image_url": "/assets/reveal.webp",
+      "alt": "Не показывать всё сразу"
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "note": "Actual deterministic retrieval, not LLM-generated examples.",
+  "kb_version": "preference-kb.report-derived.v1",
+  "parsed_items": [
+    {
+      "item_id": "item_103asc6",
+      "id": "item_103asc6",
+      "label": "бегать",
+      "item": "бегать",
+      "source_text": "бегать",
+      "explicit_user_reason": null,
+      "user_context": null
+    },
+    {
+      "item_id": "item_1nxy0rv",
+      "id": "item_1nxy0rv",
+      "label": "стадион",
+      "item": "стадион",
+      "source_text": "стадион",
+      "explicit_user_reason": null,
+      "user_context": null
+    },
+    {
+      "item_id": "item_1r7bp7r",
+      "id": "item_1r7bp7r",
+      "label": "Япония",
+      "item": "Япония",
+      "source_text": "Япония",
+      "explicit_user_reason": null,
+      "user_context": null
+    }
+  ],
+  "classifications": [
+    {
+      "item_id": "item_103asc6",
+      "domain": "sport",
+      "subdomain": null,
+      "experience_type": "endurance_sport_running_cycling_swimming",
+      "context": {
+        "active_participation": true,
+        "live_presence": null,
+        "close_relationship": null
+      },
+      "classification_confidence": "HIGH"
+    },
+    {
+      "item_id": "item_1nxy0rv",
+      "domain": "sport",
+      "subdomain": null,
+      "experience_type": "live_sport_stadium",
+      "context": {
+        "active_participation": false,
+        "live_presence": true,
+        "close_relationship": null
+      },
+      "classification_confidence": "HIGH"
+    },
+    {
+      "item_id": "item_1r7bp7r",
+      "domain": "places",
+      "subdomain": null,
+      "experience_type": "specific_city_country_place",
+      "context": {
+        "active_participation": false,
+        "live_presence": null,
+        "close_relationship": null
+      },
+      "classification_confidence": "HIGH"
+    }
+  ],
+  "retrieved_rows": [
+    {
+      "item_id": "item_103asc6",
+      "experience_type": "endurance_sport_running_cycling_swimming",
+      "domain": "sport",
+      "matched_row_ids": [
+        "endurance_sport_running_cycling_swimming"
+      ],
+      "retrieval_scope": "classified_class",
+      "objective_affordances": [
+        "movement_pleasure"
+      ],
+      "candidate_functions": [
+        {
+          "function_id": "movement_pleasure",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Endurance sport — running, cycling, swimming",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "mastery",
+            "mood_regulation",
+            "achievement_progress",
+            "autonomy",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 875
+        },
+        {
+          "function_id": "mastery",
+          "evidence_strength": "MEDIUM_HIGH",
+          "evidence_scope": "Endurance sport — running, cycling, swimming",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "movement_pleasure",
+            "mood_regulation",
+            "achievement_progress",
+            "autonomy",
+            "competition"
+          ],
+          "confidence_up": [
+            "explicit enjoyment of improvement",
+            "mastery recurs in unrelated domains"
+          ],
+          "confidence_down": [
+            "user explicitly rejects performance goals",
+            "running described only as relaxation or social time"
+          ],
+          "forbidden_inferences": [
+            "disciplined_personality"
+          ],
+          "source_line": 875
+        },
+        {
+          "function_id": "mood_regulation",
+          "evidence_strength": null,
+          "evidence_scope": "Endurance sport — running, cycling, swimming",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "movement_pleasure",
+            "mastery",
+            "achievement_progress",
+            "autonomy",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 875
+        },
+        {
+          "function_id": "achievement_progress",
+          "evidence_strength": null,
+          "evidence_scope": "Endurance sport — running, cycling, swimming",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "movement_pleasure",
+            "mastery",
+            "mood_regulation",
+            "autonomy",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 875
+        },
+        {
+          "function_id": "autonomy",
+          "evidence_strength": null,
+          "evidence_scope": "Endurance sport — running, cycling, swimming",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "movement_pleasure",
+            "mastery",
+            "mood_regulation",
+            "achievement_progress",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 875
+        }
+      ],
+      "caution": "Enjoyment and autonomous/competence-related motivation recur in physical-activity research. Do not translate running into “discipline”. citeturn4search0turn4search1",
+      "source_line": 875
+    },
+    {
+      "item_id": "item_1nxy0rv",
+      "experience_type": "live_sport_stadium",
+      "domain": "sport",
+      "matched_row_ids": [
+        "live_sport_stadium"
+      ],
+      "retrieval_scope": "classified_class",
+      "objective_affordances": [],
+      "candidate_functions": [
+        {
+          "function_id": "belonging",
+          "evidence_strength": "MEDIUM_HIGH",
+          "evidence_scope": "Live sport/stadium",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "collective_energy",
+            "stimulation_arousal",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 884
+        },
+        {
+          "function_id": "collective_energy",
+          "evidence_strength": "MEDIUM_HIGH",
+          "evidence_scope": "Live sport/stadium",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "belonging",
+            "stimulation_arousal",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 884
+        },
+        {
+          "function_id": "stimulation_arousal",
+          "evidence_strength": null,
+          "evidence_scope": "Live sport/stadium",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "belonging",
+            "collective_energy",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 884
+        },
+        {
+          "function_id": "competition",
+          "evidence_strength": null,
+          "evidence_scope": "Live sport/stadium",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "belonging",
+            "collective_energy",
+            "stimulation_arousal"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 884
+        }
+      ],
+      "caution": "Live and mediated viewing have meaningfully different affordances. citeturn4search6turn7search1",
+      "source_line": 884
+    },
+    {
+      "item_id": "item_1r7bp7r",
+      "experience_type": "specific_city_country_place",
+      "domain": "places",
+      "matched_row_ids": [
+        "specific_city_country_place"
+      ],
+      "retrieval_scope": "classified_class",
+      "objective_affordances": [],
+      "candidate_functions": [],
+      "caution": "Place attachment depends jointly on person/process/place; never substitute national stereotypes for user evidence. citeturn6search12turn6search5",
+      "source_line": 934
+    }
+  ]
+}

@@ -1,0 +1,414 @@
+{
+  "version": "function-taxonomy.v1",
+  "provenance": {
+    "version": "preference-kb.report-derived.v1",
+    "derivation": "report-derived-v1",
+    "source_file": "Codex Intelligence Bundle v1.md",
+    "source_sha256": "09daa8b4d4c4dbe99b2b4a62ee4626c4b28e8a6a8baa3680e141303af5c66ab5",
+    "missing_original_json": true,
+    "source_claimed_expanded_row_count": 485,
+    "note": "Only visible report tables are extracted. Citation markers are preserved as source locators, not resolved or independently verified."
+  },
+  "functions": [
+    {
+      "id": "sensory_pleasure",
+      "name": "Sensory pleasure",
+      "definition": "Positive hedonic response to sensory qualities.",
+      "not_equivalent_to": "Not necessarily high stimulation.",
+      "research_anchor": "Food and aesthetic research show sensory qualities as one component of reward. citeturn3search3turn8search2",
+      "typical_signals": "taste, fragrance, texture, timbre, colour",
+      "cross_domain_example": "food + perfume + textiles + music",
+      "source_line": 805
+    },
+    {
+      "id": "savouring",
+      "name": "Savouring",
+      "definition": "Attending to, deepening or prolonging a positive experience.",
+      "not_equivalent_to": "Not simply experiencing pleasure.",
+      "research_anchor": "RCT meta-analysis supports savouring as a distinct positive-experience process. citeturn15search3",
+      "typical_signals": "tastings, slow coffee, sunsets",
+      "cross_domain_example": "wine + gardens + music + slow travel",
+      "source_line": 806
+    },
+    {
+      "id": "stimulation_arousal",
+      "name": "Stimulation / arousal",
+      "definition": "Reward from activation, pace, energetic input or surprise.",
+      "not_equivalent_to": "Not necessarily emotional intensity or risk.",
+      "research_anchor": "Music and horror research distinguish activation from other rewards. citeturn9search3turn9search0",
+      "typical_signals": "fast sport, energetic music, nightlife",
+      "cross_domain_example": "electronic music + tennis + thriller",
+      "source_line": 807
+    },
+    {
+      "id": "emotional_intensity",
+      "name": "Emotional intensity",
+      "definition": "Valuing strong felt affect, including mixed emotion.",
+      "not_equivalent_to": "Not physical or sensory intensity.",
+      "research_anchor": "Sad-music and aesthetics evidence demonstrates rewarding intense/mixed emotion. citeturn9search5turn8search2",
+      "typical_signals": "sad music, drama, horror",
+      "cross_domain_example": "opera + literary fiction + character drama",
+      "source_line": 808
+    },
+    {
+      "id": "mood_regulation",
+      "name": "Mood/state regulation",
+      "definition": "Using experience to change, sustain or organise affect.",
+      "not_equivalent_to": "Not evidence of pathology.",
+      "research_anchor": "Music meta-analyses and nature research support regulatory functions. citeturn9search4turn9search1turn13search8",
+      "typical_signals": "exercise, music, baths, familiar media",
+      "cross_domain_example": "running + playlist + bath",
+      "source_line": 809
+    },
+    {
+      "id": "restoration",
+      "name": "Restoration",
+      "definition": "Replenishment after cognitive, emotional or physical demands.",
+      "not_equivalent_to": "Not equivalent to avoidance.",
+      "research_anchor": "Vacation and nature syntheses support recovery/restoration. citeturn14view6turn6search7",
+      "typical_signals": "nature, quiet holidays, parks",
+      "cross_domain_example": "forest + reading + slow trip",
+      "source_line": 810
+    },
+    {
+      "id": "escape_detachment",
+      "name": "Detachment / escape",
+      "definition": "Temporary psychological distance from demands or routine.",
+      "not_equivalent_to": "Not inherently maladaptive.",
+      "research_anchor": "Vacation and media/gaming literatures distinguish detachment from pathology. citeturn14view6turn7search0turn9search9",
+      "typical_signals": "immersive fiction, games, travel",
+      "cross_domain_example": "fantasy + RPG + cinema",
+      "source_line": 811
+    },
+    {
+      "id": "comfort_familiarity",
+      "name": "Comfort/familiarity",
+      "definition": "Reward from predictability, ease and known patterns.",
+      "not_equivalent_to": "Not necessarily nostalgia or ritual.",
+      "research_anchor": "Comfort-food and rewatching reviews support familiar-experience functions. citeturn5search1turn9search9",
+      "typical_signals": "favourite food, reruns, repeat places",
+      "cross_domain_example": "recipe + sitcom + repeat beach",
+      "source_line": 812
+    },
+    {
+      "id": "nostalgia",
+      "name": "Nostalgia/continuity",
+      "definition": "Reconnection with autobiographical or shared past.",
+      "not_equivalent_to": "Not all familiarity.",
+      "research_anchor": "Sad-music and media-rewatching literature identifies nostalgia as one mechanism. citeturn9search5turn9search9",
+      "typical_signals": "old songs, childhood foods",
+      "cross_domain_example": "teenage music + hometown + old film",
+      "source_line": 813
+    },
+    {
+      "id": "movement_pleasure",
+      "name": "Pleasure in movement",
+      "definition": "Intrinsic kinaesthetic enjoyment.",
+      "not_equivalent_to": "Not fitness, discipline or achievement.",
+      "research_anchor": "Enjoyment is a recurrent physical-activity facilitator; dance work emphasises embodiment. citeturn4search0turn4search10",
+      "typical_signals": "dance, running, swimming",
+      "cross_domain_example": "dance + cycling + walking",
+      "source_line": 814
+    },
+    {
+      "id": "embodied_intensity",
+      "name": "Embodied intensity",
+      "definition": "Reward from strong bodily sensations or exertion.",
+      "not_equivalent_to": "Not automatically sensation seeking.",
+      "research_anchor": "Adventure-sport and spicy-food reviews show heterogeneous pathways into intense bodily experiences. citeturn4search3turn5search3",
+      "typical_signals": "hard exertion, heat, cold, speed",
+      "cross_domain_example": "boxing + chilli + cold swimming",
+      "source_line": 815
+    },
+    {
+      "id": "challenge",
+      "name": "Challenge",
+      "definition": "Reward from tackling difficulty requiring effort/adaptation.",
+      "not_equivalent_to": "Not necessarily competition.",
+      "research_anchor": "Flow and sport research consistently implicate challenge. citeturn12search0turn4search0",
+      "typical_signals": "hard routes, puzzles, complex recipes",
+      "cross_domain_example": "climbing + chess puzzle + coding",
+      "source_line": 816
+    },
+    {
+      "id": "mastery",
+      "name": "Mastery",
+      "definition": "Reward from progressively refining a skill.",
+      "not_equivalent_to": "Not merely completing goals.",
+      "research_anchor": "Competence/flow and gaming literature support skill refinement as motivating. citeturn14view0turn12search0turn14view8",
+      "typical_signals": "practice, technique, repeated refinement",
+      "cross_domain_example": "piano + tennis + cooking",
+      "source_line": 817
+    },
+    {
+      "id": "achievement_progress",
+      "name": "Achievement/progress",
+      "definition": "Reward from milestones, completion or measurable advancement.",
+      "not_equivalent_to": "Not identical to mastery.",
+      "research_anchor": "Achievement/goal orientation is recurrent in sport and gaming. citeturn4search0turn14view8",
+      "typical_signals": "PBs, ranks, completed projects",
+      "cross_domain_example": "race + game rank + project launch",
+      "source_line": 818
+    },
+    {
+      "id": "competence",
+      "name": "Competence",
+      "definition": "Felt effectiveness when interacting with a task/environment.",
+      "not_equivalent_to": "Not a judgement of global ability.",
+      "research_anchor": "A central basic psychological need in SDT evidence. citeturn14view0turn14view1",
+      "typical_signals": "solving, executing, performing effectively",
+      "cross_domain_example": "cooking + sport + work problem",
+      "source_line": 819
+    },
+    {
+      "id": "autonomy",
+      "name": "Autonomy",
+      "definition": "Acting in a way experienced as volitional and self-endorsed.",
+      "not_equivalent_to": "Not simply doing something alone.",
+      "research_anchor": "Strongly grounded in SDT evidence. citeturn14view0turn14view1",
+      "typical_signals": "self-directed projects/travel",
+      "cross_domain_example": "road trip + side project + solo run",
+      "source_line": 820
+    },
+    {
+      "id": "agency_control",
+      "name": "Agency/control",
+      "definition": "Reward from shaping outcomes and observing effects of one's actions.",
+      "not_equivalent_to": "Not a “controlling personality”.",
+      "research_anchor": "Gaming and work research supports action/outcome control as a relevant affordance. citeturn14view8turn14view1",
+      "typical_signals": "strategy, organising, making",
+      "cross_domain_example": "simulation + DIY + planning",
+      "source_line": 821
+    },
+    {
+      "id": "novelty",
+      "name": "Novelty",
+      "definition": "Reward from unfamiliarity or freshness.",
+      "not_equivalent_to": "Not active exploration.",
+      "research_anchor": "Novelty is implicated in curiosity and travel-related motivation. citeturn15search0turn6search6",
+      "typical_signals": "new cuisine, city, music",
+      "cross_domain_example": "food + destination + art",
+      "source_line": 822
+    },
+    {
+      "id": "exploration",
+      "name": "Exploration",
+      "definition": "Active search through environments or possibilities.",
+      "not_equivalent_to": "Not just encountering novelty.",
+      "research_anchor": "Curiosity theory explicitly connects curiosity with exploratory behaviour. citeturn15search0",
+      "typical_signals": "wandering, open-world games, browsing",
+      "cross_domain_example": "city + market + hiking + game",
+      "source_line": 823
+    },
+    {
+      "id": "curiosity",
+      "name": "Curiosity",
+      "definition": "Desire to resolve a knowledge/information gap.",
+      "not_equivalent_to": "Not the knowledge obtained afterwards.",
+      "research_anchor": "Current reviews directly support this distinction. citeturn15search0turn15search1",
+      "typical_signals": "science, mysteries, museums",
+      "cross_domain_example": "book + documentary + research",
+      "source_line": 824
+    },
+    {
+      "id": "learning",
+      "name": "Learning",
+      "definition": "Reward from acquiring skill, knowledge or perspective.",
+      "not_equivalent_to": "Not identical to curiosity.",
+      "research_anchor": "Curiosity and reading evidence distinguish knowledge-seeking from acquisition. citeturn15search0turn3search5",
+      "typical_signals": "nonfiction, classes, cultural travel",
+      "cross_domain_example": "history + museum + project",
+      "source_line": 825
+    },
+    {
+      "id": "cognitive_complexity",
+      "name": "Cognitive complexity",
+      "definition": "Enjoyment of ambiguity, layered structure or interpretation.",
+      "not_equivalent_to": "Not intelligence or sophistication.",
+      "research_anchor": "Aesthetic experience is strongly multidimensional and can involve ambiguity/interpretation. citeturn14view7turn8search2",
+      "typical_signals": "jazz, conceptual art, strategy",
+      "cross_domain_example": "literary fiction + jazz + chess",
+      "source_line": 826
+    },
+    {
+      "id": "flow_absorption",
+      "name": "Flow/absorption",
+      "definition": "Deep involvement and intrinsically rewarding attentional absorption.",
+      "not_equivalent_to": "Not any period of concentration.",
+      "research_anchor": "Flow reviews consistently identify absorption alongside challenge, goals and feedback. citeturn12search0turn12search3",
+      "typical_signals": "coding, climbing, performance",
+      "cross_domain_example": "piano + climbing + coding",
+      "source_line": 827
+    },
+    {
+      "id": "play",
+      "name": "Play",
+      "definition": "Voluntary experimentation, humour, imaginative variation or intrinsically enjoyable rule use.",
+      "not_equivalent_to": "Not childishness.",
+      "research_anchor": "Gaming and leisure research support play as distinct from achievement. citeturn14view8turn13search7",
+      "typical_signals": "games, improvisation, playful styling",
+      "cross_domain_example": "board game + improv + fashion",
+      "source_line": 828
+    },
+    {
+      "id": "competition",
+      "name": "Competition",
+      "definition": "Reward from comparative contest or ranking.",
+      "not_equivalent_to": "Not difficulty itself.",
+      "research_anchor": "Competition appears independently from mastery/challenge in sport and gaming motivation. citeturn4search0turn14view8",
+      "typical_signals": "matches, rankings, races",
+      "cross_domain_example": "tennis + esports + quiz",
+      "source_line": 829
+    },
+    {
+      "id": "creativity_creation",
+      "name": "Creation",
+      "definition": "Reward from making or transforming something.",
+      "not_equivalent_to": "Not evidence of a “creative personality”.",
+      "research_anchor": "Cooking/hobby evidence supports creation and self-efficacy-like rewards, though causality is uneven. citeturn5search2turn13search7",
+      "typical_signals": "cooking, writing, design, DIY",
+      "cross_domain_example": "baking + décor + side project",
+      "source_line": 830
+    },
+    {
+      "id": "aesthetic_pleasure",
+      "name": "Aesthetic pleasure",
+      "definition": "Reward from form, composition, style or material qualities.",
+      "not_equivalent_to": "Not necessarily awe.",
+      "research_anchor": "Contemporary aesthetics research rejects reduction of aesthetic experience to a single beauty dimension. citeturn14view7turn8search2",
+      "typical_signals": "art, design, architecture, clothing",
+      "cross_domain_example": "architecture + fashion + food",
+      "source_line": 831
+    },
+    {
+      "id": "awe_transcendence",
+      "name": "Awe",
+      "definition": "Wonder/perspective shift elicited by perceived vastness or profundity.",
+      "not_equivalent_to": "Not generic liking or beauty.",
+      "research_anchor": "Experimental meta-analysis supports awe as a distinguishable emotion. citeturn2search1",
+      "typical_signals": "mountains, monumental spaces",
+      "cross_domain_example": "landscape + orchestra + astronomy",
+      "source_line": 832
+    },
+    {
+      "id": "meaning_reflection",
+      "name": "Meaning/reflection",
+      "definition": "Reward from significance, interpretation or connection to larger narratives.",
+      "not_equivalent_to": "Not proof of spirituality or virtue.",
+      "research_anchor": "Narrative and aesthetic evidence supports reflective/meaning-oriented engagement. citeturn3search5turn8search1",
+      "typical_signals": "philosophy, historical places, serious art",
+      "cross_domain_example": "philosophy + memorial + literature",
+      "source_line": 833
+    },
+    {
+      "id": "self_expression_identity",
+      "name": "Self-expression/identity",
+      "definition": "Using choices to express or maintain a sense of self.",
+      "not_equivalent_to": "Never licence to infer sensitive identity.",
+      "research_anchor": "Identity-expressive consumption and music/media work support this function. citeturn8search14turn9search3",
+      "typical_signals": "fashion, music, décor",
+      "cross_domain_example": "clothing + playlist + home",
+      "source_line": 834
+    },
+    {
+      "id": "distinction_status",
+      "name": "Distinction/status signalling",
+      "definition": "Reward from communicating prestige, scarcity or social distinction.",
+      "not_equivalent_to": "Not the default explanation for luxury.",
+      "research_anchor": "Luxury research establishes status signalling as one motive among several. citeturn8search11turn8search13",
+      "typical_signals": "exclusivity, prestige language",
+      "cross_domain_example": "fashion + exclusive dining + travel",
+      "source_line": 835
+    },
+    {
+      "id": "belonging",
+      "name": "Belonging",
+      "definition": "Inclusion and acceptance within a group or social world.",
+      "not_equivalent_to": "Not intimacy with a particular person.",
+      "research_anchor": "Belonging and relatedness are well-supported constructs. citeturn11search5turn14view0",
+      "typical_signals": "clubs, fandoms, communities",
+      "cross_domain_example": "running club + fandom + guild",
+      "source_line": 836
+    },
+    {
+      "id": "intimacy_attachment",
+      "name": "Intimacy/attachment",
+      "definition": "Close particularised bond involving trust and mutual importance.",
+      "not_equivalent_to": "Not group inclusion or crowd energy.",
+      "research_anchor": "Adult attachment research supports close-bond functions. citeturn11search2",
+      "typical_signals": "partner, children, close friends",
+      "cross_domain_example": "couple dinner + family ritual",
+      "source_line": 837
+    },
+    {
+      "id": "care",
+      "name": "Care/contribution",
+      "definition": "Reward from supporting or nurturing another person's welfare.",
+      "not_equivalent_to": "Not proof of self-sacrifice or moral virtue.",
+      "research_anchor": "Meta-analytic work on communal motivation supports caregiving-oriented motivation. citeturn11search9",
+      "typical_signals": "hosting, mentoring, cooking for others",
+      "cross_domain_example": "meal + mentoring + family care",
+      "source_line": 838
+    },
+    {
+      "id": "shared_experience",
+      "name": "Shared experience",
+      "definition": "Value of co-experiencing something with another person/group.",
+      "not_equivalent_to": "Not necessarily belonging or high arousal.",
+      "research_anchor": "Experiments show sharing can alter experience and can be sought for connection. citeturn10search0turn10search3",
+      "typical_signals": "film together, dinner, trip",
+      "cross_domain_example": "movie + meal + road trip",
+      "source_line": 839
+    },
+    {
+      "id": "collective_energy",
+      "name": "Collective energy",
+      "definition": "High-arousal unison from synchronised attention/emotion/movement.",
+      "not_equivalent_to": "Not intimacy.",
+      "research_anchor": "Collective-effervescence meta-analysis supports this as a group-event process. citeturn7search1turn7search6",
+      "typical_signals": "stadiums, festivals, mass singing",
+      "cross_domain_example": "match + festival + concert",
+      "source_line": 840
+    },
+    {
+      "id": "social_observation",
+      "name": "Social observation/simulation",
+      "definition": "Reward from interpreting others' motives, relationships and behaviour.",
+      "not_equivalent_to": "Not proof of empathy or social skill.",
+      "research_anchor": "Narrative-reading evidence shows small/context-sensitive social-cognitive effects. citeturn3search1turn3search4",
+      "typical_signals": "biography, character drama",
+      "cross_domain_example": "memoir + drama + documentary",
+      "source_line": 841
+    },
+    {
+      "id": "ritual_structure",
+      "name": "Ritual/structure",
+      "definition": "Reward from repeated ordered, meaningful sequences.",
+      "not_equivalent_to": "Not mere familiarity and not compulsivity.",
+      "research_anchor": "Ritual review identifies emotional, goal-state and social regulation. citeturn15search2turn5search6",
+      "typical_signals": "morning coffee, weekly dinner",
+      "cross_domain_example": "tea + bath + pre-run routine",
+      "source_line": 842
+    },
+    {
+      "id": "social_recognition",
+      "name": "Recognition/esteem",
+      "definition": "Reward from acknowledgement of contribution or performance.",
+      "not_equivalent_to": "Not necessarily status hierarchy.",
+      "research_anchor": "Work/social motivation research supports interpersonal acknowledgement as contextual reward, although it is less cleanly isolated than basic needs. citeturn14view1",
+      "typical_signals": "applause, praise, awards",
+      "cross_domain_example": "performance + project + hosting",
+      "source_line": 843
+    },
+    {
+      "id": "nature_connection",
+      "name": "Nature connection",
+      "definition": "Reward from contact with landscapes and living/non-built environments.",
+      "not_equivalent_to": "Not synonymous with calmness or restoration.",
+      "research_anchor": "Nature syntheses show multiple affective and restorative pathways. citeturn6search2turn6search7turn13search8",
+      "typical_signals": "forest, sea, gardening",
+      "cross_domain_example": "hiking + gardening + nature travel",
+      "source_line": 844
+    }
+  ]
+}

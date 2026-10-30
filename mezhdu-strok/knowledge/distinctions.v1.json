@@ -1,0 +1,83 @@
+{
+  "version": "distinctions.v1",
+  "rules": [
+    {
+      "pair": "Pleasure vs stimulation",
+      "rule": "Pleasure is positive hedonic valence; stimulation is activation. Chocolate may be pleasant but low-arousal; a tense thriller can be highly activating without being deeply pleasurable. Reward components need not coincide. citeturn15search5",
+      "source_line": 850
+    },
+    {
+      "pair": "Mastery vs achievement",
+      "rule": "Mastery is refining capability over time; achievement is crossing a goal or benchmark.",
+      "source_line": 851
+    },
+    {
+      "pair": "Belonging vs intimacy",
+      "rule": "Belonging concerns inclusion in a group/social world; intimacy concerns a particular close bond. citeturn11search5turn11search2",
+      "source_line": 852
+    },
+    {
+      "pair": "Collective energy vs shared experience",
+      "rule": "Collective energy requires relatively intense coordinated group activation; shared experience can be quiet and involve two people. citeturn7search1turn10search3",
+      "source_line": 853
+    },
+    {
+      "pair": "Novelty vs exploration",
+      "rule": "Novelty is a property of encountering something unfamiliar; exploration is the active process of searching. citeturn15search0",
+      "source_line": 854
+    },
+    {
+      "pair": "Restoration vs escape",
+      "rule": "Restoration implies replenishment; detachment merely means temporary distance. A detached experience may or may not restore. citeturn14view6",
+      "source_line": 855
+    },
+    {
+      "pair": "Sensory vs emotional intensity",
+      "rule": "One concerns strength of sensory/body input; the other concerns strength of affect.",
+      "source_line": 856
+    },
+    {
+      "pair": "Autonomy vs independence",
+      "rule": "Autonomy means volition. A chosen collaborative activity can be highly autonomous; a solo activity can be externally controlled. citeturn14view0",
+      "source_line": 857
+    },
+    {
+      "pair": "Awe vs aesthetic pleasure",
+      "rule": "Awe centrally involves vastness/profundity and frame adjustment; aesthetic pleasure covers a much broader range of pleasing form. citeturn2search1turn14view7",
+      "source_line": 858
+    },
+    {
+      "pair": "Curiosity vs learning",
+      "rule": "Curiosity motivates wanting to know; learning is acquisition/change in knowledge. citeturn15search0turn15search1",
+      "source_line": 859
+    },
+    {
+      "pair": "Competition vs challenge",
+      "rule": "Competition requires comparative contest; challenge does not require an opponent.",
+      "source_line": 860
+    },
+    {
+      "pair": "Ritual vs comfort",
+      "rule": "Ritual concerns ordered repetition and meaning; comfort concerns ease/predictability. Either can occur without the other. citeturn15search2turn5search1",
+      "source_line": 861
+    }
+  ],
+  "hard_non_equivalences": [
+    [
+      "intimacy_attachment",
+      "belonging"
+    ],
+    [
+      "intimacy_attachment",
+      "collective_energy"
+    ],
+    [
+      "shared_experience",
+      "collective_energy"
+    ],
+    [
+      "cooperation",
+      "belonging"
+    ]
+  ]
+}

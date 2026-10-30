@@ -1,0 +1,544 @@
+TAP version 13
+# Subtest: A: independent mastery recurrence outranks single ambiguous movement; restoration stays a separate hypothesis
+ok 1 - A: independent mastery recurrence outranks single ambiguous movement; restoration stays a separate hypothesis
+  ---
+  duration_ms: 8.183071
+  type: 'test'
+  ...
+# Subtest: B/F: intimacy and collective energy survive as different mechanisms
+ok 2 - B/F: intimacy and collective energy survive as different mechanisms
+  ---
+  duration_ms: 5.480304
+  type: 'test'
+  ...
+# Subtest: C/D/E: sensory, place and sport hypotheses do not become trait labels
+ok 3 - C/D/E: sensory, place and sport hypotheses do not become trait labels
+  ---
+  duration_ms: 1.808474
+  type: 'test'
+  ...
+# Subtest: G/J: multiple mechanisms coexist and explicit reason overrides performance priors
+ok 4 - G/J: multiple mechanisms coexist and explicit reason overrides performance priors
+  ---
+  duration_ms: 1.205448
+  type: 'test'
+  ...
+# Subtest: Rich input with one finding triggers an explicit coverage recheck
+ok 5 - Rich input with one finding triggers an explicit coverage recheck
+  ---
+  duration_ms: 18.52449
+  type: 'test'
+  ...
+# Subtest: No single-item finding or invented support can pass validation
+ok 6 - No single-item finding or invented support can pass validation
+  ---
+  duration_ms: 2.579421
+  type: 'test'
+  ...
+# Subtest: An unavailable Writer cannot cancel approved findings or invent fallback content
+ok 7 - An unavailable Writer cannot cancel approved findings or invent fallback content
+  ---
+  duration_ms: 7.472815
+  type: 'test'
+  ...
+# Subtest: Secondary functions need their own recurrence among the same real evidence
+ok 8 - Secondary functions need their own recurrence among the same real evidence
+  ---
+  duration_ms: 1.042665
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 1: running
+ok 9 - Report interpretation trap 1: running
+  ---
+  duration_ms: 3.106672
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 2: weight training
+ok 10 - Report interpretation trap 2: weight training
+  ---
+  duration_ms: 0.719319
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 3: boxing
+ok 11 - Report interpretation trap 3: boxing
+  ---
+  duration_ms: 0.475854
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 4: extreme sport
+ok 12 - Report interpretation trap 4: extreme sport
+  ---
+  duration_ms: 0.100611
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 5: team sport
+ok 13 - Report interpretation trap 5: team sport
+  ---
+  duration_ms: 0.109895
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 6: watching football
+ok 14 - Report interpretation trap 6: watching football
+  ---
+  duration_ms: 0.636616
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 7: stadium
+ok 15 - Report interpretation trap 7: stadium
+  ---
+  duration_ms: 0.463446
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 8: wine
+ok 16 - Report interpretation trap 8: wine
+  ---
+  duration_ms: 0.108593
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 9: wine
+ok 17 - Report interpretation trap 9: wine
+  ---
+  duration_ms: 0.120631
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 10: spicy food
+ok 18 - Report interpretation trap 10: spicy food
+  ---
+  duration_ms: 0.217406
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 11: fine dining
+ok 19 - Report interpretation trap 11: fine dining
+  ---
+  duration_ms: 0.118638
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 12: comfort food
+ok 20 - Report interpretation trap 12: comfort food
+  ---
+  duration_ms: 0.130375
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 13: coffee
+ok 21 - Report interpretation trap 13: coffee
+  ---
+  duration_ms: 0.072198
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 14: sad music
+ok 22 - Report interpretation trap 14: sad music
+  ---
+  duration_ms: 0.050466
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 15: metal
+ok 23 - Report interpretation trap 15: metal
+  ---
+  duration_ms: 0.047732
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 16: classical music
+ok 24 - Report interpretation trap 16: classical music
+  ---
+  duration_ms: 0.060791
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 17: pop
+ok 25 - Report interpretation trap 17: pop
+  ---
+  duration_ms: 0.043776
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 18: live concerts
+ok 26 - Report interpretation trap 18: live concerts
+  ---
+  duration_ms: 0.041382
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 19: literary fiction
+ok 27 - Report interpretation trap 19: literary fiction
+  ---
+  duration_ms: 0.044497
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 20: philosophy
+ok 28 - Report interpretation trap 20: philosophy
+  ---
+  duration_ms: 0.045999
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 21: romance novels
+ok 29 - Report interpretation trap 21: romance novels
+  ---
+  duration_ms: 0.062063
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 22: horror
+ok 30 - Report interpretation trap 22: horror
+  ---
+  duration_ms: 0.048243
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 23: rewatching
+ok 31 - Report interpretation trap 23: rewatching
+  ---
+  duration_ms: 0.047561
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 24: Japan
+ok 32 - Report interpretation trap 24: Japan
+  ---
+  duration_ms: 0.044678
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 25: Armenia
+ok 33 - Report interpretation trap 25: Armenia
+  ---
+  duration_ms: 0.051627
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 26: Paris
+ok 34 - Report interpretation trap 26: Paris
+  ---
+  duration_ms: 0.051367
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 27: repeat destination
+ok 35 - Report interpretation trap 27: repeat destination
+  ---
+  duration_ms: 0.058498
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 28: luxury travel
+ok 36 - Report interpretation trap 28: luxury travel
+  ---
+  duration_ms: 0.054121
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 29: backpacking
+ok 37 - Report interpretation trap 29: backpacking
+  ---
+  duration_ms: 0.052919
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 30: minimalism
+ok 38 - Report interpretation trap 30: minimalism
+  ---
+  duration_ms: 0.051497
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 31: maximalism
+ok 39 - Report interpretation trap 31: maximalism
+  ---
+  duration_ms: 0.052759
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 32: luxury brand
+ok 40 - Report interpretation trap 32: luxury brand
+  ---
+  duration_ms: 0.089505
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 33: family
+ok 41 - Report interpretation trap 33: family
+  ---
+  duration_ms: 0.069554
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 34: many friends
+ok 42 - Report interpretation trap 34: many friends
+  ---
+  duration_ms: 0.077677
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 35: public figure
+ok 43 - Report interpretation trap 35: public figure
+  ---
+  duration_ms: 0.096876
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 36: parties
+ok 44 - Report interpretation trap 36: parties
+  ---
+  duration_ms: 0.07358
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 37: sea
+ok 45 - Report interpretation trap 37: sea
+  ---
+  duration_ms: 0.060511
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 38: mountains
+ok 46 - Report interpretation trap 38: mountains
+  ---
+  duration_ms: 0.053089
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 39: chess
+ok 47 - Report interpretation trap 39: chess
+  ---
+  duration_ms: 0.047402
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 40: RPGs
+ok 48 - Report interpretation trap 40: RPGs
+  ---
+  duration_ms: 0.050776
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 41: cleaning
+ok 49 - Report interpretation trap 41: cleaning
+  ---
+  duration_ms: 0.045488
+  type: 'test'
+  ...
+# Subtest: Report interpretation trap 42: candles
+ok 50 - Report interpretation trap 42: candles
+  ---
+  duration_ms: 0.050706
+  type: 'test'
+  ...
+# Subtest: Required unsupported trait leaps are blocked independently of the LLM prompt
+ok 51 - Required unsupported trait leaps are blocked independently of the LLM prompt
+  ---
+  duration_ms: 1.329084
+  type: 'test'
+  ...
+# Subtest: Sensitive attributes never appear in the function schema; experience-focused wording is allowed
+ok 52 - Sensitive attributes never appear in the function schema; experience-focused wording is allowed
+  ---
+  duration_ms: 0.155103
+  type: 'test'
+  ...
+# Subtest: A place-only prior cannot become a finding and a close bond cannot be a collective-energy secondary function
+ok 53 - A place-only prior cannot become a finding and a close bond cannot be a collective-energy secondary function
+  ---
+  duration_ms: 8.149749
+  type: 'test'
+  ...
+# Subtest: Compact result renders a card without an unexpected pair and offers enrichment
+ok 54 - Compact result renders a card without an unexpected pair and offers enrichment
+  ---
+  duration_ms: 25.359977
+  type: 'test'
+  ...
+# Subtest: Enrichment submits all previous and new data; API failure and reload retain the draft
+ok 55 - Enrichment submits all previous and new data; API failure and reload retain the draft
+  ---
+  duration_ms: 3.038119
+  type: 'test'
+  ...
+# Subtest: Research consent is off by default and feedback sends nothing without opt-in
+ok 56 - Research consent is off by default and feedback sends nothing without opt-in
+  ---
+  duration_ms: 1.436606
+  type: 'test'
+  ...
+# Subtest: Opted-in feedback and enrichment refer to the saved result without account identity
+ok 57 - Opted-in feedback and enrichment refer to the saved result without account identity
+  ---
+  duration_ms: 2.244428
+  type: 'test'
+  ...
+# Subtest: Enrichment passes the full signed previous analysis even with research logging off
+ok 58 - Enrichment passes the full signed previous analysis even with research logging off
+  ---
+  duration_ms: 2.422806
+  type: 'test'
+  ...
+# Subtest: Runtime KB only claims visible report content and preserves exact source provenance
+ok 59 - Runtime KB only claims visible report content and preserves exact source provenance
+  ---
+  duration_ms: 1.115735
+  type: 'test'
+  ...
+# Subtest: Retrieval is class scoped, not the whole KB; places get zero generic motives
+ok 60 - Retrieval is class scoped, not the whole KB; places get zero generic motives
+  ---
+  duration_ms: 7.446845
+  type: 'test'
+  ...
+# Subtest: Unknown named works have no fabricated attributes and uncertain classifications lower priors
+ok 61 - Unknown named works have no fabricated attributes and uncertain classifications lower priors
+  ---
+  duration_ms: 0.443065
+  type: 'test'
+  ...
+# Subtest: Semantic parser contract allows corrected labels and non-contiguous natural-language choices
+ok 62 - Semantic parser contract allows corrected labels and non-contiguous natural-language choices
+  ---
+  duration_ms: 6.660356
+  type: 'test'
+  ...
+# Subtest: Canonical ids are independent of order and punctuation, reasons remain explicit data
+ok 63 - Canonical ids are independent of order and punctuation, reasons remain explicit data
+  ---
+  duration_ms: 0.88615
+  type: 'test'
+  ...
+# Subtest: Required regression: supported collective_energy + unsupported belonging returns HTTP 200, keeps primary and removes secondary
+ok 64 - Required regression: supported collective_energy + unsupported belonging returns HTTP 200, keeps primary and removes secondary
+  ---
+  duration_ms: 42.915013
+  type: 'test'
+  ...
+# Subtest: Explicit single signal can support secondary; an unconfirmed generic single signal cannot
+ok 65 - Explicit single signal can support secondary; an unconfirmed generic single signal cannot
+  ---
+  duration_ms: 1.560532
+  type: 'test'
+  ...
+# Subtest: Near-structural secondary is retained only for a concrete shared experience class
+ok 66 - Near-structural secondary is retained only for a concrete shared experience class
+  ---
+  duration_ms: 2.015184
+  type: 'test'
+  ...
+# Subtest: Redundant, duplicate, unknown and incompatible secondary functions are pruned, not blockers
+ok 67 - Redundant, duplicate, unknown and incompatible secondary functions are pruned, not blockers
+  ---
+  duration_ms: 1.235654
+  type: 'test'
+  ...
+# Subtest: Invalid optional fields, duplicate findings and one bad evidence ID are repaired without inventing support
+ok 68 - Invalid optional fields, duplicate findings and one bad evidence ID are repaired without inventing support
+  ---
+  duration_ms: 2.827413
+  type: 'test'
+  ...
+# Subtest: Unsafe optional wording is removed while safe evidence survives; unsafe primary evidence cannot be fabricated back
+ok 69 - Unsafe optional wording is removed while safe evidence survives; unsafe primary evidence cannot be fabricated back
+  ---
+  duration_ms: 0.707382
+  type: 'test'
+  ...
+# Subtest: Writer optional accent and malformed entries are repaired from approved text
+ok 70 - Writer optional accent and malformed entries are repaired from approved text
+  ---
+  duration_ms: 1.18595
+  type: 'test'
+  ...
+# Subtest: Unavailable optional coverage recheck cannot cancel an already valid finding
+ok 71 - Unavailable optional coverage recheck cannot cancel an already valid finding
+  ---
+  duration_ms: 7.057692
+  type: 'test'
+  ...
+# Subtest: Unrecoverable all-primary failure is bounded and production JSON never exposes internal validation codes
+ok 72 - Unrecoverable all-primary failure is bounded and production JSON never exposes internal validation codes
+  ---
+  duration_ms: 3.53151
+  type: 'test'
+  ...
+# Subtest: Malformed Critic JSON gets one repair attempt and a generic error only when it still fails
+ok 73 - Malformed Critic JSON gets one repair attempt and a generic error only when it still fails
+  ---
+  duration_ms: 3.200953
+  type: 'test'
+  ...
+# Subtest: Consent defaults off and performs no research reads or writes
+ok 74 - Consent defaults off and performs no research reads or writes
+  ---
+  duration_ms: 1.043265
+  type: 'test'
+  ...
+# Subtest: Consented records are versioned pseudonymous data; feedback, lineage and bounded events use a scoped capability
+ok 75 - Consented records are versioned pseudonymous data; feedback, lineage and bounded events use a scoped capability
+  ---
+  duration_ms: 27.143534
+  type: 'test'
+  ...
+# Subtest: Research endpoints reject forged capabilities, invalid ratings, cross-origin writes and requests without consent
+ok 76 - Research endpoints reject forged capabilities, invalid ratings, cross-origin writes and requests without consent
+  ---
+  duration_ms: 2.34543
+  type: 'test'
+  ...
+# Subtest: Research storage failures never cancel a successful analysis
+ok 77 - Research storage failures never cancel a successful analysis
+  ---
+  duration_ms: 0.627852
+  type: 'test'
+  ...
+# Subtest: Published Worker contract preserves cards and returns grounded multi-finding results with signed previous state
+ok 78 - Published Worker contract preserves cards and returns grounded multi-finding results with signed previous state
+  ---
+  duration_ms: 49.120675
+  type: 'test'
+  ...
+# Subtest: Consented trace is private and includes structured stages without auth headers; opt-out performs no storage operations
+ok 79 - Consented trace is private and includes structured stages without auth headers; opt-out performs no storage operations
+  ---
+  duration_ms: 26.222543
+  type: 'test'
+  ...
+# Subtest: API failures expose safe diagnostics, not key/input/provider messages
+ok 80 - API failures expose safe diagnostics, not key/input/provider messages
+  ---
+  duration_ms: 0.956556
+  type: 'test'
+  ...
+# Subtest: Input/method/origin checks happen before provider or research operations
+ok 81 - Input/method/origin checks happen before provider or research operations
+  ---
+  duration_ms: 23.890042
+  type: 'test'
+  ...
+# Subtest: Single-mechanism small input still succeeds; schema allows two evidence and no artificial pair minimum
+ok 82 - Single-mechanism small input still succeeds; schema allows two evidence and no artificial pair minimum
+  ---
+  duration_ms: 5.500273
+  type: 'test'
+  ...
+# Subtest: A broken primary finding is discarded while independent valid findings remain
+ok 83 - A broken primary finding is discarded while independent valid findings remain
+  ---
+  duration_ms: 8.823722
+  type: 'test'
+  ...
+# Subtest: H: five input orders have identical substantive aggregate functions and confidence
+ok 84 - H: five input orders have identical substantive aggregate functions and confidence
+  ---
+  duration_ms: 16.586973
+  type: 'test'
+  ...
+# Subtest: I: Russian running paraphrases have identical classification and functions
+ok 85 - I: Russian running paraphrases have identical classification and functions
+  ---
+  duration_ms: 0.396625
+  type: 'test'
+  ...
+# Subtest: Repeat-run deterministic reasoning is substantively stable
+ok 86 - Repeat-run deterministic reasoning is substantively stable
+  ---
+  duration_ms: 6.808787
+  type: 'test'
+  ...
+# Subtest: Signed previous results cannot be forged; valid strong findings survive omission during enrichment
+ok 87 - Signed previous results cannot be forged; valid strong findings survive omission during enrichment
+  ---
+  duration_ms: 22.115358
+  type: 'test'
+  ...
+# Subtest: Explicitly changed reasons revise or remove old evidence rather than blindly keeping it
+ok 88 - Explicitly changed reasons revise or remove old evidence rather than blindly keeping it
+  ---
+  duration_ms: 1.115785
+  type: 'test'
+  ...
+# Subtest: Reanalysis distinguishes KEEP, STRENGTHEN and REMOVE by current evidence
+ok 89 - Reanalysis distinguishes KEEP, STRENGTHEN and REMOVE by current evidence
+  ---
+  duration_ms: 1.4265
+  type: 'test'
+  ...
+1..89
+# tests 89
+# suites 0
+# pass 89
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 880.102323

@@ -1,0 +1,4036 @@
+{
+  "verification_type": "OFFLINE_FIXTURE",
+  "limitation": "Parser/Critic/Writer responses are prepared fixtures. Classification, retrieval, explicit override, aggregation, validation and result adaptation run through the actual implementation. This is not a live OpenAI response and contains no private chain of thought.",
+  "prompt_version": "intelligence-v1",
+  "kb_version": "preference-kb.report-derived.v1",
+  "raw_input": "бег — мне не важны результаты, бегаю чтобы очистить голову. фортепиано. шахматы. программировать. лесные прогулки. садоводство. чайный ритуал. партнёр. ребёнок. стадион. живые концерты. кофе. парфюм",
+  "validation_version": "critic-repair-v1",
+  "repair_log": [],
+  "parsed_items": [
+    {
+      "item_id": "item_1ei2psj",
+      "id": "item_1ei2psj",
+      "label": "шахматы",
+      "item": "шахматы",
+      "source_text": "шахматы",
+      "explicit_user_reason": null,
+      "user_context": null
+    },
+    {
+      "item_id": "item_1jrv157",
+      "id": "item_1jrv157",
+      "label": "ребёнок",
+      "item": "ребёнок",
+      "source_text": "ребёнок",
+      "explicit_user_reason": null,
+      "user_context": null
+    },
+    {
+      "item_id": "item_1jz3ca",
+      "id": "item_1jz3ca",
+      "label": "фортепиано",
+      "item": "фортепиано",
+      "source_text": "фортепиано",
+      "explicit_user_reason": null,
+      "user_context": null
+    },
+    {
+      "item_id": "item_1nxy0rv",
+      "id": "item_1nxy0rv",
+      "label": "стадион",
+      "item": "стадион",
+      "source_text": "стадион",
+      "explicit_user_reason": null,
+      "user_context": null
+    },
+    {
+      "item_id": "item_1poh2jp",
+      "id": "item_1poh2jp",
+      "label": "садоводство",
+      "item": "садоводство",
+      "source_text": "садоводство",
+      "explicit_user_reason": null,
+      "user_context": null
+    },
+    {
+      "item_id": "item_1psgv51",
+      "id": "item_1psgv51",
+      "label": "программировать",
+      "item": "программировать",
+      "source_text": "программировать",
+      "explicit_user_reason": null,
+      "user_context": null
+    },
+    {
+      "item_id": "item_1von6va",
+      "id": "item_1von6va",
+      "label": "кофе",
+      "item": "кофе",
+      "source_text": "кофе",
+      "explicit_user_reason": null,
+      "user_context": null
+    },
+    {
+      "item_id": "item_1x3aery",
+      "id": "item_1x3aery",
+      "label": "чайный ритуал",
+      "item": "чайный ритуал",
+      "source_text": "чайный ритуал",
+      "explicit_user_reason": null,
+      "user_context": null
+    },
+    {
+      "item_id": "item_5ieh6m",
+      "id": "item_5ieh6m",
+      "label": "партнёр",
+      "item": "партнёр",
+      "source_text": "партнёр",
+      "explicit_user_reason": null,
+      "user_context": null
+    },
+    {
+      "item_id": "item_66pac1",
+      "id": "item_66pac1",
+      "label": "лесные прогулки",
+      "item": "лесные прогулки",
+      "source_text": "лесные прогулки",
+      "explicit_user_reason": null,
+      "user_context": null
+    },
+    {
+      "item_id": "item_n272fc",
+      "id": "item_n272fc",
+      "label": "живые концерты",
+      "item": "живые концерты",
+      "source_text": "живые концерты",
+      "explicit_user_reason": null,
+      "user_context": null
+    },
+    {
+      "item_id": "item_qzi3e0",
+      "id": "item_qzi3e0",
+      "label": "бег",
+      "item": "бег",
+      "source_text": "бег — мне не важны результаты, бегаю чтобы очистить голову",
+      "explicit_user_reason": "мне не важны результаты, бегаю чтобы очистить голову",
+      "user_context": "мне не важны результаты, бегаю чтобы очистить голову"
+    },
+    {
+      "item_id": "item_ug3v1g",
+      "id": "item_ug3v1g",
+      "label": "парфюм",
+      "item": "парфюм",
+      "source_text": "парфюм",
+      "explicit_user_reason": null,
+      "user_context": null
+    }
+  ],
+  "classifications": [
+    {
+      "item_id": "item_1ei2psj",
+      "domain": "games",
+      "subdomain": null,
+      "experience_type": "strategy_games",
+      "context": {
+        "active_participation": true,
+        "live_presence": null,
+        "close_relationship": null
+      },
+      "classification_confidence": "HIGH"
+    },
+    {
+      "item_id": "item_1jrv157",
+      "domain": "relationships",
+      "subdomain": null,
+      "experience_type": "children",
+      "context": {
+        "active_participation": false,
+        "live_presence": null,
+        "close_relationship": true
+      },
+      "classification_confidence": "HIGH"
+    },
+    {
+      "item_id": "item_1jz3ca",
+      "domain": "music",
+      "subdomain": null,
+      "experience_type": "piano_practice",
+      "context": {
+        "active_participation": true,
+        "live_presence": null,
+        "close_relationship": null
+      },
+      "classification_confidence": "HIGH"
+    },
+    {
+      "item_id": "item_1nxy0rv",
+      "domain": "sport",
+      "subdomain": null,
+      "experience_type": "live_sport_stadium",
+      "context": {
+        "active_participation": false,
+        "live_presence": true,
+        "close_relationship": null
+      },
+      "classification_confidence": "HIGH"
+    },
+    {
+      "item_id": "item_1poh2jp",
+      "domain": "home_rituals",
+      "subdomain": null,
+      "experience_type": "gardening",
+      "context": {
+        "active_participation": true,
+        "live_presence": null,
+        "close_relationship": null
+      },
+      "classification_confidence": "HIGH"
+    },
+    {
+      "item_id": "item_1psgv51",
+      "domain": "work",
+      "subdomain": null,
+      "experience_type": "coding_projects",
+      "context": {
+        "active_participation": true,
+        "live_presence": null,
+        "close_relationship": null
+      },
+      "classification_confidence": "HIGH"
+    },
+    {
+      "item_id": "item_1von6va",
+      "domain": "food_drink",
+      "subdomain": null,
+      "experience_type": "coffee",
+      "context": {
+        "active_participation": false,
+        "live_presence": null,
+        "close_relationship": null
+      },
+      "classification_confidence": "HIGH"
+    },
+    {
+      "item_id": "item_1x3aery",
+      "domain": "home_rituals",
+      "subdomain": null,
+      "experience_type": "morning_coffee_tea",
+      "context": {
+        "active_participation": false,
+        "live_presence": null,
+        "close_relationship": null
+      },
+      "classification_confidence": "HIGH"
+    },
+    {
+      "item_id": "item_5ieh6m",
+      "domain": "relationships",
+      "subdomain": null,
+      "experience_type": "partner",
+      "context": {
+        "active_participation": false,
+        "live_presence": null,
+        "close_relationship": true
+      },
+      "classification_confidence": "HIGH"
+    },
+    {
+      "item_id": "item_66pac1",
+      "domain": "nature",
+      "subdomain": null,
+      "experience_type": "forest",
+      "context": {
+        "active_participation": false,
+        "live_presence": null,
+        "close_relationship": null
+      },
+      "classification_confidence": "HIGH"
+    },
+    {
+      "item_id": "item_n272fc",
+      "domain": "music",
+      "subdomain": null,
+      "experience_type": "live_music",
+      "context": {
+        "active_participation": false,
+        "live_presence": true,
+        "close_relationship": null
+      },
+      "classification_confidence": "HIGH"
+    },
+    {
+      "item_id": "item_qzi3e0",
+      "domain": "sport",
+      "subdomain": null,
+      "experience_type": "endurance_sport_running_cycling_swimming",
+      "context": {
+        "active_participation": true,
+        "live_presence": null,
+        "close_relationship": null
+      },
+      "classification_confidence": "HIGH"
+    },
+    {
+      "item_id": "item_ug3v1g",
+      "domain": "art_design",
+      "subdomain": null,
+      "experience_type": "tactile_material_design",
+      "context": {
+        "active_participation": false,
+        "live_presence": null,
+        "close_relationship": null
+      },
+      "classification_confidence": "HIGH"
+    }
+  ],
+  "retrieved_kb_rows": [
+    {
+      "item_id": "item_1ei2psj",
+      "experience_type": "strategy_games",
+      "domain": "games",
+      "matched_row_ids": [
+        "strategy_games"
+      ],
+      "retrieval_scope": "classified_class",
+      "objective_affordances": [],
+      "candidate_functions": [
+        {
+          "function_id": "challenge",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Strategy games",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "cognitive_complexity",
+            "mastery",
+            "agency_control",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 958
+        },
+        {
+          "function_id": "cognitive_complexity",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Strategy games",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "challenge",
+            "mastery",
+            "agency_control",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 958
+        },
+        {
+          "function_id": "mastery",
+          "evidence_strength": null,
+          "evidence_scope": "Strategy games",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "challenge",
+            "cognitive_complexity",
+            "agency_control",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 958
+        },
+        {
+          "function_id": "agency_control",
+          "evidence_strength": null,
+          "evidence_scope": "Strategy games",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "challenge",
+            "cognitive_complexity",
+            "mastery",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 958
+        },
+        {
+          "function_id": "competition",
+          "evidence_strength": null,
+          "evidence_scope": "Strategy games",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "challenge",
+            "cognitive_complexity",
+            "mastery",
+            "agency_control"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 958
+        }
+      ],
+      "caution": "Never infer IQ from chess/strategy preference. citeturn14view8",
+      "source_line": 958
+    },
+    {
+      "item_id": "item_1jrv157",
+      "experience_type": "children",
+      "domain": "relationships",
+      "matched_row_ids": [
+        "children"
+      ],
+      "retrieval_scope": "classified_class",
+      "objective_affordances": [],
+      "candidate_functions": [
+        {
+          "function_id": "intimacy_attachment",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Children",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "care",
+            "play",
+            "shared_experience"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 947
+        },
+        {
+          "function_id": "care",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Children",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "intimacy_attachment",
+            "play",
+            "shared_experience"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 947
+        },
+        {
+          "function_id": "play",
+          "evidence_strength": null,
+          "evidence_scope": "Children",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "intimacy_attachment",
+            "care",
+            "shared_experience"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 947
+        },
+        {
+          "function_id": "shared_experience",
+          "evidence_strength": null,
+          "evidence_scope": "Children",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "intimacy_attachment",
+            "care",
+            "play"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 947
+        }
+      ],
+      "caution": "Do not convert a family preference into a virtue judgement. citeturn11search9",
+      "source_line": 947
+    },
+    {
+      "item_id": "item_1jz3ca",
+      "experience_type": "piano_practice",
+      "domain": "music",
+      "matched_row_ids": [
+        "piano_practice"
+      ],
+      "retrieval_scope": "classified_class",
+      "objective_affordances": [],
+      "candidate_functions": [
+        {
+          "function_id": "mastery",
+          "evidence_strength": null,
+          "evidence_scope": "visible_cross_domain_examples",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "challenge",
+            "flow_absorption"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 1082
+        },
+        {
+          "function_id": "challenge",
+          "evidence_strength": null,
+          "evidence_scope": "visible_cross_domain_examples",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "mastery",
+            "flow_absorption"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 1081
+        },
+        {
+          "function_id": "flow_absorption",
+          "evidence_strength": null,
+          "evidence_scope": "visible_cross_domain_examples",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "mastery",
+            "challenge"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 1088
+        }
+      ],
+      "caution": "Derived only from visible report cross-domain examples; no class-level evidence band supplied.",
+      "source_line": 736
+    },
+    {
+      "item_id": "item_1nxy0rv",
+      "experience_type": "live_sport_stadium",
+      "domain": "sport",
+      "matched_row_ids": [
+        "live_sport_stadium"
+      ],
+      "retrieval_scope": "classified_class",
+      "objective_affordances": [],
+      "candidate_functions": [
+        {
+          "function_id": "belonging",
+          "evidence_strength": "MEDIUM_HIGH",
+          "evidence_scope": "Live sport/stadium",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "collective_energy",
+            "stimulation_arousal",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 884
+        },
+        {
+          "function_id": "collective_energy",
+          "evidence_strength": "MEDIUM_HIGH",
+          "evidence_scope": "Live sport/stadium",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "belonging",
+            "stimulation_arousal",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 884
+        },
+        {
+          "function_id": "stimulation_arousal",
+          "evidence_strength": null,
+          "evidence_scope": "Live sport/stadium",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "belonging",
+            "collective_energy",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 884
+        },
+        {
+          "function_id": "competition",
+          "evidence_strength": null,
+          "evidence_scope": "Live sport/stadium",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "belonging",
+            "collective_energy",
+            "stimulation_arousal"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 884
+        }
+      ],
+      "caution": "Live and mediated viewing have meaningfully different affordances. citeturn4search6turn7search1",
+      "source_line": 884
+    },
+    {
+      "item_id": "item_1poh2jp",
+      "experience_type": "gardening",
+      "domain": "home_rituals",
+      "matched_row_ids": [
+        "gardening"
+      ],
+      "retrieval_scope": "classified_class",
+      "objective_affordances": [],
+      "candidate_functions": [
+        {
+          "function_id": "nature_connection",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Gardening",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "restoration",
+            "mastery",
+            "care"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 973
+        },
+        {
+          "function_id": "restoration",
+          "evidence_strength": null,
+          "evidence_scope": "Gardening",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "nature_connection",
+            "mastery",
+            "care"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 973
+        },
+        {
+          "function_id": "mastery",
+          "evidence_strength": null,
+          "evidence_scope": "Gardening",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "nature_connection",
+            "restoration",
+            "care"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 973
+        },
+        {
+          "function_id": "care",
+          "evidence_strength": null,
+          "evidence_scope": "Gardening",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "nature_connection",
+            "restoration",
+            "mastery"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 973
+        }
+      ],
+      "caution": "Nature-based activity evidence supports wellbeing pathways, not personality diagnosis. citeturn6search2",
+      "source_line": 973
+    },
+    {
+      "item_id": "item_1psgv51",
+      "experience_type": "coding_projects",
+      "domain": "work",
+      "matched_row_ids": [
+        "coding_projects"
+      ],
+      "retrieval_scope": "classified_class",
+      "objective_affordances": [],
+      "candidate_functions": [
+        {
+          "function_id": "mastery",
+          "evidence_strength": null,
+          "evidence_scope": "visible_cross_domain_examples",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "challenge",
+            "creativity_creation",
+            "flow_absorption"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 1082
+        },
+        {
+          "function_id": "challenge",
+          "evidence_strength": null,
+          "evidence_scope": "visible_cross_domain_examples",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "mastery",
+            "creativity_creation",
+            "flow_absorption"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 1081
+        },
+        {
+          "function_id": "creativity_creation",
+          "evidence_strength": null,
+          "evidence_scope": "visible_cross_domain_examples",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "mastery",
+            "challenge",
+            "flow_absorption"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 1081
+        },
+        {
+          "function_id": "flow_absorption",
+          "evidence_strength": null,
+          "evidence_scope": "visible_cross_domain_examples",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "mastery",
+            "challenge",
+            "creativity_creation"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 1088
+        }
+      ],
+      "caution": "Derived only from visible report cross-domain examples; no class-level evidence band supplied.",
+      "source_line": 1081
+    },
+    {
+      "item_id": "item_1von6va",
+      "experience_type": "coffee",
+      "domain": "food_drink",
+      "matched_row_ids": [
+        "coffee"
+      ],
+      "retrieval_scope": "classified_class",
+      "objective_affordances": [
+        "sensory_pleasure"
+      ],
+      "candidate_functions": [
+        {
+          "function_id": "sensory_pleasure",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Coffee",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "stimulation_arousal",
+            "shared_experience",
+            "ritual_structure"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 895
+        },
+        {
+          "function_id": "stimulation_arousal",
+          "evidence_strength": null,
+          "evidence_scope": "Coffee",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "shared_experience",
+            "ritual_structure"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 895
+        },
+        {
+          "function_id": "shared_experience",
+          "evidence_strength": null,
+          "evidence_scope": "Coffee",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "stimulation_arousal",
+            "ritual_structure"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 895
+        },
+        {
+          "function_id": "ritual_structure",
+          "evidence_strength": null,
+          "evidence_scope": "Coffee",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "stimulation_arousal",
+            "shared_experience"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 895
+        }
+      ],
+      "caution": "Systematic-review-based work identifies functional, taste, habit/tradition and social motives. citeturn5search8",
+      "source_line": 895
+    },
+    {
+      "item_id": "item_1x3aery",
+      "experience_type": "morning_coffee_tea",
+      "domain": "home_rituals",
+      "matched_row_ids": [
+        "morning_coffee_tea"
+      ],
+      "retrieval_scope": "classified_class",
+      "objective_affordances": [
+        "ritual_structure",
+        "sensory_pleasure"
+      ],
+      "candidate_functions": [
+        {
+          "function_id": "sensory_pleasure",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Morning coffee/tea",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "ritual_structure",
+            "stimulation_arousal",
+            "comfort_familiarity"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 969
+        },
+        {
+          "function_id": "ritual_structure",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Morning coffee/tea",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "stimulation_arousal",
+            "comfort_familiarity"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 969
+        },
+        {
+          "function_id": "stimulation_arousal",
+          "evidence_strength": null,
+          "evidence_scope": "Morning coffee/tea",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "ritual_structure",
+            "comfort_familiarity"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 969
+        },
+        {
+          "function_id": "comfort_familiarity",
+          "evidence_strength": null,
+          "evidence_scope": "Morning coffee/tea",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "ritual_structure",
+            "stimulation_arousal"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 969
+        }
+      ],
+      "caution": "An unusually good example of multiple mechanisms coexisting. citeturn5search8turn15search2",
+      "source_line": 969
+    },
+    {
+      "item_id": "item_5ieh6m",
+      "experience_type": "partner",
+      "domain": "relationships",
+      "matched_row_ids": [
+        "partner"
+      ],
+      "retrieval_scope": "classified_class",
+      "objective_affordances": [],
+      "candidate_functions": [
+        {
+          "function_id": "intimacy_attachment",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Partner",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "shared_experience",
+            "novelty",
+            "care"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 946
+        },
+        {
+          "function_id": "shared_experience",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Partner",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "intimacy_attachment",
+            "novelty",
+            "care"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 946
+        },
+        {
+          "function_id": "novelty",
+          "evidence_strength": null,
+          "evidence_scope": "Partner",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "intimacy_attachment",
+            "shared_experience",
+            "care"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 946
+        },
+        {
+          "function_id": "care",
+          "evidence_strength": null,
+          "evidence_scope": "Partner",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "intimacy_attachment",
+            "shared_experience",
+            "novelty"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 946
+        }
+      ],
+      "caution": "Close-bond processes differ from generic sociability. citeturn11search2turn2search3",
+      "source_line": 946
+    },
+    {
+      "item_id": "item_66pac1",
+      "experience_type": "forest",
+      "domain": "nature",
+      "matched_row_ids": [
+        "forest"
+      ],
+      "retrieval_scope": "classified_class",
+      "objective_affordances": [],
+      "candidate_functions": [
+        {
+          "function_id": "restoration",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Forest",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "nature_connection",
+            "sensory_pleasure"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 956
+        },
+        {
+          "function_id": "nature_connection",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Forest",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "restoration",
+            "sensory_pleasure"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 956
+        },
+        {
+          "function_id": "sensory_pleasure",
+          "evidence_strength": null,
+          "evidence_scope": "Forest",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "restoration",
+            "nature_connection"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 956
+        }
+      ],
+      "caution": "Among the stronger environment-function priors. citeturn6search7",
+      "source_line": 956
+    },
+    {
+      "item_id": "item_n272fc",
+      "experience_type": "live_music",
+      "domain": "music",
+      "matched_row_ids": [
+        "live_music"
+      ],
+      "retrieval_scope": "classified_class",
+      "objective_affordances": [],
+      "candidate_functions": [
+        {
+          "function_id": "sensory_pleasure",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Live music",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "collective_energy",
+            "emotional_intensity",
+            "self_expression_identity"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 905
+        },
+        {
+          "function_id": "collective_energy",
+          "evidence_strength": "MEDIUM_HIGH",
+          "evidence_scope": "Live music",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "emotional_intensity",
+            "self_expression_identity"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 905
+        },
+        {
+          "function_id": "emotional_intensity",
+          "evidence_strength": null,
+          "evidence_scope": "Live music",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "collective_energy",
+            "self_expression_identity"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 905
+        },
+        {
+          "function_id": "self_expression_identity",
+          "evidence_strength": null,
+          "evidence_scope": "Live music",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "collective_energy",
+            "emotional_intensity"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 905
+        }
+      ],
+      "caution": "Live music can create shared emotion and synchrony. citeturn7search6turn7search1",
+      "source_line": 905
+    },
+    {
+      "item_id": "item_qzi3e0",
+      "experience_type": "endurance_sport_running_cycling_swimming",
+      "domain": "sport",
+      "matched_row_ids": [
+        "endurance_sport_running_cycling_swimming"
+      ],
+      "retrieval_scope": "classified_class",
+      "objective_affordances": [
+        "movement_pleasure"
+      ],
+      "candidate_functions": [
+        {
+          "function_id": "movement_pleasure",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Endurance sport — running, cycling, swimming",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "mastery",
+            "mood_regulation",
+            "achievement_progress",
+            "autonomy",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 875
+        },
+        {
+          "function_id": "mastery",
+          "evidence_strength": "MEDIUM_HIGH",
+          "evidence_scope": "Endurance sport — running, cycling, swimming",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "movement_pleasure",
+            "mood_regulation",
+            "achievement_progress",
+            "autonomy",
+            "competition"
+          ],
+          "confidence_up": [
+            "explicit enjoyment of improvement",
+            "mastery recurs in unrelated domains"
+          ],
+          "confidence_down": [
+            "user explicitly rejects performance goals",
+            "running described only as relaxation or social time"
+          ],
+          "forbidden_inferences": [
+            "disciplined_personality"
+          ],
+          "source_line": 875
+        },
+        {
+          "function_id": "mood_regulation",
+          "evidence_strength": null,
+          "evidence_scope": "Endurance sport — running, cycling, swimming",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "movement_pleasure",
+            "mastery",
+            "achievement_progress",
+            "autonomy",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 875
+        },
+        {
+          "function_id": "achievement_progress",
+          "evidence_strength": null,
+          "evidence_scope": "Endurance sport — running, cycling, swimming",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "movement_pleasure",
+            "mastery",
+            "mood_regulation",
+            "autonomy",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 875
+        },
+        {
+          "function_id": "autonomy",
+          "evidence_strength": null,
+          "evidence_scope": "Endurance sport — running, cycling, swimming",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "movement_pleasure",
+            "mastery",
+            "mood_regulation",
+            "achievement_progress",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 875
+        }
+      ],
+      "caution": "Enjoyment and autonomous/competence-related motivation recur in physical-activity research. Do not translate running into “discipline”. citeturn4search0turn4search1",
+      "source_line": 875
+    },
+    {
+      "item_id": "item_ug3v1g",
+      "experience_type": "tactile_material_design",
+      "domain": "art_design",
+      "matched_row_ids": [
+        "tactile_material_design"
+      ],
+      "retrieval_scope": "classified_class",
+      "objective_affordances": [],
+      "candidate_functions": [
+        {
+          "function_id": "sensory_pleasure",
+          "evidence_strength": "MEDIUM_HIGH",
+          "evidence_scope": "Tactile/material design",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "aesthetic_pleasure",
+            "mastery",
+            "learning"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 941
+        },
+        {
+          "function_id": "aesthetic_pleasure",
+          "evidence_strength": "MEDIUM_HIGH",
+          "evidence_scope": "Tactile/material design",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "mastery",
+            "learning"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 941
+        },
+        {
+          "function_id": "mastery",
+          "evidence_strength": null,
+          "evidence_scope": "Tactile/material design",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "aesthetic_pleasure",
+            "learning"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 941
+        },
+        {
+          "function_id": "learning",
+          "evidence_strength": null,
+          "evidence_scope": "Tactile/material design",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "aesthetic_pleasure",
+            "mastery"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 941
+        }
+      ],
+      "caution": "Material pleasure is distinct from status.",
+      "source_line": 941
+    }
+  ],
+  "item_hypotheses": [
+    {
+      "item_id": "item_1ei2psj",
+      "label": "шахматы",
+      "domain": "games",
+      "experience_type": "strategy_games",
+      "objective_affordances": [],
+      "explicit_user_reason": null,
+      "explicit_context_signals": {
+        "confirmed": [],
+        "excluded": []
+      },
+      "candidate_functions": [
+        {
+          "function_id": "challenge",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Strategy games",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "cognitive_complexity",
+            "mastery",
+            "agency_control",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 958,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "cognitive_complexity",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Strategy games",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "challenge",
+            "mastery",
+            "agency_control",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 958,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "mastery",
+          "evidence_strength": null,
+          "evidence_scope": "Strategy games",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "challenge",
+            "cognitive_complexity",
+            "agency_control",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 958,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "agency_control",
+          "evidence_strength": null,
+          "evidence_scope": "Strategy games",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "challenge",
+            "cognitive_complexity",
+            "mastery",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 958,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "competition",
+          "evidence_strength": null,
+          "evidence_scope": "Strategy games",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "challenge",
+            "cognitive_complexity",
+            "mastery",
+            "agency_control"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 958,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        }
+      ]
+    },
+    {
+      "item_id": "item_1jrv157",
+      "label": "ребёнок",
+      "domain": "relationships",
+      "experience_type": "children",
+      "objective_affordances": [],
+      "explicit_user_reason": null,
+      "explicit_context_signals": {
+        "confirmed": [],
+        "excluded": []
+      },
+      "candidate_functions": [
+        {
+          "function_id": "intimacy_attachment",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Children",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "care",
+            "play",
+            "shared_experience"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 947,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "care",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Children",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "intimacy_attachment",
+            "play",
+            "shared_experience"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 947,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "play",
+          "evidence_strength": null,
+          "evidence_scope": "Children",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "intimacy_attachment",
+            "care",
+            "shared_experience"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 947,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "shared_experience",
+          "evidence_strength": null,
+          "evidence_scope": "Children",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "intimacy_attachment",
+            "care",
+            "play"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 947,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        }
+      ]
+    },
+    {
+      "item_id": "item_1jz3ca",
+      "label": "фортепиано",
+      "domain": "music",
+      "experience_type": "piano_practice",
+      "objective_affordances": [],
+      "explicit_user_reason": null,
+      "explicit_context_signals": {
+        "confirmed": [],
+        "excluded": []
+      },
+      "candidate_functions": [
+        {
+          "function_id": "mastery",
+          "evidence_strength": null,
+          "evidence_scope": "visible_cross_domain_examples",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "challenge",
+            "flow_absorption"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 1082,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "challenge",
+          "evidence_strength": null,
+          "evidence_scope": "visible_cross_domain_examples",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "mastery",
+            "flow_absorption"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 1081,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "flow_absorption",
+          "evidence_strength": null,
+          "evidence_scope": "visible_cross_domain_examples",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "mastery",
+            "challenge"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 1088,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        }
+      ]
+    },
+    {
+      "item_id": "item_1nxy0rv",
+      "label": "стадион",
+      "domain": "sport",
+      "experience_type": "live_sport_stadium",
+      "objective_affordances": [],
+      "explicit_user_reason": null,
+      "explicit_context_signals": {
+        "confirmed": [],
+        "excluded": []
+      },
+      "candidate_functions": [
+        {
+          "function_id": "belonging",
+          "evidence_strength": "MEDIUM_HIGH",
+          "evidence_scope": "Live sport/stadium",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "collective_energy",
+            "stimulation_arousal",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 884,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "collective_energy",
+          "evidence_strength": "MEDIUM_HIGH",
+          "evidence_scope": "Live sport/stadium",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "belonging",
+            "stimulation_arousal",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 884,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "stimulation_arousal",
+          "evidence_strength": null,
+          "evidence_scope": "Live sport/stadium",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "belonging",
+            "collective_energy",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 884,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "competition",
+          "evidence_strength": null,
+          "evidence_scope": "Live sport/stadium",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "belonging",
+            "collective_energy",
+            "stimulation_arousal"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 884,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        }
+      ]
+    },
+    {
+      "item_id": "item_1poh2jp",
+      "label": "садоводство",
+      "domain": "home_rituals",
+      "experience_type": "gardening",
+      "objective_affordances": [],
+      "explicit_user_reason": null,
+      "explicit_context_signals": {
+        "confirmed": [],
+        "excluded": []
+      },
+      "candidate_functions": [
+        {
+          "function_id": "nature_connection",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Gardening",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "restoration",
+            "mastery",
+            "care"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 973,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "restoration",
+          "evidence_strength": null,
+          "evidence_scope": "Gardening",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "nature_connection",
+            "mastery",
+            "care"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 973,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "mastery",
+          "evidence_strength": null,
+          "evidence_scope": "Gardening",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "nature_connection",
+            "restoration",
+            "care"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 973,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "care",
+          "evidence_strength": null,
+          "evidence_scope": "Gardening",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "nature_connection",
+            "restoration",
+            "mastery"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 973,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        }
+      ]
+    },
+    {
+      "item_id": "item_1psgv51",
+      "label": "программировать",
+      "domain": "work",
+      "experience_type": "coding_projects",
+      "objective_affordances": [],
+      "explicit_user_reason": null,
+      "explicit_context_signals": {
+        "confirmed": [],
+        "excluded": []
+      },
+      "candidate_functions": [
+        {
+          "function_id": "mastery",
+          "evidence_strength": null,
+          "evidence_scope": "visible_cross_domain_examples",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "challenge",
+            "creativity_creation",
+            "flow_absorption"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 1082,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "challenge",
+          "evidence_strength": null,
+          "evidence_scope": "visible_cross_domain_examples",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "mastery",
+            "creativity_creation",
+            "flow_absorption"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 1081,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "creativity_creation",
+          "evidence_strength": null,
+          "evidence_scope": "visible_cross_domain_examples",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "mastery",
+            "challenge",
+            "flow_absorption"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 1081,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "flow_absorption",
+          "evidence_strength": null,
+          "evidence_scope": "visible_cross_domain_examples",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "mastery",
+            "challenge",
+            "creativity_creation"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 1088,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        }
+      ]
+    },
+    {
+      "item_id": "item_1von6va",
+      "label": "кофе",
+      "domain": "food_drink",
+      "experience_type": "coffee",
+      "objective_affordances": [
+        "sensory_pleasure"
+      ],
+      "explicit_user_reason": null,
+      "explicit_context_signals": {
+        "confirmed": [],
+        "excluded": []
+      },
+      "candidate_functions": [
+        {
+          "function_id": "sensory_pleasure",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Coffee",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "stimulation_arousal",
+            "shared_experience",
+            "ritual_structure"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 895,
+          "basis": "structural_affordance",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "stimulation_arousal",
+          "evidence_strength": null,
+          "evidence_scope": "Coffee",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "shared_experience",
+            "ritual_structure"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 895,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "shared_experience",
+          "evidence_strength": null,
+          "evidence_scope": "Coffee",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "stimulation_arousal",
+            "ritual_structure"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 895,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "ritual_structure",
+          "evidence_strength": null,
+          "evidence_scope": "Coffee",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "stimulation_arousal",
+            "shared_experience"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 895,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        }
+      ]
+    },
+    {
+      "item_id": "item_1x3aery",
+      "label": "чайный ритуал",
+      "domain": "home_rituals",
+      "experience_type": "morning_coffee_tea",
+      "objective_affordances": [
+        "ritual_structure",
+        "sensory_pleasure"
+      ],
+      "explicit_user_reason": null,
+      "explicit_context_signals": {
+        "confirmed": [],
+        "excluded": []
+      },
+      "candidate_functions": [
+        {
+          "function_id": "sensory_pleasure",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Morning coffee/tea",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "ritual_structure",
+            "stimulation_arousal",
+            "comfort_familiarity"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 969,
+          "basis": "structural_affordance",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "ritual_structure",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Morning coffee/tea",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "stimulation_arousal",
+            "comfort_familiarity"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 969,
+          "basis": "structural_affordance",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "stimulation_arousal",
+          "evidence_strength": null,
+          "evidence_scope": "Morning coffee/tea",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "ritual_structure",
+            "comfort_familiarity"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 969,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "comfort_familiarity",
+          "evidence_strength": null,
+          "evidence_scope": "Morning coffee/tea",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "ritual_structure",
+            "stimulation_arousal"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 969,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        }
+      ]
+    },
+    {
+      "item_id": "item_5ieh6m",
+      "label": "партнёр",
+      "domain": "relationships",
+      "experience_type": "partner",
+      "objective_affordances": [],
+      "explicit_user_reason": null,
+      "explicit_context_signals": {
+        "confirmed": [],
+        "excluded": []
+      },
+      "candidate_functions": [
+        {
+          "function_id": "intimacy_attachment",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Partner",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "shared_experience",
+            "novelty",
+            "care"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 946,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "shared_experience",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Partner",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "intimacy_attachment",
+            "novelty",
+            "care"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 946,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "novelty",
+          "evidence_strength": null,
+          "evidence_scope": "Partner",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "intimacy_attachment",
+            "shared_experience",
+            "care"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 946,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "care",
+          "evidence_strength": null,
+          "evidence_scope": "Partner",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "intimacy_attachment",
+            "shared_experience",
+            "novelty"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 946,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        }
+      ]
+    },
+    {
+      "item_id": "item_66pac1",
+      "label": "лесные прогулки",
+      "domain": "nature",
+      "experience_type": "forest",
+      "objective_affordances": [],
+      "explicit_user_reason": null,
+      "explicit_context_signals": {
+        "confirmed": [],
+        "excluded": []
+      },
+      "candidate_functions": [
+        {
+          "function_id": "restoration",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Forest",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "nature_connection",
+            "sensory_pleasure"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 956,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "nature_connection",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Forest",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "restoration",
+            "sensory_pleasure"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 956,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "sensory_pleasure",
+          "evidence_strength": null,
+          "evidence_scope": "Forest",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "restoration",
+            "nature_connection"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 956,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        }
+      ]
+    },
+    {
+      "item_id": "item_n272fc",
+      "label": "живые концерты",
+      "domain": "music",
+      "experience_type": "live_music",
+      "objective_affordances": [],
+      "explicit_user_reason": null,
+      "explicit_context_signals": {
+        "confirmed": [],
+        "excluded": []
+      },
+      "candidate_functions": [
+        {
+          "function_id": "sensory_pleasure",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Live music",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "collective_energy",
+            "emotional_intensity",
+            "self_expression_identity"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 905,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "collective_energy",
+          "evidence_strength": "MEDIUM_HIGH",
+          "evidence_scope": "Live music",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "emotional_intensity",
+            "self_expression_identity"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 905,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "emotional_intensity",
+          "evidence_strength": null,
+          "evidence_scope": "Live music",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "collective_energy",
+            "self_expression_identity"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 905,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "self_expression_identity",
+          "evidence_strength": null,
+          "evidence_scope": "Live music",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "collective_energy",
+            "emotional_intensity"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 905,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        }
+      ]
+    },
+    {
+      "item_id": "item_qzi3e0",
+      "label": "бег",
+      "domain": "sport",
+      "experience_type": "endurance_sport_running_cycling_swimming",
+      "objective_affordances": [
+        "movement_pleasure"
+      ],
+      "explicit_user_reason": "мне не важны результаты, бегаю чтобы очистить голову",
+      "explicit_context_signals": {
+        "confirmed": [
+          "mood_regulation"
+        ],
+        "excluded": [
+          "achievement_progress",
+          "mastery"
+        ]
+      },
+      "candidate_functions": [
+        {
+          "function_id": "movement_pleasure",
+          "evidence_strength": "HIGH",
+          "evidence_scope": "Endurance sport — running, cycling, swimming",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "mastery",
+            "mood_regulation",
+            "achievement_progress",
+            "autonomy",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 875,
+          "basis": "structural_affordance",
+          "explicitly_excluded": false,
+          "context_deprioritized": true,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "mastery",
+          "evidence_strength": "MEDIUM_HIGH",
+          "evidence_scope": "Endurance sport — running, cycling, swimming",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "movement_pleasure",
+            "mood_regulation",
+            "achievement_progress",
+            "autonomy",
+            "competition"
+          ],
+          "confidence_up": [
+            "explicit enjoyment of improvement",
+            "mastery recurs in unrelated domains"
+          ],
+          "confidence_down": [
+            "user explicitly rejects performance goals",
+            "running described only as relaxation or social time"
+          ],
+          "forbidden_inferences": [
+            "disciplined_personality"
+          ],
+          "source_line": 875,
+          "basis": "research_prior",
+          "explicitly_excluded": true,
+          "context_deprioritized": true,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "mood_regulation",
+          "evidence_strength": null,
+          "evidence_scope": "Endurance sport — running, cycling, swimming",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "movement_pleasure",
+            "mastery",
+            "achievement_progress",
+            "autonomy",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 875,
+          "basis": "explicit_user_reason",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "HIGH"
+        },
+        {
+          "function_id": "achievement_progress",
+          "evidence_strength": null,
+          "evidence_scope": "Endurance sport — running, cycling, swimming",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "movement_pleasure",
+            "mastery",
+            "mood_regulation",
+            "autonomy",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 875,
+          "basis": "research_prior",
+          "explicitly_excluded": true,
+          "context_deprioritized": true,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "autonomy",
+          "evidence_strength": null,
+          "evidence_scope": "Endurance sport — running, cycling, swimming",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "movement_pleasure",
+            "mastery",
+            "mood_regulation",
+            "achievement_progress",
+            "competition"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 875,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": true,
+          "initial_user_fit_confidence": "LOW"
+        }
+      ]
+    },
+    {
+      "item_id": "item_ug3v1g",
+      "label": "парфюм",
+      "domain": "art_design",
+      "experience_type": "tactile_material_design",
+      "objective_affordances": [],
+      "explicit_user_reason": null,
+      "explicit_context_signals": {
+        "confirmed": [],
+        "excluded": []
+      },
+      "candidate_functions": [
+        {
+          "function_id": "sensory_pleasure",
+          "evidence_strength": "MEDIUM_HIGH",
+          "evidence_scope": "Tactile/material design",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "aesthetic_pleasure",
+            "mastery",
+            "learning"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 941,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "aesthetic_pleasure",
+          "evidence_strength": "MEDIUM_HIGH",
+          "evidence_scope": "Tactile/material design",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "mastery",
+            "learning"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 941,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "mastery",
+          "evidence_strength": null,
+          "evidence_scope": "Tactile/material design",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "aesthetic_pleasure",
+            "learning"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 941,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        },
+        {
+          "function_id": "learning",
+          "evidence_strength": null,
+          "evidence_scope": "Tactile/material design",
+          "why_rewarding": null,
+          "alternative_functions": [
+            "sensory_pleasure",
+            "aesthetic_pleasure",
+            "mastery"
+          ],
+          "confidence_up": [],
+          "confidence_down": [],
+          "forbidden_inferences": [],
+          "source_line": 941,
+          "basis": "research_prior",
+          "explicitly_excluded": false,
+          "context_deprioritized": false,
+          "initial_user_fit_confidence": "LOW"
+        }
+      ]
+    }
+  ],
+  "aggregated_hypotheses": [
+    {
+      "function_id": "sensory_pleasure",
+      "support": [
+        {
+          "item_id": "item_1von6va",
+          "domain": "food_drink",
+          "basis": "structural_affordance",
+          "evidence_strength": "HIGH"
+        },
+        {
+          "item_id": "item_1x3aery",
+          "domain": "home_rituals",
+          "basis": "structural_affordance",
+          "evidence_strength": "HIGH"
+        },
+        {
+          "item_id": "item_66pac1",
+          "domain": "nature",
+          "basis": "research_prior",
+          "evidence_strength": null
+        },
+        {
+          "item_id": "item_n272fc",
+          "domain": "music",
+          "basis": "research_prior",
+          "evidence_strength": "HIGH"
+        },
+        {
+          "item_id": "item_ug3v1g",
+          "domain": "art_design",
+          "basis": "research_prior",
+          "evidence_strength": "MEDIUM_HIGH"
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [
+        "stimulation_arousal"
+      ],
+      "independent_domains": [
+        "art_design",
+        "food_drink",
+        "home_rituals",
+        "music",
+        "nature"
+      ],
+      "user_fit_confidence": "HIGH",
+      "confidence_basis": {
+        "supporting_choices": 5,
+        "independent_domains": 5,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "challenge",
+      "support": [
+        {
+          "item_id": "item_1ei2psj",
+          "domain": "games",
+          "basis": "research_prior",
+          "evidence_strength": "HIGH"
+        },
+        {
+          "item_id": "item_1jz3ca",
+          "domain": "music",
+          "basis": "research_prior",
+          "evidence_strength": null
+        },
+        {
+          "item_id": "item_1psgv51",
+          "domain": "work",
+          "basis": "research_prior",
+          "evidence_strength": null
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [
+        "mastery",
+        "competition"
+      ],
+      "independent_domains": [
+        "games",
+        "music",
+        "work"
+      ],
+      "user_fit_confidence": "HIGH",
+      "confidence_basis": {
+        "supporting_choices": 3,
+        "independent_domains": 3,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "stimulation_arousal",
+      "support": [
+        {
+          "item_id": "item_1nxy0rv",
+          "domain": "sport",
+          "basis": "research_prior",
+          "evidence_strength": null
+        },
+        {
+          "item_id": "item_1von6va",
+          "domain": "food_drink",
+          "basis": "research_prior",
+          "evidence_strength": null
+        },
+        {
+          "item_id": "item_1x3aery",
+          "domain": "home_rituals",
+          "basis": "research_prior",
+          "evidence_strength": null
+        }
+      ],
+      "counterevidence": [
+        {
+          "item_id": "item_1poh2jp",
+          "kind": "limits_universal_scope"
+        },
+        {
+          "item_id": "item_66pac1",
+          "kind": "limits_universal_scope"
+        }
+      ],
+      "competing_functions": [
+        "sensory_pleasure",
+        "emotional_intensity"
+      ],
+      "independent_domains": [
+        "food_drink",
+        "home_rituals",
+        "sport"
+      ],
+      "user_fit_confidence": "HIGH",
+      "confidence_basis": {
+        "supporting_choices": 3,
+        "independent_domains": 3,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "care",
+      "support": [
+        {
+          "item_id": "item_1jrv157",
+          "domain": "relationships",
+          "basis": "research_prior",
+          "evidence_strength": "HIGH"
+        },
+        {
+          "item_id": "item_1poh2jp",
+          "domain": "home_rituals",
+          "basis": "research_prior",
+          "evidence_strength": null
+        },
+        {
+          "item_id": "item_5ieh6m",
+          "domain": "relationships",
+          "basis": "research_prior",
+          "evidence_strength": null
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [],
+      "independent_domains": [
+        "home_rituals",
+        "relationships"
+      ],
+      "user_fit_confidence": "HIGH",
+      "confidence_basis": {
+        "supporting_choices": 3,
+        "independent_domains": 2,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "shared_experience",
+      "support": [
+        {
+          "item_id": "item_1jrv157",
+          "domain": "relationships",
+          "basis": "research_prior",
+          "evidence_strength": null
+        },
+        {
+          "item_id": "item_1von6va",
+          "domain": "food_drink",
+          "basis": "research_prior",
+          "evidence_strength": null
+        },
+        {
+          "item_id": "item_5ieh6m",
+          "domain": "relationships",
+          "basis": "research_prior",
+          "evidence_strength": "HIGH"
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [
+        "collective_energy"
+      ],
+      "independent_domains": [
+        "food_drink",
+        "relationships"
+      ],
+      "user_fit_confidence": "HIGH",
+      "confidence_basis": {
+        "supporting_choices": 3,
+        "independent_domains": 2,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "mastery",
+      "support": [
+        {
+          "item_id": "item_1ei2psj",
+          "domain": "games",
+          "basis": "research_prior",
+          "evidence_strength": null
+        },
+        {
+          "item_id": "item_1jz3ca",
+          "domain": "music",
+          "basis": "research_prior",
+          "evidence_strength": null
+        },
+        {
+          "item_id": "item_1poh2jp",
+          "domain": "home_rituals",
+          "basis": "research_prior",
+          "evidence_strength": null
+        },
+        {
+          "item_id": "item_1psgv51",
+          "domain": "work",
+          "basis": "research_prior",
+          "evidence_strength": null
+        },
+        {
+          "item_id": "item_ug3v1g",
+          "domain": "art_design",
+          "basis": "research_prior",
+          "evidence_strength": null
+        }
+      ],
+      "counterevidence": [
+        {
+          "item_id": "item_qzi3e0",
+          "kind": "explicit_reason_conflict"
+        }
+      ],
+      "competing_functions": [
+        "achievement_progress",
+        "challenge"
+      ],
+      "independent_domains": [
+        "art_design",
+        "games",
+        "home_rituals",
+        "music",
+        "work"
+      ],
+      "user_fit_confidence": "MEDIUM_HIGH",
+      "confidence_basis": {
+        "supporting_choices": 5,
+        "independent_domains": 5,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 1
+      }
+    },
+    {
+      "function_id": "collective_energy",
+      "support": [
+        {
+          "item_id": "item_1nxy0rv",
+          "domain": "sport",
+          "basis": "research_prior",
+          "evidence_strength": "MEDIUM_HIGH"
+        },
+        {
+          "item_id": "item_n272fc",
+          "domain": "music",
+          "basis": "research_prior",
+          "evidence_strength": "MEDIUM_HIGH"
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [
+        "shared_experience"
+      ],
+      "independent_domains": [
+        "music",
+        "sport"
+      ],
+      "user_fit_confidence": "MEDIUM_HIGH",
+      "confidence_basis": {
+        "supporting_choices": 2,
+        "independent_domains": 2,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "competition",
+      "support": [
+        {
+          "item_id": "item_1ei2psj",
+          "domain": "games",
+          "basis": "research_prior",
+          "evidence_strength": null
+        },
+        {
+          "item_id": "item_1nxy0rv",
+          "domain": "sport",
+          "basis": "research_prior",
+          "evidence_strength": null
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [
+        "challenge"
+      ],
+      "independent_domains": [
+        "games",
+        "sport"
+      ],
+      "user_fit_confidence": "MEDIUM_HIGH",
+      "confidence_basis": {
+        "supporting_choices": 2,
+        "independent_domains": 2,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "flow_absorption",
+      "support": [
+        {
+          "item_id": "item_1jz3ca",
+          "domain": "music",
+          "basis": "research_prior",
+          "evidence_strength": null
+        },
+        {
+          "item_id": "item_1psgv51",
+          "domain": "work",
+          "basis": "research_prior",
+          "evidence_strength": null
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [],
+      "independent_domains": [
+        "music",
+        "work"
+      ],
+      "user_fit_confidence": "MEDIUM_HIGH",
+      "confidence_basis": {
+        "supporting_choices": 2,
+        "independent_domains": 2,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "nature_connection",
+      "support": [
+        {
+          "item_id": "item_1poh2jp",
+          "domain": "home_rituals",
+          "basis": "research_prior",
+          "evidence_strength": "HIGH"
+        },
+        {
+          "item_id": "item_66pac1",
+          "domain": "nature",
+          "basis": "research_prior",
+          "evidence_strength": "HIGH"
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [],
+      "independent_domains": [
+        "home_rituals",
+        "nature"
+      ],
+      "user_fit_confidence": "MEDIUM_HIGH",
+      "confidence_basis": {
+        "supporting_choices": 2,
+        "independent_domains": 2,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "restoration",
+      "support": [
+        {
+          "item_id": "item_1poh2jp",
+          "domain": "home_rituals",
+          "basis": "research_prior",
+          "evidence_strength": null
+        },
+        {
+          "item_id": "item_66pac1",
+          "domain": "nature",
+          "basis": "research_prior",
+          "evidence_strength": "HIGH"
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [
+        "escape_detachment"
+      ],
+      "independent_domains": [
+        "home_rituals",
+        "nature"
+      ],
+      "user_fit_confidence": "MEDIUM_HIGH",
+      "confidence_basis": {
+        "supporting_choices": 2,
+        "independent_domains": 2,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "ritual_structure",
+      "support": [
+        {
+          "item_id": "item_1von6va",
+          "domain": "food_drink",
+          "basis": "research_prior",
+          "evidence_strength": null
+        },
+        {
+          "item_id": "item_1x3aery",
+          "domain": "home_rituals",
+          "basis": "structural_affordance",
+          "evidence_strength": "HIGH"
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [],
+      "independent_domains": [
+        "food_drink",
+        "home_rituals"
+      ],
+      "user_fit_confidence": "MEDIUM_HIGH",
+      "confidence_basis": {
+        "supporting_choices": 2,
+        "independent_domains": 2,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "mood_regulation",
+      "support": [
+        {
+          "item_id": "item_qzi3e0",
+          "domain": "sport",
+          "basis": "explicit_user_reason",
+          "evidence_strength": null
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [],
+      "independent_domains": [
+        "sport"
+      ],
+      "user_fit_confidence": "MEDIUM_HIGH",
+      "confidence_basis": {
+        "supporting_choices": 1,
+        "independent_domains": 1,
+        "explicit_confirmation": true,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "intimacy_attachment",
+      "support": [
+        {
+          "item_id": "item_1jrv157",
+          "domain": "relationships",
+          "basis": "research_prior",
+          "evidence_strength": "HIGH"
+        },
+        {
+          "item_id": "item_5ieh6m",
+          "domain": "relationships",
+          "basis": "research_prior",
+          "evidence_strength": "HIGH"
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [
+        "belonging"
+      ],
+      "independent_domains": [
+        "relationships"
+      ],
+      "user_fit_confidence": "MEDIUM",
+      "confidence_basis": {
+        "supporting_choices": 2,
+        "independent_domains": 1,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "aesthetic_pleasure",
+      "support": [
+        {
+          "item_id": "item_ug3v1g",
+          "domain": "art_design",
+          "basis": "research_prior",
+          "evidence_strength": "MEDIUM_HIGH"
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [
+        "awe_transcendence"
+      ],
+      "independent_domains": [
+        "art_design"
+      ],
+      "user_fit_confidence": "LOW",
+      "confidence_basis": {
+        "supporting_choices": 1,
+        "independent_domains": 1,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "agency_control",
+      "support": [
+        {
+          "item_id": "item_1ei2psj",
+          "domain": "games",
+          "basis": "research_prior",
+          "evidence_strength": null
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [],
+      "independent_domains": [
+        "games"
+      ],
+      "user_fit_confidence": "LOW",
+      "confidence_basis": {
+        "supporting_choices": 1,
+        "independent_domains": 1,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "belonging",
+      "support": [
+        {
+          "item_id": "item_1nxy0rv",
+          "domain": "sport",
+          "basis": "research_prior",
+          "evidence_strength": "MEDIUM_HIGH"
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [
+        "intimacy_attachment"
+      ],
+      "independent_domains": [
+        "sport"
+      ],
+      "user_fit_confidence": "LOW",
+      "confidence_basis": {
+        "supporting_choices": 1,
+        "independent_domains": 1,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "cognitive_complexity",
+      "support": [
+        {
+          "item_id": "item_1ei2psj",
+          "domain": "games",
+          "basis": "research_prior",
+          "evidence_strength": "HIGH"
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [],
+      "independent_domains": [
+        "games"
+      ],
+      "user_fit_confidence": "LOW",
+      "confidence_basis": {
+        "supporting_choices": 1,
+        "independent_domains": 1,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "comfort_familiarity",
+      "support": [
+        {
+          "item_id": "item_1x3aery",
+          "domain": "home_rituals",
+          "basis": "research_prior",
+          "evidence_strength": null
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [],
+      "independent_domains": [
+        "home_rituals"
+      ],
+      "user_fit_confidence": "LOW",
+      "confidence_basis": {
+        "supporting_choices": 1,
+        "independent_domains": 1,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "creativity_creation",
+      "support": [
+        {
+          "item_id": "item_1psgv51",
+          "domain": "work",
+          "basis": "research_prior",
+          "evidence_strength": null
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [],
+      "independent_domains": [
+        "work"
+      ],
+      "user_fit_confidence": "LOW",
+      "confidence_basis": {
+        "supporting_choices": 1,
+        "independent_domains": 1,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "emotional_intensity",
+      "support": [
+        {
+          "item_id": "item_n272fc",
+          "domain": "music",
+          "basis": "research_prior",
+          "evidence_strength": null
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [
+        "stimulation_arousal"
+      ],
+      "independent_domains": [
+        "music"
+      ],
+      "user_fit_confidence": "LOW",
+      "confidence_basis": {
+        "supporting_choices": 1,
+        "independent_domains": 1,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "learning",
+      "support": [
+        {
+          "item_id": "item_ug3v1g",
+          "domain": "art_design",
+          "basis": "research_prior",
+          "evidence_strength": null
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [
+        "curiosity"
+      ],
+      "independent_domains": [
+        "art_design"
+      ],
+      "user_fit_confidence": "LOW",
+      "confidence_basis": {
+        "supporting_choices": 1,
+        "independent_domains": 1,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "novelty",
+      "support": [
+        {
+          "item_id": "item_5ieh6m",
+          "domain": "relationships",
+          "basis": "research_prior",
+          "evidence_strength": null
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [
+        "exploration"
+      ],
+      "independent_domains": [
+        "relationships"
+      ],
+      "user_fit_confidence": "LOW",
+      "confidence_basis": {
+        "supporting_choices": 1,
+        "independent_domains": 1,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "play",
+      "support": [
+        {
+          "item_id": "item_1jrv157",
+          "domain": "relationships",
+          "basis": "research_prior",
+          "evidence_strength": null
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [],
+      "independent_domains": [
+        "relationships"
+      ],
+      "user_fit_confidence": "LOW",
+      "confidence_basis": {
+        "supporting_choices": 1,
+        "independent_domains": 1,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "self_expression_identity",
+      "support": [
+        {
+          "item_id": "item_n272fc",
+          "domain": "music",
+          "basis": "research_prior",
+          "evidence_strength": null
+        }
+      ],
+      "counterevidence": [],
+      "competing_functions": [],
+      "independent_domains": [
+        "music"
+      ],
+      "user_fit_confidence": "LOW",
+      "confidence_basis": {
+        "supporting_choices": 1,
+        "independent_domains": 1,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "achievement_progress",
+      "support": [],
+      "counterevidence": [
+        {
+          "item_id": "item_qzi3e0",
+          "kind": "explicit_reason_conflict"
+        }
+      ],
+      "competing_functions": [
+        "mastery"
+      ],
+      "independent_domains": [],
+      "user_fit_confidence": "LOW",
+      "confidence_basis": {
+        "supporting_choices": 0,
+        "independent_domains": 0,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 1
+      }
+    },
+    {
+      "function_id": "autonomy",
+      "support": [],
+      "counterevidence": [],
+      "competing_functions": [],
+      "independent_domains": [],
+      "user_fit_confidence": "LOW",
+      "confidence_basis": {
+        "supporting_choices": 0,
+        "independent_domains": 0,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "function_id": "movement_pleasure",
+      "support": [],
+      "counterevidence": [],
+      "competing_functions": [],
+      "independent_domains": [],
+      "user_fit_confidence": "LOW",
+      "confidence_basis": {
+        "supporting_choices": 0,
+        "independent_domains": 0,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    }
+  ],
+  "reanalysis_actions": [],
+  "approved_findings": [
+    {
+      "primary_function_id": "mastery",
+      "finding_id": "finding_mastery",
+      "evidence": [
+        {
+          "item_id": "item_1ei2psj",
+          "role": "support",
+          "reason": "шахматы даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+          "label": "шахматы"
+        },
+        {
+          "item_id": "item_1jz3ca",
+          "role": "support",
+          "reason": "фортепиано даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+          "label": "фортепиано"
+        },
+        {
+          "item_id": "item_1poh2jp",
+          "role": "support",
+          "reason": "садоводство даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+          "label": "садоводство"
+        },
+        {
+          "item_id": "item_1psgv51",
+          "role": "support",
+          "reason": "программировать даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+          "label": "программировать"
+        },
+        {
+          "item_id": "item_ug3v1g",
+          "role": "support",
+          "reason": "парфюм даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+          "label": "парфюм"
+        }
+      ],
+      "title": "Навык меняется в процессе",
+      "description": "В игре на инструменте, шахматах, программировании и беге повторяется работа с навыком: можно пробовать, замечать обратную связь и улучшать выполнение. Это возможная связь между занятиями, а не вывод о способностях или характере.",
+      "reason_selected": "Механизм повторяется в нескольких реальных выборах; scope ограничен этими доказательствами.",
+      "secondary_function_ids": [],
+      "counterevidence": [
+        {
+          "item_id": "item_qzi3e0",
+          "reason": "Явная причина ограничивает эту трактовку."
+        }
+      ],
+      "competing_functions": [
+        "achievement_progress",
+        "challenge"
+      ],
+      "user_fit_confidence": "MEDIUM_HIGH",
+      "confidence_basis": {
+        "supporting_choices": 5,
+        "independent_domains": 5,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 1
+      }
+    },
+    {
+      "primary_function_id": "restoration",
+      "finding_id": "finding_restoration",
+      "evidence": [
+        {
+          "item_id": "item_1poh2jp",
+          "role": "support",
+          "reason": "садоводство даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+          "label": "садоводство"
+        },
+        {
+          "item_id": "item_66pac1",
+          "role": "support",
+          "reason": "лесные прогулки даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+          "label": "лесные прогулки"
+        }
+      ],
+      "title": "Восстановление через живое окружение",
+      "description": "В лесной прогулке и садоводстве есть контакт с живым окружением. Он может создавать условия для восстановления, хотя по одному названию занятия нельзя установить личную причину выбора.",
+      "reason_selected": "Механизм повторяется в нескольких реальных выборах; scope ограничен этими доказательствами.",
+      "secondary_function_ids": [],
+      "counterevidence": [],
+      "competing_functions": [
+        "escape_detachment"
+      ],
+      "user_fit_confidence": "MEDIUM_HIGH",
+      "confidence_basis": {
+        "supporting_choices": 2,
+        "independent_domains": 2,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "primary_function_id": "intimacy_attachment",
+      "finding_id": "finding_intimacy_attachment",
+      "evidence": [
+        {
+          "item_id": "item_1jrv157",
+          "role": "support",
+          "reason": "ребёнок даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+          "label": "ребёнок"
+        },
+        {
+          "item_id": "item_5ieh6m",
+          "role": "support",
+          "reason": "партнёр даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+          "label": "партнёр"
+        }
+      ],
+      "title": "Близость к конкретным людям",
+      "description": "Партнёр и ребёнок — конкретные близкие отношения. Здесь уместно говорить об особой связи с людьми, а не об энергии толпы или любви к коллективным событиям.",
+      "reason_selected": "Механизм повторяется в нескольких реальных выборах; scope ограничен этими доказательствами.",
+      "secondary_function_ids": [],
+      "counterevidence": [],
+      "competing_functions": [
+        "belonging"
+      ],
+      "user_fit_confidence": "MEDIUM",
+      "confidence_basis": {
+        "supporting_choices": 2,
+        "independent_domains": 1,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    },
+    {
+      "primary_function_id": "collective_energy",
+      "finding_id": "finding_collective_energy",
+      "evidence": [
+        {
+          "item_id": "item_1nxy0rv",
+          "role": "support",
+          "reason": "стадион даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+          "label": "стадион"
+        },
+        {
+          "item_id": "item_n272fc",
+          "role": "support",
+          "reason": "живые концерты даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+          "label": "живые концерты"
+        }
+      ],
+      "title": "Событие происходит вместе с другими",
+      "description": "На стадионе и живом концерте внимание многих людей направлено на одно происходящее событие. Такая совместная активация отличается от близости к определённому человеку.",
+      "reason_selected": "Механизм повторяется в нескольких реальных выборах; scope ограничен этими доказательствами.",
+      "secondary_function_ids": [],
+      "counterevidence": [],
+      "competing_functions": [
+        "shared_experience"
+      ],
+      "user_fit_confidence": "MEDIUM_HIGH",
+      "confidence_basis": {
+        "supporting_choices": 2,
+        "independent_domains": 2,
+        "explicit_confirmation": false,
+        "explicit_counterevidence": 0
+      }
+    }
+  ],
+  "unused_items": [
+    {
+      "item_id": "item_1von6va",
+      "reason": "no_strong_evidence"
+    },
+    {
+      "item_id": "item_1x3aery",
+      "reason": "no_strong_evidence"
+    },
+    {
+      "item_id": "item_qzi3e0",
+      "reason": "no_strong_evidence"
+    }
+  ],
+  "writer_output": {
+    "headline": "Несколько разных способов получать удовольствие",
+    "headline_accent": "разных способов",
+    "main_text": "В игре на инструменте, шахматах, программировании и беге повторяется работа с навыком: можно пробовать, замечать обратную связь и улучшать выполнение. Это возможная связь между занятиями, а не вывод о способностях или характере. В лесной прогулке и садоводстве есть контакт с живым окружением. Он может создавать условия для восстановления, хотя по одному названию занятия нельзя установить личную причину выбора. Партнёр и ребёнок — конкретные близкие отношения. Здесь уместно говорить об особой связи с людьми, а не об энергии толпы или любви к коллективным событиям.",
+    "patterns": [
+      {
+        "finding_id": "finding_mastery",
+        "title": "Навык меняется в процессе",
+        "description": "В игре на инструменте, шахматах, программировании и беге повторяется работа с навыком: можно пробовать, замечать обратную связь и улучшать выполнение. Это возможная связь между занятиями, а не вывод о способностях или характере."
+      },
+      {
+        "finding_id": "finding_restoration",
+        "title": "Восстановление через живое окружение",
+        "description": "В лесной прогулке и садоводстве есть контакт с живым окружением. Он может создавать условия для восстановления, хотя по одному названию занятия нельзя установить личную причину выбора."
+      },
+      {
+        "finding_id": "finding_intimacy_attachment",
+        "title": "Близость к конкретным людям",
+        "description": "Партнёр и ребёнок — конкретные близкие отношения. Здесь уместно говорить об особой связи с людьми, а не об энергии толпы или любви к коллективным событиям."
+      },
+      {
+        "finding_id": "finding_collective_energy",
+        "title": "Событие происходит вместе с другими",
+        "description": "На стадионе и живом концерте внимание многих людей направлено на одно происходящее событие. Такая совместная активация отличается от близости к определённому человеку."
+      }
+    ]
+  },
+  "public_result": {
+    "headline": "Несколько разных способов получать удовольствие",
+    "headline_accent": "разных способов",
+    "main_insight": "В игре на инструменте, шахматах, программировании и беге повторяется работа с навыком: можно пробовать, замечать обратную связь и улучшать выполнение. Это возможная связь между занятиями, а не вывод о способностях или характере. В лесной прогулке и садоводстве есть контакт с живым окружением. Он может создавать условия для восстановления, хотя по одному названию занятия нельзя установить личную причину выбора. Партнёр и ребёнок — конкретные близкие отношения. Здесь уместно говорить об особой связи с людьми, а не об энергии толпы или любви к коллективным событиям.",
+    "key_fragment": "В игре на инструменте, шахматах, программировании и",
+    "share_insight": "В игре на инструменте, шахматах, программировании и беге повторяется работа с навыком: можно пробовать, замечать обратную связь и улучшать выполнение. Это возможная связь между занятиями, а не вывод о способностях или характере. В лесной прогулке и садоводстве есть контакт с живым окружением. Он может создавать условия для восстановления, хотя по одному названию занятия нельзя установить личную причину выбора. Партнёр и ребёнок — конкретные близкие отношения. Здесь уместно говорить об особой связи с людьми, а не об энергии толпы или любви к коллективным событиям.",
+    "patterns": [
+      {
+        "finding_id": "finding_mastery",
+        "title": "Навык меняется в процессе",
+        "description": "В игре на инструменте, шахматах, программировании и беге повторяется работа с навыком: можно пробовать, замечать обратную связь и улучшать выполнение. Это возможная связь между занятиями, а не вывод о способностях или характере.",
+        "evidence": [
+          {
+            "item_id": "item_1ei2psj",
+            "item": "шахматы",
+            "area": "games",
+            "reason": "шахматы даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+            "user_context": null,
+            "user_context_used": null,
+            "support_item_ids": [
+              "item_1jz3ca",
+              "item_1poh2jp",
+              "item_1psgv51",
+              "item_ug3v1g"
+            ]
+          },
+          {
+            "item_id": "item_1jz3ca",
+            "item": "фортепиано",
+            "area": "music",
+            "reason": "фортепиано даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+            "user_context": null,
+            "user_context_used": null,
+            "support_item_ids": [
+              "item_1ei2psj",
+              "item_1poh2jp",
+              "item_1psgv51",
+              "item_ug3v1g"
+            ]
+          },
+          {
+            "item_id": "item_1poh2jp",
+            "item": "садоводство",
+            "area": "home_rituals",
+            "reason": "садоводство даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+            "user_context": null,
+            "user_context_used": null,
+            "support_item_ids": [
+              "item_1ei2psj",
+              "item_1jz3ca",
+              "item_1psgv51",
+              "item_ug3v1g"
+            ]
+          },
+          {
+            "item_id": "item_1psgv51",
+            "item": "программировать",
+            "area": "work",
+            "reason": "программировать даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+            "user_context": null,
+            "user_context_used": null,
+            "support_item_ids": [
+              "item_1ei2psj",
+              "item_1jz3ca",
+              "item_1poh2jp",
+              "item_ug3v1g"
+            ]
+          },
+          {
+            "item_id": "item_ug3v1g",
+            "item": "парфюм",
+            "area": "art_design",
+            "reason": "парфюм даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+            "user_context": null,
+            "user_context_used": null,
+            "support_item_ids": [
+              "item_1ei2psj",
+              "item_1jz3ca",
+              "item_1poh2jp",
+              "item_1psgv51"
+            ]
+          }
+        ]
+      },
+      {
+        "finding_id": "finding_restoration",
+        "title": "Восстановление через живое окружение",
+        "description": "В лесной прогулке и садоводстве есть контакт с живым окружением. Он может создавать условия для восстановления, хотя по одному названию занятия нельзя установить личную причину выбора.",
+        "evidence": [
+          {
+            "item_id": "item_1poh2jp",
+            "item": "садоводство",
+            "area": "home_rituals",
+            "reason": "садоводство даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+            "user_context": null,
+            "user_context_used": null,
+            "support_item_ids": [
+              "item_66pac1"
+            ]
+          },
+          {
+            "item_id": "item_66pac1",
+            "item": "лесные прогулки",
+            "area": "nature",
+            "reason": "лесные прогулки даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+            "user_context": null,
+            "user_context_used": null,
+            "support_item_ids": [
+              "item_1poh2jp"
+            ]
+          }
+        ]
+      },
+      {
+        "finding_id": "finding_intimacy_attachment",
+        "title": "Близость к конкретным людям",
+        "description": "Партнёр и ребёнок — конкретные близкие отношения. Здесь уместно говорить об особой связи с людьми, а не об энергии толпы или любви к коллективным событиям.",
+        "evidence": [
+          {
+            "item_id": "item_1jrv157",
+            "item": "ребёнок",
+            "area": "relationships",
+            "reason": "ребёнок даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+            "user_context": null,
+            "user_context_used": null,
+            "support_item_ids": [
+              "item_5ieh6m"
+            ]
+          },
+          {
+            "item_id": "item_5ieh6m",
+            "item": "партнёр",
+            "area": "relationships",
+            "reason": "партнёр даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+            "user_context": null,
+            "user_context_used": null,
+            "support_item_ids": [
+              "item_1jrv157"
+            ]
+          }
+        ]
+      },
+      {
+        "finding_id": "finding_collective_energy",
+        "title": "Событие происходит вместе с другими",
+        "description": "На стадионе и живом концерте внимание многих людей направлено на одно происходящее событие. Такая совместная активация отличается от близости к определённому человеку.",
+        "evidence": [
+          {
+            "item_id": "item_1nxy0rv",
+            "item": "стадион",
+            "area": "sport",
+            "reason": "стадион даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+            "user_context": null,
+            "user_context_used": null,
+            "support_item_ids": [
+              "item_n272fc"
+            ]
+          },
+          {
+            "item_id": "item_n272fc",
+            "item": "живые концерты",
+            "area": "music",
+            "reason": "живые концерты даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+            "user_context": null,
+            "user_context_used": null,
+            "support_item_ids": [
+              "item_1nxy0rv"
+            ]
+          }
+        ]
+      }
+    ],
+    "main_evidence": [
+      {
+        "item_id": "item_1ei2psj",
+        "item": "шахматы",
+        "area": "games",
+        "reason": "шахматы даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+        "user_context": null,
+        "user_context_used": null,
+        "support_item_ids": [
+          "item_1jz3ca",
+          "item_1poh2jp",
+          "item_1psgv51",
+          "item_ug3v1g"
+        ]
+      },
+      {
+        "item_id": "item_1jz3ca",
+        "item": "фортепиано",
+        "area": "music",
+        "reason": "фортепиано даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+        "user_context": null,
+        "user_context_used": null,
+        "support_item_ids": [
+          "item_1ei2psj",
+          "item_1poh2jp",
+          "item_1psgv51",
+          "item_ug3v1g"
+        ]
+      },
+      {
+        "item_id": "item_1poh2jp",
+        "item": "садоводство",
+        "area": "home_rituals",
+        "reason": "садоводство даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+        "user_context": null,
+        "user_context_used": null,
+        "support_item_ids": [
+          "item_66pac1"
+        ]
+      },
+      {
+        "item_id": "item_1psgv51",
+        "item": "программировать",
+        "area": "work",
+        "reason": "программировать даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+        "user_context": null,
+        "user_context_used": null,
+        "support_item_ids": [
+          "item_1ei2psj",
+          "item_1jz3ca",
+          "item_1poh2jp",
+          "item_ug3v1g"
+        ]
+      },
+      {
+        "item_id": "item_ug3v1g",
+        "item": "парфюм",
+        "area": "art_design",
+        "reason": "парфюм даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+        "user_context": null,
+        "user_context_used": null,
+        "support_item_ids": [
+          "item_1ei2psj",
+          "item_1jz3ca",
+          "item_1poh2jp",
+          "item_1psgv51"
+        ]
+      },
+      {
+        "item_id": "item_66pac1",
+        "item": "лесные прогулки",
+        "area": "nature",
+        "reason": "лесные прогулки даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+        "user_context": null,
+        "user_context_used": null,
+        "support_item_ids": [
+          "item_1poh2jp"
+        ]
+      },
+      {
+        "item_id": "item_1jrv157",
+        "item": "ребёнок",
+        "area": "relationships",
+        "reason": "ребёнок даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+        "user_context": null,
+        "user_context_used": null,
+        "support_item_ids": [
+          "item_5ieh6m"
+        ]
+      },
+      {
+        "item_id": "item_5ieh6m",
+        "item": "партнёр",
+        "area": "relationships",
+        "reason": "партнёр даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+        "user_context": null,
+        "user_context_used": null,
+        "support_item_ids": [
+          "item_1jrv157"
+        ]
+      },
+      {
+        "item_id": "item_1nxy0rv",
+        "item": "стадион",
+        "area": "sport",
+        "reason": "стадион даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+        "user_context": null,
+        "user_context_used": null,
+        "support_item_ids": [
+          "item_n272fc"
+        ]
+      },
+      {
+        "item_id": "item_n272fc",
+        "item": "живые концерты",
+        "area": "music",
+        "reason": "живые концерты даёт повод проверить этот конкретный тип опыта; личная причина без пояснения остаётся гипотезой.",
+        "user_context": null,
+        "user_context_used": null,
+        "support_item_ids": [
+          "item_1nxy0rv"
+        ]
+      }
+    ],
+    "unexpected_connections": [
+      {
+        "finding_id": "finding_mastery",
+        "item_1_id": "item_1ei2psj",
+        "item_2_id": "item_1jz3ca",
+        "item_1": "шахматы",
+        "item_2": "фортепиано",
+        "area_1": "games",
+        "area_2": "music",
+        "connection": "В игре на инструменте, шахматах, программировании и беге повторяется работа с навыком: можно пробовать, замечать обратную связь и улучшать выполнение. Это возможная связь между занятиями, а не вывод о способностях или характере."
+      },
+      {
+        "finding_id": "finding_restoration",
+        "item_1_id": "item_1poh2jp",
+        "item_2_id": "item_66pac1",
+        "item_1": "садоводство",
+        "item_2": "лесные прогулки",
+        "area_1": "home_rituals",
+        "area_2": "nature",
+        "connection": "В лесной прогулке и садоводстве есть контакт с живым окружением. Он может создавать условия для восстановления, хотя по одному названию занятия нельзя установить личную причину выбора."
+      },
+      {
+        "finding_id": "finding_collective_energy",
+        "item_1_id": "item_1nxy0rv",
+        "item_2_id": "item_n272fc",
+        "item_1": "стадион",
+        "item_2": "живые концерты",
+        "area_1": "sport",
+        "area_2": "music",
+        "connection": "На стадионе и живом концерте внимание многих людей направлено на одно происходящее событие. Такая совместная активация отличается от близости к определённому человеку."
+      }
+    ],
+    "items": [
+      {
+        "item_id": "item_1ei2psj",
+        "id": "item_1ei2psj",
+        "label": "шахматы",
+        "item": "шахматы",
+        "source_text": "шахматы",
+        "explicit_user_reason": null,
+        "user_context": null,
+        "area": "games",
+        "visual": null
+      },
+      {
+        "item_id": "item_1jrv157",
+        "id": "item_1jrv157",
+        "label": "ребёнок",
+        "item": "ребёнок",
+        "source_text": "ребёнок",
+        "explicit_user_reason": null,
+        "user_context": null,
+        "area": "relationships",
+        "visual": null
+      },
+      {
+        "item_id": "item_1jz3ca",
+        "id": "item_1jz3ca",
+        "label": "фортепиано",
+        "item": "фортепиано",
+        "source_text": "фортепиано",
+        "explicit_user_reason": null,
+        "user_context": null,
+        "area": "music",
+        "visual": null
+      },
+      {
+        "item_id": "item_1nxy0rv",
+        "id": "item_1nxy0rv",
+        "label": "стадион",
+        "item": "стадион",
+        "source_text": "стадион",
+        "explicit_user_reason": null,
+        "user_context": null,
+        "area": "sport",
+        "visual": null
+      },
+      {
+        "item_id": "item_1poh2jp",
+        "id": "item_1poh2jp",
+        "label": "садоводство",
+        "item": "садоводство",
+        "source_text": "садоводство",
+        "explicit_user_reason": null,
+        "user_context": null,
+        "area": "home_rituals",
+        "visual": null
+      },
+      {
+        "item_id": "item_1psgv51",
+        "id": "item_1psgv51",
+        "label": "программировать",
+        "item": "программировать",
+        "source_text": "программировать",
+        "explicit_user_reason": null,
+        "user_context": null,
+        "area": "work",
+        "visual": null
+      },
+      {
+        "item_id": "item_1von6va",
+        "id": "item_1von6va",
+        "label": "кофе",
+        "item": "кофе",
+        "source_text": "кофе",
+        "explicit_user_reason": null,
+        "user_context": null,
+        "area": "food_drink",
+        "visual": null
+      },
+      {
+        "item_id": "item_1x3aery",
+        "id": "item_1x3aery",
+        "label": "чайный ритуал",
+        "item": "чайный ритуал",
+        "source_text": "чайный ритуал",
+        "explicit_user_reason": null,
+        "user_context": null,
+        "area": "home_rituals",
+        "visual": null
+      },
+      {
+        "item_id": "item_5ieh6m",
+        "id": "item_5ieh6m",
+        "label": "партнёр",
+        "item": "партнёр",
+        "source_text": "партнёр",
+        "explicit_user_reason": null,
+        "user_context": null,
+        "area": "relationships",
+        "visual": null
+      },
+      {
+        "item_id": "item_66pac1",
+        "id": "item_66pac1",
+        "label": "лесные прогулки",
+        "item": "лесные прогулки",
+        "source_text": "лесные прогулки",
+        "explicit_user_reason": null,
+        "user_context": null,
+        "area": "nature",
+        "visual": null
+      },
+      {
+        "item_id": "item_n272fc",
+        "id": "item_n272fc",
+        "label": "живые концерты",
+        "item": "живые концерты",
+        "source_text": "живые концерты",
+        "explicit_user_reason": null,
+        "user_context": null,
+        "area": "music",
+        "visual": null
+      },
+      {
+        "item_id": "item_qzi3e0",
+        "id": "item_qzi3e0",
+        "label": "бег",
+        "item": "бег",
+        "source_text": "бег — мне не важны результаты, бегаю чтобы очистить голову",
+        "explicit_user_reason": "мне не важны результаты, бегаю чтобы очистить голову",
+        "user_context": "мне не важны результаты, бегаю чтобы очистить голову",
+        "area": "sport",
+        "visual": null
+      },
+      {
+        "item_id": "item_ug3v1g",
+        "id": "item_ug3v1g",
+        "label": "парфюм",
+        "item": "парфюм",
+        "source_text": "парфюм",
+        "explicit_user_reason": null,
+        "user_context": null,
+        "area": "art_design",
+        "visual": null
+      }
+    ],
+    "visual_map": {
+      "center": "Несколько разных способов получать удовольствие",
+      "clusters": [
+        {
+          "title": "Навык меняется в процессе",
+          "item_ids": [
+            "item_1ei2psj",
+            "item_1jz3ca",
+            "item_1poh2jp",
+            "item_1psgv51",
+            "item_ug3v1g"
+          ],
+          "visual": null
+        },
+        {
+          "title": "Восстановление через живое окружение",
+          "item_ids": [
+            "item_1poh2jp",
+            "item_66pac1"
+          ],
+          "visual": null
+        },
+        {
+          "title": "Близость к конкретным людям",
+          "item_ids": [
+            "item_1jrv157",
+            "item_5ieh6m"
+          ],
+          "visual": null
+        },
+        {
+          "title": "Событие происходит вместе с другими",
+          "item_ids": [
+            "item_1nxy0rv",
+            "item_n272fc"
+          ],
+          "visual": null
+        }
+      ],
+      "highlight_connections": [
+        {
+          "item_1_id": "item_1ei2psj",
+          "item_2_id": "item_1jz3ca",
+          "label": "Из подтверждённой связи"
+        },
+        {
+          "item_1_id": "item_1poh2jp",
+          "item_2_id": "item_66pac1",
+          "label": "Из подтверждённой связи"
+        }
+      ]
+    },
+    "areas_count": 8,
+    "prompt_version": "intelligence-v1",
+    "validation_version": "critic-repair-v1",
+    "kb_version": "preference-kb.report-derived.v1",
+    "knowledge_base_version": "preference-kb.report-derived.v1",
+    "reanalysis_actions": []
+  }
+}

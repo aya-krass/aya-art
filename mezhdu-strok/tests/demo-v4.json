@@ -1,0 +1,288 @@
+{
+  "main_insight": "В очень разных твоих выборах сильное переживание редко остаётся просто переживанием — ему находят форму. У Абрамович оно становится действием, в беге проходит через тело, у Айвазовского собирается в композицию, а красная помада превращает внутреннее состояние в видимый жест. Похоже, интерес начинается там, где чувство уже можно увидеть, прожить или сделать.",
+  "key_fragment": "ему находят форму",
+  "share_insight": "В разных твоих выборах сильное переживание не остаётся только внутри: ему находят форму — в действии, движении, музыке или видимом жесте.",
+  "main_evidence": [
+    {
+      "item_id": "abramovic",
+      "item": "Marina Abramović",
+      "area": "people",
+      "reason": "Переживание становится действием перформанса.",
+      "user_context": null,
+      "user_context_used": null,
+      "support_item_ids": [
+        "running",
+        "aivazovsky"
+      ]
+    },
+    {
+      "item_id": "running",
+      "item": "бег",
+      "area": "hobbies",
+      "reason": "Усилие проживается телом через ритм и дистанцию.",
+      "user_context": null,
+      "user_context_used": null,
+      "support_item_ids": [
+        "abramovic",
+        "classical"
+      ]
+    },
+    {
+      "item_id": "aivazovsky",
+      "item": "Айвазовский",
+      "area": "people",
+      "reason": "Движение моря получает живописную композицию.",
+      "user_context": null,
+      "user_context_used": null,
+      "support_item_ids": [
+        "running",
+        "classical"
+      ]
+    },
+    {
+      "item_id": "lipstick",
+      "item": "красная помада",
+      "area": "objects",
+      "reason": "Цвет становится видимым выразительным жестом.",
+      "user_context": null,
+      "user_context_used": null,
+      "support_item_ids": [
+        "abramovic",
+        "aivazovsky"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "title": "Не оставлять внутри",
+      "description": "Fleabag, I Love Dick и Abramović работают с тем, что обычно проще оставить личным: желанием, неловкостью, телом, болью. Здесь интерес появляется именно тогда, когда внутренний материал перестаёт быть только внутренним и становится произведением.",
+      "evidence": [
+        {
+          "item_id": "fleabag",
+          "item": "Fleabag",
+          "area": "films",
+          "reason": "Обращение к зрителю превращает личную неловкость героини в материал рассказа.",
+          "user_context": null,
+          "user_context_used": null,
+          "support_item_ids": [
+            "dick",
+            "abramovic"
+          ]
+        },
+        {
+          "item_id": "dick",
+          "item": "I Love Dick",
+          "area": "books",
+          "reason": "Личное желание становится письмами и литературным произведением.",
+          "user_context": null,
+          "user_context_used": null,
+          "support_item_ids": [
+            "fleabag",
+            "abramovic"
+          ]
+        },
+        {
+          "item_id": "abramovic",
+          "item": "Marina Abramović",
+          "area": "people",
+          "reason": "В перформансе тело и переживание становятся самим действием перед зрителем.",
+          "user_context": null,
+          "user_context_used": null,
+          "support_item_ids": [
+            "fleabag",
+            "dick"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Сила, которую удерживает форма",
+      "description": "В беге есть ритм и дистанция, у Айвазовского — композиция, в классической музыке — музыкальная форма. Сильное ощущение не исчезает от структуры; наоборот, структура позволяет ему стать сильнее и точнее.",
+      "evidence": [
+        {
+          "item_id": "running",
+          "item": "бег",
+          "area": "hobbies",
+          "reason": "Ритм шагов и дистанция дают физическому усилию протяжённость и форму.",
+          "user_context": null,
+          "user_context_used": null,
+          "support_item_ids": [
+            "classical",
+            "aivazovsky"
+          ]
+        },
+        {
+          "item_id": "aivazovsky",
+          "item": "Айвазовский",
+          "area": "people",
+          "reason": "Движение воды и света удерживается живописной композицией.",
+          "user_context": null,
+          "user_context_used": null,
+          "support_item_ids": [
+            "classical",
+            "running"
+          ]
+        },
+        {
+          "item_id": "classical",
+          "item": "классическая музыка вживую",
+          "area": "music",
+          "reason": "Развитие музыкальной темы организует нарастание и разрешение напряжения.",
+          "user_context": null,
+          "user_context_used": null,
+          "support_item_ids": [
+            "running",
+            "aivazovsky"
+          ]
+        }
+      ]
+    }
+  ],
+  "unexpected_connections": [
+    {
+      "item_1_id": "hitchcock",
+      "item_2_id": "agent",
+      "item_1": "фильмы Хичкока",
+      "item_2": "Agent Provocateur",
+      "area_1": "films",
+      "area_2": "objects",
+      "connection": "В обоих случаях притяжение строится не на том, чтобы показать всё сразу. Самое интересное происходит в промежутке между тем, что уже дали увидеть, и тем, что пока удержали."
+    },
+    {
+      "item_1_id": "abramovic",
+      "item_2_id": "running",
+      "item_1": "Marina Abramović",
+      "item_2": "бег",
+      "area_1": "people",
+      "area_2": "hobbies",
+      "connection": "В обоих тело перестаёт быть просто оболочкой и становится способом прожить опыт: через усилие, предел, повторение и физическое присутствие."
+    }
+  ],
+  "items": [
+    {
+      "id": "fleabag",
+      "item": "Fleabag",
+      "area": "films",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "dick",
+      "item": "I Love Dick",
+      "area": "books",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "abramovic",
+      "item": "Marina Abramović",
+      "area": "people",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "running",
+      "item": "бег",
+      "area": "hobbies",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "classical",
+      "item": "классическая музыка вживую",
+      "area": "music",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "aivazovsky",
+      "item": "Айвазовский",
+      "area": "people",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "hitchcock",
+      "item": "фильмы Хичкока",
+      "area": "films",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "lipstick",
+      "item": "красная помада",
+      "area": "objects",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "westwood",
+      "item": "Vivienne Westwood",
+      "area": "objects",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "agent",
+      "item": "Agent Provocateur",
+      "area": "objects",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "london",
+      "item": "Лондон",
+      "area": "places",
+      "user_context": null,
+      "visual": null
+    },
+    {
+      "id": "projects",
+      "item": "придумывать проекты с нуля",
+      "area": "work",
+      "user_context": null,
+      "visual": null
+    }
+  ],
+  "visual_map": {
+    "center": "Дать сильному ощущению форму",
+    "clusters": [
+      {
+        "title": "Не оставлять внутри",
+        "item_ids": [
+          "fleabag",
+          "dick",
+          "abramovic"
+        ],
+        "visual": null
+      },
+      {
+        "title": "Сила, которую удерживает форма",
+        "item_ids": [
+          "running",
+          "aivazovsky",
+          "classical"
+        ],
+        "visual": null
+      }
+    ],
+    "highlight_connections": [
+      {
+        "item_1_id": "hitchcock",
+        "item_2_id": "agent",
+        "label": "Не показывать всё сразу"
+      },
+      {
+        "item_1_id": "abramovic",
+        "item_2_id": "running",
+        "label": "Прожить опыт телом"
+      }
+    ]
+  },
+  "image_concept": {
+    "subject": "A translucent fabric with a vivid carmine fold",
+    "metaphor": "An intense internal movement becomes a visible contour",
+    "prompt": "Tactile conceptual editorial still life, carmine fabric pressing against translucent ivory paper, precise contour emerging, warm ivory, black, restrained gold, natural light, no text, no logos"
+  },
+  "areas_count": 6
+}

@@ -1,0 +1,528 @@
+{
+  "version": "interpretation-traps.v1",
+  "source_sha256": "09daa8b4d4c4dbe99b2b4a62ee4626c4b28e8a6a8baa3680e141303af5c66ab5",
+  "traps": [
+    {
+      "input": "running",
+      "blocked_inference": "“disciplined person”",
+      "why_blocked": "trait leap",
+      "safer_functions": [
+        "mood_regulation",
+        "movement_pleasure",
+        "challenge",
+        "mastery",
+        "achievement_progress"
+      ],
+      "safer_hypotheses_text": "movement, mastery, progress, challenge, regulation",
+      "source_line": 1012
+    },
+    {
+      "input": "weight training",
+      "blocked_inference": "“insecure about appearance”",
+      "why_blocked": "assumes pathology/body motive",
+      "safer_functions": [
+        "embodied_intensity",
+        "mastery",
+        "achievement_progress",
+        "competence"
+      ],
+      "safer_hypotheses_text": "competence, mastery, progress, intensity",
+      "source_line": 1013
+    },
+    {
+      "input": "boxing",
+      "blocked_inference": "“aggressive person”",
+      "why_blocked": "activity ≠ aggression trait",
+      "safer_functions": [
+        "embodied_intensity",
+        "challenge",
+        "mastery",
+        "competition"
+      ],
+      "safer_hypotheses_text": "mastery, challenge, competition, intensity",
+      "source_line": 1014
+    },
+    {
+      "input": "extreme sport",
+      "blocked_inference": "“reckless thrill seeker”",
+      "why_blocked": "monocausal stereotype",
+      "safer_functions": [
+        "challenge",
+        "competence",
+        "agency_control",
+        "flow_absorption",
+        "nature_connection"
+      ],
+      "safer_hypotheses_text": "challenge, agency, nature, competence, flow",
+      "source_line": 1015
+    },
+    {
+      "input": "team sport",
+      "blocked_inference": "“extrovert”",
+      "why_blocked": "social format ≠ personality trait",
+      "safer_functions": [
+        "play",
+        "competition",
+        "belonging",
+        "shared_experience"
+      ],
+      "safer_hypotheses_text": "belonging, shared play, competition",
+      "source_line": 1016
+    },
+    {
+      "input": "watching football",
+      "blocked_inference": "“wants to play football”",
+      "why_blocked": "spectator and participant affordances differ",
+      "safer_functions": [
+        "stimulation_arousal",
+        "belonging",
+        "shared_experience"
+      ],
+      "safer_hypotheses_text": "fandom, tension, entertainment, sociality",
+      "source_line": 1017
+    },
+    {
+      "input": "stadium",
+      "blocked_inference": "“likes crowds generally”",
+      "why_blocked": "live-event mechanism may be event-specific",
+      "safer_functions": [
+        "stimulation_arousal",
+        "self_expression_identity",
+        "collective_energy"
+      ],
+      "safer_hypotheses_text": "collective energy, identity, spectacle",
+      "source_line": 1018
+    },
+    {
+      "input": "wine",
+      "blocked_inference": "“hedonist”",
+      "why_blocked": "global trait from one preference",
+      "safer_functions": [
+        "sensory_pleasure",
+        "savouring",
+        "learning",
+        "shared_experience",
+        "ritual_structure"
+      ],
+      "safer_hypotheses_text": "taste, savouring, ritual, learning, sociality",
+      "source_line": 1019
+    },
+    {
+      "input": "wine",
+      "blocked_inference": "“alcohol problem”",
+      "why_blocked": "sensitive health inference",
+      "safer_functions": [
+        "sensory_pleasure",
+        "ritual_structure"
+      ],
+      "safer_hypotheses_text": "analyse taste/ritual/context only",
+      "source_line": 1020
+    },
+    {
+      "input": "spicy food",
+      "blocked_inference": "“high sensation seeker”",
+      "why_blocked": "trait evidence heterogeneous",
+      "safer_functions": [
+        "sensory_pleasure",
+        "comfort_familiarity",
+        "embodied_intensity"
+      ],
+      "safer_hypotheses_text": "sensory intensity, exposure, cuisine familiarity",
+      "source_line": 1021
+    },
+    {
+      "input": "fine dining",
+      "blocked_inference": "“status-driven”",
+      "why_blocked": "status is one competing explanation",
+      "safer_functions": [
+        "sensory_pleasure",
+        "mastery",
+        "novelty",
+        "aesthetic_pleasure"
+      ],
+      "safer_hypotheses_text": "craft, sensory pleasure, aesthetics, novelty",
+      "source_line": 1022
+    },
+    {
+      "input": "comfort food",
+      "blocked_inference": "“emotionally dysregulated”",
+      "why_blocked": "pathologises ordinary reward",
+      "safer_functions": [
+        "sensory_pleasure",
+        "comfort_familiarity",
+        "nostalgia"
+      ],
+      "safer_hypotheses_text": "familiarity, nostalgia, memory, sensory reward",
+      "source_line": 1023
+    },
+    {
+      "input": "coffee",
+      "blocked_inference": "“workaholic/dependent”",
+      "why_blocked": "functional explanation overextended",
+      "safer_functions": [
+        "sensory_pleasure",
+        "shared_experience",
+        "ritual_structure"
+      ],
+      "safer_hypotheses_text": "taste, ritual, alertness, sociality",
+      "source_line": 1024
+    },
+    {
+      "input": "sad music",
+      "blocked_inference": "“depressed”",
+      "why_blocked": "sensitive mental-health inference",
+      "safer_functions": [
+        "emotional_intensity",
+        "nostalgia",
+        "meaning_reflection"
+      ],
+      "safer_hypotheses_text": "emotion, nostalgia, being moved, reflection",
+      "source_line": 1025
+    },
+    {
+      "input": "metal",
+      "blocked_inference": "“angry”",
+      "why_blocked": "genre stereotype",
+      "safer_functions": [
+        "sensory_pleasure",
+        "stimulation_arousal",
+        "mood_regulation",
+        "belonging"
+      ],
+      "safer_hypotheses_text": "stimulation, regulation, community, sound",
+      "source_line": 1026
+    },
+    {
+      "input": "classical music",
+      "blocked_inference": "“intellectual”",
+      "why_blocked": "flattering trait stereotype",
+      "safer_functions": [
+        "emotional_intensity",
+        "cognitive_complexity",
+        "aesthetic_pleasure",
+        "awe_transcendence"
+      ],
+      "safer_hypotheses_text": "aesthetics, complexity, emotion, awe",
+      "source_line": 1027
+    },
+    {
+      "input": "pop",
+      "blocked_inference": "“superficial”",
+      "why_blocked": "evaluative stereotype",
+      "safer_functions": [
+        "mood_regulation",
+        "comfort_familiarity",
+        "movement_pleasure",
+        "shared_experience"
+      ],
+      "safer_hypotheses_text": "regulation, familiarity, sharing, movement",
+      "source_line": 1028
+    },
+    {
+      "input": "live concerts",
+      "blocked_inference": "“extrovert”",
+      "why_blocked": "crowd preference ≠ broad trait",
+      "safer_functions": [
+        "sensory_pleasure",
+        "shared_experience",
+        "collective_energy"
+      ],
+      "safer_hypotheses_text": "collective energy, sound, sharing",
+      "source_line": 1029
+    },
+    {
+      "input": "literary fiction",
+      "blocked_inference": "“high empathy”",
+      "why_blocked": "average effects do not diagnose individual trait",
+      "safer_functions": [
+        "cognitive_complexity",
+        "meaning_reflection",
+        "social_observation"
+      ],
+      "safer_hypotheses_text": "social simulation, complexity, language, meaning",
+      "source_line": 1030
+    },
+    {
+      "input": "philosophy",
+      "blocked_inference": "“deep person”",
+      "why_blocked": "flattering typology",
+      "safer_functions": [
+        "curiosity",
+        "learning",
+        "cognitive_complexity",
+        "meaning_reflection"
+      ],
+      "safer_hypotheses_text": "curiosity, complexity, learning, meaning",
+      "source_line": 1031
+    },
+    {
+      "input": "romance novels",
+      "blocked_inference": "“relationship obsessed”",
+      "why_blocked": "genre ≠ personal-life motive",
+      "safer_functions": [
+        "emotional_intensity",
+        "intimacy_attachment"
+      ],
+      "safer_hypotheses_text": "emotional experience, narrative, attachment themes",
+      "source_line": 1032
+    },
+    {
+      "input": "horror",
+      "blocked_inference": "“fearless/disturbed”",
+      "why_blocked": "contradictory stereotype; evidence heterogeneous",
+      "safer_functions": [
+        "stimulation_arousal",
+        "curiosity",
+        "play"
+      ],
+      "safer_hypotheses_text": "controlled fear, excitement, curiosity, social fun",
+      "source_line": 1033
+    },
+    {
+      "input": "rewatching",
+      "blocked_inference": "“resistant to change”",
+      "why_blocked": "familiarity can have many functions",
+      "safer_functions": [
+        "mood_regulation",
+        "comfort_familiarity",
+        "nostalgia"
+      ],
+      "safer_hypotheses_text": "comfort, nostalgia, regulation",
+      "source_line": 1034
+    },
+    {
+      "input": "Japan",
+      "blocked_inference": "“likes order”",
+      "why_blocked": "national stereotype",
+      "safer_functions": [
+        "novelty"
+      ],
+      "safer_hypotheses_text": "design, food, history, urban form, memories, novelty",
+      "source_line": 1035
+    },
+    {
+      "input": "Armenia",
+      "blocked_inference": "“likes hospitality”",
+      "why_blocked": "assumed cultural explanation",
+      "safer_functions": [],
+      "safer_hypotheses_text": "landscape, family connection, food, history, architecture",
+      "source_line": 1036
+    },
+    {
+      "input": "Paris",
+      "blocked_inference": "“romantic person”",
+      "why_blocked": "place cliché",
+      "safer_functions": [],
+      "safer_hypotheses_text": "architecture, walkability, food, art, memories",
+      "source_line": 1037
+    },
+    {
+      "input": "repeat destination",
+      "blocked_inference": "“unadventurous”",
+      "why_blocked": "ignores attachment/comfort",
+      "safer_functions": [
+        "restoration",
+        "comfort_familiarity",
+        "belonging",
+        "ritual_structure"
+      ],
+      "safer_hypotheses_text": "familiarity, ritual, belonging, restoration",
+      "source_line": 1038
+    },
+    {
+      "input": "luxury travel",
+      "blocked_inference": "“status seeker”",
+      "why_blocked": "ignores service/design/comfort",
+      "safer_functions": [
+        "sensory_pleasure",
+        "restoration",
+        "comfort_familiarity",
+        "autonomy",
+        "aesthetic_pleasure"
+      ],
+      "safer_hypotheses_text": "restoration, aesthetics, autonomy, sensory comfort",
+      "source_line": 1039
+    },
+    {
+      "input": "backpacking",
+      "blocked_inference": "“free spirit”",
+      "why_blocked": "travel-format-to-trait leap",
+      "safer_functions": [
+        "challenge",
+        "autonomy",
+        "exploration",
+        "shared_experience"
+      ],
+      "safer_hypotheses_text": "exploration, autonomy, sociality, challenge",
+      "source_line": 1040
+    },
+    {
+      "input": "minimalism",
+      "blocked_inference": "“needs control”",
+      "why_blocked": "style does not establish motive",
+      "safer_functions": [
+        "stimulation_arousal",
+        "aesthetic_pleasure"
+      ],
+      "safer_hypotheses_text": "aesthetics, low stimulation, clarity",
+      "source_line": 1041
+    },
+    {
+      "input": "maximalism",
+      "blocked_inference": "“chaotic”",
+      "why_blocked": "style-to-personality stereotype",
+      "safer_functions": [
+        "play",
+        "self_expression_identity"
+      ],
+      "safer_hypotheses_text": "richness, play, self-expression",
+      "source_line": 1042
+    },
+    {
+      "input": "luxury brand",
+      "blocked_inference": "“materialistic/insecure”",
+      "why_blocked": "pathologising and monocausal",
+      "safer_functions": [
+        "mastery",
+        "aesthetic_pleasure",
+        "self_expression_identity",
+        "distinction_status"
+      ],
+      "safer_hypotheses_text": "aesthetics, craft, identity, distinction",
+      "source_line": 1043
+    },
+    {
+      "input": "family",
+      "blocked_inference": "“likes collective experiences”",
+      "why_blocked": "confuses intimacy with crowd experience",
+      "safer_functions": [
+        "belonging",
+        "intimacy_attachment",
+        "care",
+        "ritual_structure"
+      ],
+      "safer_hypotheses_text": "attachment, care, belonging, ritual",
+      "source_line": 1044
+    },
+    {
+      "input": "many friends",
+      "blocked_inference": "“extrovert”",
+      "why_blocked": "preference/network ≠ trait",
+      "safer_functions": [
+        "play",
+        "belonging",
+        "shared_experience"
+      ],
+      "safer_hypotheses_text": "belonging, play, shared experience",
+      "source_line": 1045
+    },
+    {
+      "input": "public figure",
+      "blocked_inference": "“wants to be them”",
+      "why_blocked": "admiration ≠ identification",
+      "safer_functions": [
+        "mastery",
+        "learning",
+        "aesthetic_pleasure"
+      ],
+      "safer_hypotheses_text": "craft, learning, ideas, aesthetics",
+      "source_line": 1046
+    },
+    {
+      "input": "parties",
+      "blocked_inference": "“attention seeking”",
+      "why_blocked": "unsupported trait claim",
+      "safer_functions": [
+        "stimulation_arousal",
+        "play",
+        "belonging",
+        "shared_experience"
+      ],
+      "safer_hypotheses_text": "play, stimulation, belonging, sharing",
+      "source_line": 1047
+    },
+    {
+      "input": "sea",
+      "blocked_inference": "“calm person”",
+      "why_blocked": "environment preference ≠ temperament",
+      "safer_functions": [
+        "sensory_pleasure",
+        "restoration",
+        "nostalgia",
+        "awe_transcendence"
+      ],
+      "safer_hypotheses_text": "sensory pleasure, restoration, awe, memory",
+      "source_line": 1048
+    },
+    {
+      "input": "mountains",
+      "blocked_inference": "“likes conquering things”",
+      "why_blocked": "achievement metaphor imposed",
+      "safer_functions": [
+        "challenge",
+        "awe_transcendence",
+        "nature_connection"
+      ],
+      "safer_hypotheses_text": "awe, nature, challenge, solitude",
+      "source_line": 1049
+    },
+    {
+      "input": "chess",
+      "blocked_inference": "“high IQ”",
+      "why_blocked": "preference ≠ intelligence measurement",
+      "safer_functions": [
+        "challenge",
+        "mastery"
+      ],
+      "safer_hypotheses_text": "challenge, mastery, pattern/system enjoyment",
+      "source_line": 1050
+    },
+    {
+      "input": "RPGs",
+      "blocked_inference": "“escapist person”",
+      "why_blocked": "motive is not trait; escape has multiple forms",
+      "safer_functions": [
+        "exploration",
+        "play",
+        "shared_experience"
+      ],
+      "safer_hypotheses_text": "play, exploration, narrative, sociality",
+      "source_line": 1051
+    },
+    {
+      "input": "cleaning",
+      "blocked_inference": "“anxious/OCD”",
+      "why_blocked": "sensitive diagnosis",
+      "safer_functions": [
+        "sensory_pleasure",
+        "achievement_progress",
+        "agency_control",
+        "ritual_structure"
+      ],
+      "safer_hypotheses_text": "ritual, agency, completion, sensory outcome",
+      "source_line": 1052
+    },
+    {
+      "input": "candles",
+      "blocked_inference": "“homebody”",
+      "why_blocked": "object → global lifestyle leap",
+      "safer_functions": [
+        "sensory_pleasure",
+        "aesthetic_pleasure",
+        "ritual_structure"
+      ],
+      "safer_hypotheses_text": "sensory pleasure, aesthetics, ritual",
+      "source_line": 1053
+    }
+  ],
+  "sensitive_inference_block": [
+    "politics",
+    "religion",
+    "sexual_orientation",
+    "health",
+    "psychiatric_condition",
+    "ethnicity",
+    "criminality",
+    "addiction"
+  ]
+}

@@ -1,0 +1,214 @@
+[
+  {
+    "id": "sport-family-food",
+    "raw_input": "жена, ребёнок, стейки, сидр, гулять по паркам, ездить на машине, сноуборд, ходить на стадион смотреть футбол или регби, путешествовать на машине или самолёте, видео про космос, бег, концерты Linkin Park, Англия, Армения",
+    "areas": [
+      "people",
+      "food",
+      "hobbies",
+      "travel",
+      "music",
+      "places"
+    ],
+    "expected_function_families": [
+      "movement_pleasure",
+      "sensory_pleasure",
+      "intimacy_attachment",
+      "collective_energy",
+      "awe_transcendence"
+    ],
+    "forbidden_phrases": [
+      "ты семейный человек"
+    ],
+    "rubric_note": "Не сводить к движению; стадион — наблюдение, семья и еда полноценны."
+  },
+  {
+    "id": "culture-quiet",
+    "raw_input": "Вирджиния Вулф, Чехов, камерные концерты, музеи, прогулки в одиночестве, чай, старые библиотеки, Вена, дождь, рисование акварелью, ботанические сады",
+    "areas": [
+      "books",
+      "music",
+      "hobbies",
+      "food",
+      "places"
+    ],
+    "expected_function_families": [
+      "contemplation",
+      "aesthetic_pleasure",
+      "restoration",
+      "sensory_pleasure"
+    ],
+    "forbidden_phrases": [
+      "ты интроверт",
+      "ты глубокий человек"
+    ],
+    "rubric_note": "Медленное внимание, не тип личности."
+  },
+  {
+    "id": "nightlife-fashion",
+    "raw_input": "техно, клубы, Mugler, Rick Owens, поздние ужины, Берлин, танцы, кожаная одежда, большие вечеринки, contemporary art",
+    "areas": [
+      "music",
+      "hobbies",
+      "objects",
+      "food",
+      "places"
+    ],
+    "expected_function_families": [
+      "embodied_intensity",
+      "collective_energy",
+      "aesthetic_pleasure",
+      "ritual_structure"
+    ],
+    "forbidden_phrases": [
+      "любит свободу и самовыражение"
+    ],
+    "rubric_note": "Различить звук, коллективность и эстетическую форму."
+  },
+  {
+    "id": "gaming-tech",
+    "raw_input": "strategy games, sci-fi, coding side projects, Formula 1, YouTube про инженерию, LEGO Technic, японские автомобили, настольные игры",
+    "areas": [
+      "hobbies",
+      "books",
+      "work",
+      "objects"
+    ],
+    "expected_function_families": [
+      "cognitive_complexity",
+      "mastery",
+      "challenge",
+      "creativity_creation",
+      "competition"
+    ],
+    "forbidden_phrases": [
+      "высокий интеллект"
+    ],
+    "rubric_note": "Проверить системы, механику и создание."
+  },
+  {
+    "id": "home-craft",
+    "raw_input": "готовить дома, вязать, свечи, растения, выпечка, семейные ужины, маленькие кафе, керамика, загородный дом",
+    "areas": [
+      "hobbies",
+      "objects",
+      "food",
+      "people",
+      "places"
+    ],
+    "expected_function_families": [
+      "creativity_creation",
+      "care",
+      "ritual_structure",
+      "shared_experience"
+    ],
+    "forbidden_phrases": [
+      "всё про уют"
+    ],
+    "rubric_note": "Не сводить к уюту; различать создание и заботу."
+  },
+  {
+    "id": "business-competition",
+    "raw_input": "переговоры, шахматы, теннис, биографии предпринимателей, Formula 1, запуск проектов, публичные выступления, poker",
+    "areas": [
+      "work",
+      "hobbies",
+      "books"
+    ],
+    "expected_function_families": [
+      "competition",
+      "challenge",
+      "social_recognition",
+      "competence",
+      "cognitive_complexity"
+    ],
+    "forbidden_phrases": [
+      "прирождённый лидер"
+    ],
+    "rubric_note": "Не делать карьерных рекомендаций или выводов о статусе."
+  },
+  {
+    "id": "nature-exploration",
+    "raw_input": "хайкинг, дайвинг, National Geographic, Исландия, космос, карты, походы, фотографировать пейзажи",
+    "areas": [
+      "hobbies",
+      "places",
+      "books"
+    ],
+    "expected_function_families": [
+      "exploration",
+      "awe_transcendence",
+      "contemplation",
+      "movement_pleasure"
+    ],
+    "forbidden_phrases": [
+      "любит путешествовать значит любознательный"
+    ],
+    "rubric_note": "Обнаружение через наблюдение и непосредственное участие."
+  },
+  {
+    "id": "pop-social",
+    "raw_input": "Taylor Swift, Friends, brunch, Instagram, путешествия с друзьями, концерты, красивые отели, рестораны, дни рождения",
+    "areas": [
+      "music",
+      "films",
+      "food",
+      "hobbies",
+      "travel",
+      "places"
+    ],
+    "expected_function_families": [
+      "shared_experience",
+      "ritual_structure",
+      "aesthetic_pleasure",
+      "intimacy_attachment"
+    ],
+    "forbidden_phrases": [
+      "поверхностный",
+      "несерьёзный вкус"
+    ],
+    "rubric_note": "Не обесценивать массовую культуру."
+  },
+  {
+    "id": "high-variety",
+    "raw_input": "шахматы, острый суп, японские автомобили, моя бабушка, звуки дождя, абстрактная живопись, караоке, морская биология, старые карты, садовые инструменты",
+    "areas": [
+      "hobbies",
+      "food",
+      "objects",
+      "people",
+      "music",
+      "books"
+    ],
+    "expected_function_families": [
+      "cognitive_complexity",
+      "sensory_pleasure",
+      "intimacy_attachment",
+      "exploration"
+    ],
+    "forbidden_phrases": [
+      "все твои выборы"
+    ],
+    "rubric_note": "Разрешить unused items, не натягивать единую теорию."
+  },
+  {
+    "id": "minimal-input",
+    "raw_input": "бег, чай, готовить дома, прогулки, концерты, шахматы, семейные ужины, космос",
+    "areas": [
+      "hobbies",
+      "food",
+      "music",
+      "people"
+    ],
+    "expected_function_families": [
+      "movement_pleasure",
+      "sensory_pleasure",
+      "shared_experience",
+      "awe_transcendence"
+    ],
+    "forbidden_phrases": [
+      "нужно хотя бы 12"
+    ],
+    "rubric_note": "Дать компактный лучший доступный результат."
+  }
+]

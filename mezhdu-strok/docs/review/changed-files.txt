@@ -1,0 +1,14 @@
+ M README.md
+ M docs/review/changed-files.txt
+ M docs/review/regression-results.tap
+ M docs/review/regression-summary.json
+ M docs/review/structured-trace.json
+ M server/analysis-pipeline.mjs
+ M server/critic.mjs
+ M server/research.mjs
+ M server/worker.mjs
+ M server/writer.mjs
+ M tests/server.test.mjs
+?? docs/requirements-repair-first.md
+?? scripts/emit-repair-review.mjs
+?? tests/repair-first.test.mjs
